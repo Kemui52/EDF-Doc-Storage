@@ -1,0 +1,5968 @@
+[
+    {
+        representations: [0x0],
+        group: 0,
+        name: "",
+        description: "",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "",
+                type: "int",
+                description: ""
+            }
+        ]
+    },
+    {
+        representations: [0x1],
+        group: 0,
+        name: "Pop",
+        description: "Pops an element off the literal stack.",
+        returnValue: 
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "item",
+                type: "any",
+                description: "Not really an argument. Placeholder to show an element was removed from the stack."
+            }
+        ]
+    },
+    {
+        representations: [0x2],
+        group: 0,
+        name: "RegisterEvent",
+        description: "Registers a function for use with an event factor. If no factor is specified soon after, function seems to fire automatically?",
+        returnValue: 
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "FunctionName",
+                type: "string",
+                description: "Name of local function to call."
+            },
+            {
+                name: "",
+                type: "float",
+                description: "Usually 1.0f"
+            },
+            {
+                name: "MultiFunction?",
+                type: "bool",
+                description: "multiple_functions_per_event?"
+            }
+        ]
+    },
+    {
+        representations: [0x3],
+        group: 0,
+        name: "",
+        description: "",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "",
+                type: "int",
+                description: ""
+            }
+        ]
+    },
+    {
+        representations: [0x4],
+        group: 0,
+        name: "",
+        description: "",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        []
+    },
+    {
+        representations: [0x5],
+        group: 0,
+        name: "",
+        description: "Used in the InitializeCommon local function.",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        []
+    },
+    {
+        representations: [0x6],
+        group: 0,
+        name: "",
+        description: "",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        []
+    },
+    {
+        representations: [0x7],
+        group: 0,
+        name: "",
+        description: "",
+        returnValue:
+        {
+            type: "int",
+            description: ""
+        },
+        arguments:
+        []
+    },
+    {
+        representations: [0x8],
+        group: 0,
+        name: "",
+        description: "",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        []
+    },
+    {
+        representations: [0x9],
+        group: 0,
+        name: "",
+        description: "",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "",
+                type: "float",
+                description: ""
+            }
+        ]
+    },
+    {
+        representations: [0xA],
+        group: 0,
+        name: "",
+        description: "Called after InitializeCommon local function.",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        []
+    },
+    {
+        representations: [0xB],
+        group: 0,
+        name: "",
+        description: "Called after 0xC and 0x2710.",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        []
+    },
+    {
+        representations: [0xC],
+        group: 0,
+        name: "CheckResourcesLoaded",
+        description: "Sleeps for 10ms and checks if resources are finished loading. Resets BVM PC if resources are not loaded? Can also prevent custom command return values from being pushed to the BVM stack (if loading isn't done?).",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        []
+    },
+    {
+        representations: [0xD],
+        group: 0,
+        name: "LoadResource",
+        description: "Loads a resource into memory.",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "Resource",
+                type: "string",
+                description: "The resource to load, typically an SGO."
+            },
+            {
+                name: "",
+                type: "int",
+                description: "Usually set to -1."
+            }
+        ]
+    },
+    {
+        representations: [0xE],
+        group: 0,
+        name: "LoadMapResource",
+        description: "Loads a map's files into memory.",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "Map",
+                type: "string",
+                description: "The MAC file to load. This is an absolute path from game root."
+            },
+            {
+                name: "Weather",
+                type: "string",
+                description: "The weather string of the map."
+            },
+            {
+                name: "",
+                type: "int",
+                description: "Usually set to -1."
+            }
+        ]
+    },
+    {
+        representations: [0xF],
+        group: 0,
+        name: "",
+        description: "",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "",
+                type: "int",
+                description: ""
+            }
+        ]
+    },
+    {
+        representations: [0x10],
+        group: 0,
+        name: "",
+        description: "Called after 0xD and 0xE.",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        []
+    },
+    {
+        representations: [0x11],
+        group: 0,
+        name: "",
+        description: "Used in the EconomyMode local function.",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "",
+                type: "int",
+                description: ""
+            }
+        ]
+    },
+    {
+        representations: [0x12],
+        group: 0,
+        name: "",
+        description: "Pops four elements off the literal stack.",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "item",
+                type: "any",
+                description: "Not really an argument. Placeholder to show an element was removed from the stack."
+            },
+            {
+                name: "item",
+                type: "any",
+                description: "Not really an argument. Placeholder to show an element was removed from the stack."
+            },
+            {
+                name: "item",
+                type: "any",
+                description: "Not really an argument. Placeholder to show an element was removed from the stack."
+            },
+            {
+                name: "item",
+                type: "any",
+                description: "Not really an argument. Placeholder to show an element was removed from the stack."
+            }
+        ]
+    },
+    {
+        representations: [0x13],
+        group: 0,
+        name: "",
+        description: "",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        []
+    },
+    {
+        representations: [0x14],
+        group: 0,
+        name: "",
+        description: "",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "",
+                type: "int",
+                description: ""
+            }
+        ]
+    },
+    {
+        representations: [0x15],
+        group: 0,
+        name: "GetDifficulty",
+        description: "Returns the game's selected difficulty.",
+        returnValue:
+        {
+            type: "int",
+            description: "Easy = 0, Normal = 1, Hard = 2, Hardest = 3, Inferno = 4"
+        },
+        arguments:
+        []
+    },
+    {
+        representations: [0x16],
+        group: 0,
+        name: "",
+        description: "",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        []
+    },
+    {
+        representations: [0x18],
+        group: 0,
+        name: "",
+        description: "",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "",
+                type: "int",
+                description: ""
+            },
+            {
+                name: "",
+                type: "string",
+                description: ""
+            }
+        ]
+    },
+    {
+        representations: [0x19],
+        group: 0,
+        name: "",
+        description: "",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "",
+                type: "int",
+                description: ""
+            },
+            {
+                name: "",
+                type: "string",
+                description: ""
+            }
+        ]
+    },
+    {
+        representations: [0x1A],
+        group: 0,
+        name: "",
+        description: "",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "",
+                type: "int",
+                description: ""
+            }
+        ]
+    },
+    {
+        representations: [0x1E],
+        group: 0,
+        name: "CreateUiElement",
+        description: "Creates a UI element that is built into the game.",
+        returnValue:
+        {
+            type: "int",
+            description: "ID of the UI element."
+        },
+        arguments:
+        [
+            {
+                name: "Element",
+                type: "string",
+                description: "The UI to create. Typical screen fade for EDF5 is ui_fade_screen_simple"
+            }
+        ]
+    },
+    {
+        representations: [0x1F],
+        group: 0,
+        name: "DestroyUiElement",
+        description: "Removes the provided UI element.",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "ID",
+                type: "int",
+                description: "ID of the UI element to remove."
+            }
+        ]
+    },
+    {
+        representations: [0x20],
+        group: 0,
+        name: "",
+        description: "Returns dword_1412535C4, whatever that is.",
+        returnValue:
+        {
+            type: "int",
+            description: ""
+        },
+        arguments:
+        []
+    },
+    {
+        representations: [0x21],
+        group: 0,
+        name: "",
+        description: "",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "",
+                type: "int",
+                description: ""
+            }
+        ]
+    },
+    {
+        representations: [0x22],
+        group: 0,
+        name: "",
+        description: "",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        []
+    },
+    {
+        representations: [0x23],
+        group: 0,
+        name: "",
+        description: "",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "",
+                type: "string",
+                description: ""
+            }
+        ]
+    },
+    {
+        representations: [0x24],
+        group: 0,
+        name: "",
+        description: "",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "",
+                type: "string",
+                description: ""
+            }
+        ]
+    },
+    {
+        representations: [0x26],
+        group: 0,
+        name: "",
+        description: "Actually decreases the stackptr by 2 elements.",
+        returnValue:
+        {
+            type: "int",
+            description: ""
+        },
+        arguments:
+        []
+    },
+    {
+        representations: [0x27],
+        group: 0,
+        name: "CreateLytUiElement",
+        description: "Creates a UI element from the specified SGO.",
+        returnValue:
+        {
+            type: "int",
+            description: "ID of the UI element."
+        },
+        arguments:
+        [
+            {
+                name: "SGO",
+                type: "string",
+                description: "SGO that will form the Lyt UI element."
+            }
+        ]
+    },
+    {
+        representations: [0x2C],
+        group: 0,
+        name: "PlayBGM",
+        description: "Plays the specified music.",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "SongName",
+                type: "string",
+                description: "Name of the song to play."
+            }
+        ]
+    },
+    {
+        representations: [0x2D],
+        group: 0,
+        name: "FadeOutBGM",
+        description: "Fades out the current music in TimeDelta seconds.",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "TimeDelta",
+                type: "float",
+                description: "Seconds to fade the song out."
+            }
+        ]
+    },
+    {
+        representations: [0x2E],
+        group: 0,
+        name: "FadeInBGM",
+        description: "Fades in and plays the specified music.",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "SongName",
+                type: "string",
+                description: "Name of the song to play."
+            },
+            {
+                name: "TimeDelta",
+                type: "float",
+                description: "Seconds to fade the song in."
+            }
+        ]
+    },
+    {
+        representations: [0x2F],
+        group: 0,
+        name: "",
+        description: "",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "",
+                type: "string",
+                description: ""
+            },
+            {
+                name: "",
+                type: "float",
+                description: ""
+            },
+            {
+                name: "",
+                type: "float",
+                description: ""
+            }
+        ]
+    },
+    {
+        representations: [0x30],
+        group: 0,
+        name: "",
+        description: "",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "",
+                type: "string",
+                description: ""
+            },
+            {
+                name: "",
+                type: "float",
+                description: ""
+            },
+            {
+                name: "",
+                type: "float",
+                description: ""
+            }
+        ]
+    },
+    {
+        representations: [0x32],
+        group: 0,
+        name: "FadeUiElement?",
+        description: "Causes the provided UI element to transition in or out?",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "ID",
+                type: "int",
+                description: "ID of the UI element to affect."
+            },
+            {
+                name: "FadeType",
+                type: "int",
+                description: "Type of transition. 2 = fade in, 3 = fade out. (Or is it reverse because ui_fade_screen_simple is just a black screen?)"
+            },
+            {
+                name: "Time",
+                type: "float",
+                description: "Amount, in seconds, for the transition to complete."
+            }
+        ]
+    },
+    {
+        representations: [0x33],
+        group: 0,
+        name: "WaitForUiFade",
+        description: "Halts processing until the provided UI element is done fading in.",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "ID",
+                type: "int",
+                description: "ID of the UI element to wait on."
+            }
+        ]
+    },
+    {
+        representations: [0x34],
+        group: 0,
+        name: "",
+        description: "",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "",
+                type: "bool",
+                description: ""
+            }
+        ]
+    },
+    {
+        representations: [0x35],
+        group: 0,
+        name: "SetGenerator2",
+        description: "An alternate SetGenerator for a single spawn wave?",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "ID",
+                type: "int",
+                description: "ID of the generator that will spawn the objects."
+            },
+            {
+                name: "",
+                type: "int",
+                description: "Generally zero?"
+            },
+            {
+                name: "SGO_File",
+                type: "string",
+                description: "The object SGO to spawn."
+            },
+            {
+                name: "Amount",
+                type: "int",
+                description: "The max amount of units to spawn."
+            },
+            {
+                name: "HealthScale",
+                type: "float",
+                description: "A multiplier to the spawned unit's health."
+            },
+            {
+                name: "Rate",
+                type: "float",
+                description: "The rate, in seconds, at which to spawn in units."
+            },
+            {
+                name: "",
+                type: "bool",
+                description: ""
+            }
+        ]
+    },
+    {
+        representations: [0x42],
+        group: 0,
+        name: "VsStartPosition",
+        description: "Spawns the players at the map's versus locations. Only seems to work on IG_TestLightMap in EDF5.",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "SpawnPrefix",
+                type: "string",
+                description: "Usually set to VsPlayer. A compatible map's MAC file has an embedded RMPA with spawnpoints named VsPlayer plus numeric extensions for player number and number of spawnpoint (VsPlayer1_5 is for player one and is the fifth spawn). A mission RMPA with five properly named spawnpoints for both players can suffice."
+            }
+        ]
+    },
+    {
+        representations: [0x48],
+        group: 0,
+        name: "",
+        description: "",
+        returnValue:
+        {
+            type: "int",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "",
+                type: "int",
+                description: ""
+            },
+            {
+                name: "",
+                type: "int",
+                description: ""
+            }
+        ]
+    },
+    {
+        representations: [0x4C],
+        group: 0,
+        name: "",
+        description: "",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "",
+                type: "int",
+                description: ""
+            }
+        ]
+    },
+    {
+        representations: [0x4E],
+        group: 0,
+        name: "",
+        description: "",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "",
+                type: "int",
+                description: ""
+            },
+            {
+                name: "",
+                type: "float",
+                description: ""
+            }
+        ]
+    },
+    {
+        representations: [0x4F],
+        group: 0,
+        name: "",
+        description: "",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "",
+                type: "int",
+                description: ""
+            },
+            {
+                name: "",
+                type: "bool",
+                description: ""
+            }
+        ]
+    },
+    {
+        representations: [0x50],
+        group: 0,
+        name: "RecruitObject",
+        description: "Makes the given Leader object recruit the provided Follower object. The Follower will not automatically become player-recruitable if the Leader dies.",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "Leader",
+                type: "int",
+                description: "ID of the leader, the object to follow."
+            },
+            {
+                name: "Follower",
+                type: "int",
+                description: "ID of the object who will follow the leader."
+            }
+        ]
+    },
+    {
+        representations: [0x5F],
+        group: 0,
+        name: "PlaySurroundSE",
+        description: "Plays a sound effect from the given spawnpoint. Sound must be loaded to play.",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "Spawnpoint",
+                type: "string",
+                description: "The RMPA spawnpoint the sound will play at."
+            },
+            {
+                name: "SoundPreset",
+                type: "string",
+                description: "The sound effect preset to play, which can be found in SEPreset.SGO"
+            }
+        ]
+    },
+    {
+        representations: [0x62],
+        group: 0,
+        name: "",
+        description: "",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "",
+                type: "int",
+                description: ""
+            },
+            {
+                name: "",
+                type: "bool",
+                description: ""
+            }
+        ]
+    },
+    {
+        representations: [0x63],
+        group: 0,
+        name: "",
+        description: "",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "",
+                type: "int",
+                description: ""
+            },
+            {
+                name: "",
+                type: "bool",
+                description: ""
+            }
+        ]
+    },
+    {
+        representations: [0x64],
+        group: 0,
+        name: "",
+        description: "",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "",
+                type: "string",
+                description: ""
+            },
+            {
+                name: "",
+                type: "string",
+                description: ""
+            }
+        ]
+    },
+    {
+        representations: [0x65],
+        group: 0,
+        name: "",
+        description: "",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        []
+    },
+    {
+        representations: [0x66],
+        group: 0,
+        name: "MapObjectDestroy",
+        description: "Deletes map objects within the given area. Also alerts nearby enemies.",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "ShapeNode",
+                type: "string",
+                description: "The RMPA shape to use to find map objects. May need to be Sphero shape."
+            }
+        ]
+    },
+    {
+        representations: [0x67],
+        group: 0,
+        name: "MapObjectDestroy2",
+        description: "Destroys map objects within the given area. Does not alert enemies.",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "ShapeNode",
+                type: "string",
+                description: "The RMPA shape to use to find map objects. May need to be Sphero shape."
+            }
+        ]
+    },
+    {
+        representations: [0x68],
+        group: 0,
+        name: "MapObjectDestroy3",
+        description: "Destroys map objects within the given area. Same as MapObjectDestroy2?",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "ShapeNode",
+                type: "string",
+                description: "The RMPA shape to use to find map objects. May need to be Sphero shape."
+            }
+        ]
+    },
+    {
+        representations: [0x69],
+        group: 0,
+        name: "MapObjectDestroy4",
+        description: "Causes game to crash?",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "ShapeNode",
+                type: "string",
+                description: "The RMPA shape to use to find map objects."
+            }
+        ]
+    },
+    {
+        representations: [0x6E],
+        group: 0,
+        name: "MapObjectInvincible",
+        description: "Turns map objects within the given area invincible.",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "ShapeNode",
+                type: "string",
+                description: "The RMPA shape to use to find map objects. May need to be Sphero shape."
+            }
+        ]
+    },
+    {
+        representations: [0x74],
+        group: 0,
+        name: "",
+        description: "",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "",
+                type: "int",
+                description: ""
+            },
+            {
+                name: "",
+                type: "float",
+                description: ""
+            },
+            {
+                name: "",
+                type: "string",
+                description: ""
+            },
+            {
+                name: "",
+                type: "float",
+                description: ""
+            }
+        ]
+    },
+    {
+        representations: [0x75],
+        group: 0,
+        name: "",
+        description: "",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "",
+                type: "int",
+                description: ""
+            },
+            {
+                name: "",
+                type: "float",
+                description: ""
+            },
+            {
+                name: "",
+                type: "string",
+                description: ""
+            },
+            {
+                name: "",
+                type: "float",
+                description: ""
+            }
+        ]
+    },
+    {
+        representations: [0x7A],
+        group: 0,
+        name: "",
+        description: "",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "",
+                type: "int",
+                description: ""
+            },
+            {
+                name: "",
+                type: "float",
+                description: ""
+            }
+        ]
+    },
+    {
+        representations: [0x80],
+        group: 0,
+        name: "SetObjectAction",
+        description: "Makes the object perform an action or enter a certain state.",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "ID",
+                type: "int",
+                description: "ID of the object to affect."
+            },
+            {
+                name: "Action",
+                type: "int",
+                description: "The action the object will perform. Actions are enumerated on a per-object basis and start from zero."
+            }
+        ]
+    },
+    {
+        representations: [0x81],
+        group: 0,
+        name: "",
+        description: "",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "",
+                type: "int",
+                description: ""
+            },
+            {
+                name: "",
+                type: "int",
+                description: ""
+            }
+        ]
+    },
+    {
+        representations: [0x82],
+        group: 0,
+        name: "",
+        description: "",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "",
+                type: "int",
+                description: ""
+            }
+        ]
+    },
+    {
+        representations: [0x84],
+        group: 0,
+        name: "AddToMobGroup",
+        description: "Adds the object to the mob of fleeing civilians.",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "SGO_FileName",
+                type: "string",
+                description: "The object SGO to add to the spawn list."
+            },
+            {
+                name: "",
+                type: "float",
+                description: "Generally 1.0f?"
+            }
+        ]
+    },
+    {
+        representations: [0x85],
+        group: 0,
+        name: "",
+        description: "",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "",
+                type: "string",
+                description: ""
+            },
+            {
+                name: "",
+                type: "float",
+                description: ""
+            },
+            {
+                name: "",
+                type: "int",
+                description: ""
+            },
+            {
+                name: "",
+                type: "bool",
+                description: ""
+            }
+        ]
+    },
+    {
+        representations: [0x86],
+        group: 0,
+        name: "CreateMobPath",
+        description: "Spawns objects randomly from a list generated by 0x84 on the provided route node, making them follow that route. The created objects will have infinite health.",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "RouteNode",
+                type: "string",
+                description: "The RMPA route node the objects will spawn at. The route must draw a line close enough to the ground or else civilians may get stuck trying to reach the line."
+            },
+            {
+                name: "Amount",
+                type: "int",
+                description: "The amount of objects that will be created."
+            },
+            {
+                name: "SpawnDelay",
+                type: "float",
+                description: "An object will spawn every SpawnDelay seconds."
+            },
+            {
+                name: "LifeTime",
+                type: "float",
+                description: "The created objects will be deleted after this many seconds of existing."
+            }
+        ]
+    },
+    {
+        representations: [0x88],
+        group: 0,
+        name: "",
+        description: "",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "",
+                type: "string",
+                description: ""
+            }
+        ]
+    },
+    {
+        representations: [0x89],
+        group: 0,
+        name: "",
+        description: "",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "",
+                type: "string",
+                description: ""
+            },
+            {
+                name: "",
+                type: "string",
+                description: ""
+            },
+            {
+                name: "",
+                type: "int",
+                description: ""
+            },
+            {
+                name: "",
+                type: "float",
+                description: ""
+            },
+            {
+                name: "",
+                type: "float",
+                description: ""
+            }
+        ]
+    },
+    {
+        representations: [0x8E],
+        group: 0,
+        name: "",
+        description: "",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        []
+    },
+    {
+        representations: [0x90],
+        group: 0,
+        name: "",
+        description: "",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "",
+                type: "int",
+                description: ""
+            },
+            {
+                name: "",
+                type: "int",
+                description: ""
+            }
+        ]
+    },
+    {
+        representations: [0x91],
+        group: 0,
+        name: "",
+        description: "",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "",
+                type: "string",
+                description: ""
+            }
+        ]
+    },
+    {
+        representations: [0x92],
+        group: 0,
+        name: "",
+        description: "",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "",
+                type: "string",
+                description: ""
+            },
+            {
+                name: "",
+                type: "float",
+                description: ""
+            },
+            {
+                name: "",
+                type: "float",
+                description: ""
+            },
+            {
+                name: "",
+                type: "float",
+                description: ""
+            }
+        ]
+    },
+    {
+        representations: [0x93],
+        group: 0,
+        name: "",
+        description: "",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "",
+                type: "string",
+                description: ""
+            },
+            {
+                name: "",
+                type: "int",
+                description: ""
+            },
+            {
+                name: "",
+                type: "float",
+                description: ""
+            },
+            {
+                name: "",
+                type: "float",
+                description: ""
+            },
+            {
+                name: "",
+                type: "float",
+                description: ""
+            },
+            {
+                name: "",
+                type: "float",
+                description: ""
+            }
+        ]
+    },
+    {
+        representations: [0x94],
+        group: 0,
+        name: "",
+        description: "",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "",
+                type: "int",
+                description: ""
+            }
+        ]
+    },
+    {
+        representations: [0x95],
+        group: 0,
+        name: "",
+        description: "",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "",
+                type: "int",
+                description: ""
+            },
+            {
+                name: "",
+                type: "float",
+                description: ""
+            },
+            {
+                name: "",
+                type: "float",
+                description: ""
+            },
+            {
+                name: "",
+                type: "float",
+                description: ""
+            },
+            {
+                name: "",
+                type: "float",
+                description: ""
+            },
+            {
+                name: "",
+                type: "float",
+                description: ""
+            }
+        ]
+    },
+    {
+        representations: [0x97],
+        group: 0,
+        name: "",
+        description: "",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "",
+                type: "int",
+                description: ""
+            },
+            {
+                name: "",
+                type: "int",
+                description: ""
+            },
+            {
+                name: "",
+                type: "int",
+                description: ""
+            }
+        ]
+    },
+    {
+        representations: [0x9A],
+        group: 0,
+        name: "",
+        description: "",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "",
+                type: "int",
+                description: ""
+            },
+            {
+                name: "",
+                type: "string",
+                description: ""
+            },
+            {
+                name: "",
+                type: "string",
+                description: ""
+            }
+        ]
+    },
+    {
+        representations: [0xA2],
+        group: 0,
+        name: "",
+        description: "",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        []
+    },
+    {
+        representations: [0xA3],
+        group: 0,
+        name: "",
+        description: "",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "",
+                type: "int",
+                description: ""
+            },
+            {
+                name: "",
+                type: "string",
+                description: ""
+            },
+            {
+                name: "",
+                type: "float",
+                description: ""
+            }
+        ]
+    },
+    {
+        representations: [0xA4],
+        group: 0,
+        name: "",
+        description: "",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        []
+    },
+    {
+        representations: [0xA5],
+        group: 0,
+        name: "",
+        description: "",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        []
+    },
+    {
+        representations: [0xA6],
+        group: 0,
+        name: "",
+        description: "EventSe",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "",
+                type: "string",
+                description: ""
+            },
+            {
+                name: "",
+                type: "string",
+                description: ""
+            }
+        ]
+    },
+    {
+        representations: [0xAA],
+        group: 0,
+        name: "",
+        description: "",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "",
+                type: "int",
+                description: ""
+            }
+        ]
+    },
+    {
+        representations: [0xAB],
+        group: 0,
+        name: "",
+        description: "",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "",
+                type: "int",
+                description: ""
+            }
+        ]
+    },
+    {
+        representations: [0xAC],
+        group: 0,
+        name: "",
+        description: "",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "",
+                type: "int",
+                description: ""
+            },
+            {
+                name: "",
+                type: "int",
+                description: ""
+            }
+        ]
+    },
+    {
+        representations: [0xAD],
+        group: 0,
+        name: "",
+        description: "",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        []
+    },
+    {
+        representations: [0xAE],
+        group: 0,
+        name: "",
+        description: "",
+        returnValue:
+        {
+            type: "int",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "",
+                type: "int",
+                description: ""
+            }
+        ]
+    },
+    {
+        representations: [0xB0],
+        group: 0,
+        name: "",
+        description: "",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "",
+                type: "int",
+                description: ""
+            },
+            {
+                name: "",
+                type: "float",
+                description: ""
+            }
+        ]
+    },
+    {
+        representations: [0xB9],
+        group: 0,
+        name: "",
+        description: "deletes provided object? if squad leader, deletes the (original?) followers, too",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "",
+                type: "int",
+                description: ""
+            }
+        ]
+    },
+    {
+        representations: [0xBA],
+        group: 0,
+        name: "",
+        description: "",
+        returnValue:
+        {
+            type: "int",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "",
+                type: "int",
+                description: ""
+            }
+        ]
+    },
+    {
+        representations: [0xC8],
+        group: 0,
+        name: "Wait",
+        description: "Halts the current BVM process for TimeDelta seconds.",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "TimeDelta",
+                type: "float",
+                description: "How many seconds to stall for."
+            }
+        ]
+    },
+    {
+        representations: [0xC9],
+        group: 0,
+        name: "",
+        description: "",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "",
+                type: "int",
+                description: ""
+            }
+        ]
+    },
+    {
+        representations: [0xCA],
+        group: 0,
+        name: "",
+        description: "",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "",
+                type: "int",
+                description: ""
+            },
+            {
+                name: "",
+                type: "bool",
+                description: ""
+            }
+        ]
+    },
+    {
+        representations: [0xCB],
+        group: 0,
+        name: "",
+        description: "",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "",
+                type: "int",
+                description: ""
+            },
+            {
+                name: "",
+                type: "float",
+                description: ""
+            }
+        ]
+    },
+    {
+        representations: [0xCC],
+        group: 0,
+        name: "",
+        description: "",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "",
+                type: "int",
+                description: ""
+            },
+            {
+                name: "",
+                type: "float",
+                description: ""
+            }
+        ]
+    },
+    {
+        representations: [0xCD],
+        group: 0,
+        name: "",
+        description: "",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "",
+                type: "int",
+                description: ""
+            },
+            {
+                name: "",
+                type: "bool",
+                description: ""
+            }
+        ]
+    },
+    {
+        representations: [0xCE],
+        group: 0,
+        name: "",
+        description: "",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "",
+                type: "int",
+                description: ""
+            }
+        ]
+    },
+    {
+        representations: [0xCF],
+        group: 0,
+        name: "",
+        description: "",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "",
+                type: "int",
+                description: ""
+            }
+        ]
+    },
+    {
+        representations: [0xD0],
+        group: 0,
+        name: "",
+        description: "",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "",
+                type: "int",
+                description: ""
+            },
+            {
+                name: "",
+                type: "float",
+                description: ""
+            }
+        ]
+    },
+    {
+        representations: [0xD1],
+        group: 0,
+        name: "MultiplyObjectHealth",
+        description: "Multiplies the object's current health by the given percentage. Can decrease or increase health, but will not go past max health.",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "ID",
+                type: "int",
+                description: "ID of the object to modify."
+            },
+            {
+                name: "Percent",
+                type: "float",
+                description: "The percentage of the current health to apply. Note that 50f is half and 200f is double."
+            }
+        ]
+    },
+    {
+        representations: [0xD2],
+        group: 0,
+        name: "SetEssential",
+        description: "Sets the given object to not die when its health is depleted, but instead enter an incapacitated state where it will revive once there are no more enemies. Only works on soldiers.",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "ID",
+                type: "int",
+                description: "ID of the object to affect."
+            },
+            {
+                name: "Essential",
+                type: "bool",
+                description: "True makes the object essential, false disables the effect."
+            }
+        ]
+    },
+    {
+        representations: [0xD5],
+        group: 0,
+        name: "SetObjectPosition",
+        description: "",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "",
+                type: "int",
+                description: ""
+            },
+            {
+                name: "",
+                type: "string",
+                description: ""
+            }
+        ]
+    },
+    {
+        representations: [0xD6],
+        group: 0,
+        name: "",
+        description: "",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "",
+                type: "bool",
+                description: ""
+            }
+        ]
+    },
+    {
+        representations: [0xD7],
+        group: 0,
+        name: "",
+        description: "",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "",
+                type: "bool",
+                description: ""
+            }
+        ]
+    },
+    {
+        representations: [0xE0],
+        group: 0,
+        name: "",
+        description: "",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "",
+                type: "int",
+                description: ""
+            },
+            {
+                name: "",
+                type: "bool",
+                description: ""
+            }
+        ]
+    },
+    {
+        representations: [0xE1],
+        group: 0,
+        name: "",
+        description: "",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "",
+                type: "int",
+                description: ""
+            },
+            {
+                name: "",
+                type: "bool",
+                description: ""
+            }
+        ]
+    },
+    {
+        representations: [0xE2],
+        group: 0,
+        name: "",
+        description: "",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "",
+                type: "int",
+                description: ""
+            },
+            {
+                name: "",
+                type: "bool",
+                description: ""
+            }
+        ]
+    },
+    {
+        representations: [0xE4],
+        group: 0,
+        name: "",
+        description: "",
+        returnValue:
+        {
+            type: "int",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "",
+                type: "int",
+                description: ""
+            },
+            {
+                name: "",
+                type: "int",
+                description: ""
+            },
+            {
+                name: "",
+                type: "int",
+                description: ""
+            }
+        ]
+    },
+    {
+        representations: [0xE5],
+        group: 0,
+        name: "",
+        description: "",
+        returnValue:
+        {
+            type: "int",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "",
+                type: "int",
+                description: ""
+            },
+            {
+                name: "",
+                type: "int",
+                description: ""
+            }
+        ]
+    },
+    {
+        representations: [0xEA],
+        group: 0,
+        name: "SetObjectEnemy",
+        description: "Changes the specified object to be an enemy.",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "ID",
+                type: "int",
+                description: "ID of the object to affect."
+            }
+        ]
+    },
+    {
+        representations: [0xEB],
+        group: 0,
+        name: "SetObjectNeutral",
+        description: "Changes the specified object to be a neutral entity, removing it from the radar.",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "ID",
+                type: "int",
+                description: "ID of the object to affect."
+            }
+        ]
+    },
+    {
+        representations: [0xEC],
+        group: 0,
+        name: "SetObjectTeam",
+        description: "Changes the specified object to be on the desired team.",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "ID",
+                type: "int",
+                description: "ID of the object to affect."
+            },
+            {
+                name: "Team",
+                type: "int",
+                description: "The team to set the object to. 0 = players (white friendly), 1 = aliens (red enemy), 2 = AI friendlies (blue friendly), 3 = neutral objects (no radar, neutral), 4 = fleeing civilians (white friendly), 5 = drivable vehicles (yellow neutral, doesn't apply drivability)"
+            }
+        ]
+    },
+    {
+        representations: [0xED],
+        group: 0,
+        name: "",
+        description: "",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        []
+    },
+    {
+        representations: [0xF0],
+        group: 0,
+        name: "CreateEventFactorObjectDurability",
+        description: "Ninety percent sure it's a health percent check on the given object ID.",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "ID",
+                type: "int",
+                description: "ID of object to check."
+            },
+            {
+                name: "HealthPercent",
+                type: "float",
+                description: "percent of health, less than"
+            }
+        ]
+    },
+    {
+        representations: [0xF4],
+        group: 0,
+        name: "",
+        description: "",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "",
+                type: "int",
+                description: ""
+            }
+        ]
+    },
+    {
+        representations: [0xF5],
+        group: 0,
+        name: "",
+        description: "",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "",
+                type: "int",
+                description: ""
+            }
+        ]
+    },
+    {
+        representations: [0xFA],
+        group: 0,
+        name: "",
+        description: "",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "",
+                type: "int",
+                description: ""
+            }
+        ]
+    },
+    {
+        representations: [0xFC],
+        group: 0,
+        name: "",
+        description: "",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "",
+                type: "int",
+                description: ""
+            },
+            {
+                name: "",
+                type: "int",
+                description: ""
+            },
+            {
+                name: "",
+                type: "int",
+                description: ""
+            },
+            {
+                name: "",
+                type: "bool",
+                description: ""
+            }
+        ]
+    },
+    {
+        representations: [0xFE],
+        group: 0,
+        name: "CreateTransporter",
+        description: "",
+        returnValue:
+        {
+            type: "int",
+            description: "ID of the object created?"
+        },
+        arguments:
+        [
+            {
+                name: "",
+                type: "string",
+                description: ""
+            },
+            {
+                name: "",
+                type: "string",
+                description: ""
+            },
+            {
+                name: "",
+                type: "string",
+                description: ""
+            },
+            {
+                name: "",
+                type: "string",
+                description: ""
+            },
+            {
+                name: "",
+                type: "string",
+                description: ""
+            },
+            {
+                name: "",
+                type: "float",
+                description: ""
+            }
+        ]
+    },
+    {
+        representations: [0xFF],
+        group: 0,
+        name: "CreateTransporter",
+        description: "",
+        returnValue:
+        {
+            type: "int",
+            description: "ID of the object created?"
+        },
+        arguments:
+        [
+            {
+                name: "",
+                type: "string",
+                description: ""
+            },
+            {
+                name: "",
+                type: "string",
+                description: ""
+            },
+            {
+                name: "",
+                type: "string",
+                description: ""
+            },
+            {
+                name: "",
+                type: "string",
+                description: ""
+            },
+            {
+                name: "",
+                type: "string",
+                description: ""
+            },
+            {
+                name: "",
+                type: "float",
+                description: ""
+            }
+        ]
+    },
+    {
+        representations: [0x101],
+        group: 0,
+        name: "CreateEventObject",
+        description: "Creates an object without AI(?) at the provided Spawnpoint.",
+        returnValue:
+        {
+            type: "int",
+            description: "ID of object created."
+        },
+        arguments:
+        [
+            {
+                name: "Spawnpoint",
+                type: "string",
+                description: "The RMPA spawnpoint the object will spawn at."
+            },
+            {
+                name: "SGO_FileName",
+                type: "string",
+                description: "The object SGO to spawn."
+            }
+        ]
+    },
+    {
+        representations: [0x102],
+        group: 0,
+        name: "CreateEventObject2",
+        description: "Creates an object without AI(?) at the provided Spawnpoint. Unknown difference between first version.",
+        returnValue:
+        {
+            type: "int",
+            description: "ID of object created."
+        },
+        arguments:
+        [
+            {
+                name: "Spawnpoint",
+                type: "string",
+                description: "The RMPA spawnpoint the object will spawn at."
+            },
+            {
+                name: "SGO_FileName",
+                type: "string",
+                description: "The object SGO to spawn."
+            }
+        ]
+    },
+    {
+        representations: [0x103],
+        group: 0,
+        name: "",
+        description: "",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        []
+    },
+    {
+        representations: [0x105],
+        group: 0,
+        name: "CreateVehicle2",
+        description: "Creates a drivable vehicle at the provided Spawnpoint with a multiplier to its health.",
+        returnValue:
+        {
+            type: "int",
+            description: "ID of object created."
+        },
+        arguments:
+        [
+            {
+                name: "Spawnpoint",
+                type: "string",
+                description: "The RMPA spawnpoint the object will spawn at."
+            },
+            {
+                name: "SGO_FileName",
+                type: "string",
+                description: "The object SGO to spawn."
+            },
+            {
+                name: "HealthScale",
+                type: "float",
+                description: "A multiplier to the object's health. Result will not be lower than object's base health."
+            }
+        ]
+    },
+    {
+        representations: [0x106],
+        group: 0,
+        name: "",
+        description: "",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "",
+                type: "int",
+                description: ""
+            },
+            {
+                name: "",
+                type: "string",
+                description: ""
+            },
+            {
+                name: "",
+                type: "string",
+                description: ""
+            },
+            {
+                name: "",
+                type: "float",
+                description: ""
+            }
+        ]
+    },
+    {
+        representations: [0x107],
+        group: 0,
+        name: "",
+        description: "",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "",
+                type: "int",
+                description: ""
+            },
+            {
+                name: "",
+                type: "string",
+                description: ""
+            },
+            {
+                name: "",
+                type: "string",
+                description: ""
+            },
+            {
+                name: "",
+                type: "float",
+                description: ""
+            }
+        ]
+    },
+    {
+        representations: [0x108],
+        group: 0,
+        name: "",
+        description: "",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "",
+                type: "int",
+                description: ""
+            },
+            {
+                name: "",
+                type: "string",
+                description: ""
+            },
+            {
+                name: "",
+                type: "string",
+                description: ""
+            },
+            {
+                name: "",
+                type: "float",
+                description: ""
+            },
+            {
+                name: "",
+                type: "float",
+                description: ""
+            }
+        ]
+    },
+    {
+        representations: [0x109],
+        group: 0,
+        name: "",
+        description: "",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "",
+                type: "int",
+                description: ""
+            },
+            {
+                name: "",
+                type: "int",
+                description: ""
+            },
+            {
+                name: "",
+                type: "string",
+                description: ""
+            },
+            {
+                name: "",
+                type: "string",
+                description: ""
+            },
+            {
+                name: "",
+                type: "float",
+                description: ""
+            }
+        ]
+    },
+    {
+        representations: [0x10A],
+        group: 0,
+        name: "",
+        description: "",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "",
+                type: "int",
+                description: ""
+            },
+            {
+                name: "",
+                type: "int",
+                description: ""
+            },
+            {
+                name: "",
+                type: "string",
+                description: ""
+            },
+            {
+                name: "",
+                type: "string",
+                description: ""
+            },
+            {
+                name: "",
+                type: "float",
+                description: ""
+            },
+            {
+                name: "",
+                type: "float",
+                description: ""
+            }
+        ]
+    },
+    {
+        representations: [0x10B],
+        group: 0,
+        name: "",
+        description: "",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "",
+                type: "int",
+                description: ""
+            },
+            {
+                name: "",
+                type: "string",
+                description: ""
+            },
+            {
+                name: "",
+                type: "string",
+                description: ""
+            },
+            {
+                name: "",
+                type: "float",
+                description: ""
+            },
+            {
+                name: "",
+                type: "int",
+                description: ""
+            }
+        ]
+    },
+    {
+        representations: [0x10C],
+        group: 0,
+        name: "",
+        description: "",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "",
+                type: "int",
+                description: ""
+            },
+            {
+                name: "",
+                type: "string",
+                description: ""
+            },
+            {
+                name: "",
+                type: "string",
+                description: ""
+            },
+            {
+                name: "",
+                type: "float",
+                description: ""
+            },
+            {
+                name: "",
+                type: "float",
+                description: ""
+            },
+            {
+                name: "",
+                type: "int",
+                description: ""
+            }
+        ]
+    },
+    {
+        representations: [0x10E],
+        group: 0,
+        name: "",
+        description: "",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "",
+                type: "int",
+                description: ""
+            },
+            {
+                name: "",
+                type: "string",
+                description: ""
+            },
+            {
+                name: "",
+                type: "string",
+                description: ""
+            },
+            {
+                name: "",
+                type: "float",
+                description: ""
+            },
+            {
+                name: "",
+                type: "float",
+                description: ""
+            }
+        ]
+    },
+    {
+        representations: [0x110],
+        group: 0,
+        name: "",
+        description: "Called after 0xC.",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        []
+    },
+    {
+        representations: [0x111],
+        group: 0,
+        name: "",
+        description: "",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        []
+    },
+    {
+        representations: [0x112],
+        group: 0,
+        name: "",
+        description: "",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        []
+    },
+    {
+        representations: [0x114],
+        group: 0,
+        name: "",
+        description: "",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        []
+    },
+    {
+        representations: [0x115],
+        group: 0,
+        name: "",
+        description: "",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        []
+    },
+    {
+        representations: [0x11F],
+        group: 0,
+        name: "ObjectNotOnRoute",
+        description: "Returns true if the specified object is not on a route.",
+        returnValue:
+        {
+            type: "bool",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "ID",
+                type: "int",
+                description: "ID of the entity to check."
+            }
+        ]
+    },
+    {
+        representations: [0x120],
+        group: 0,
+        name: "CreateExplosion",
+        description: "Creates a fake explosion at the specified spawnpoint. No damage is dealt and no sound is played.",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "Spawnpoint",
+                type: "string",
+                description: "RMPA spawnpoint the explosion will occur at."
+            },
+            {
+                name: "SizeDuration",
+                type: "float",
+                description: "The size and duration of the effect."
+            },
+            {
+                name: "QuakeScale",
+                type: "float",
+                description: "The scale of the shake and rumble effects."
+            }
+        ]
+    },
+    {
+        representations: [0x121],
+        group: 0,
+        name: "CreateQuake",
+        description: "Creates a screen shake originating at the specified spawnpoint. No sound is played.",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "Spawnpoint",
+                type: "string",
+                description: "RMPA spawnpoint the screen shake will occur at."
+            },
+            {
+                name: "SizeDuration",
+                type: "float",
+                description: "The size and duration of the effect."
+            },
+            {
+                name: "QuakeScale",
+                type: "float",
+                description: "An additional scale to the shake and rumble effects."
+            }
+        ]
+    },
+    {
+        representations: [0x122],
+        group: 0,
+        name: "",
+        description: "",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "",
+                type: "int",
+                description: ""
+            },
+            {
+                name: "",
+                type: "int",
+                description: ""
+            }
+        ]
+    },
+    {
+        representations: [0x123],
+        group: 0,
+        name: "",
+        description: "",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "",
+                type: "int",
+                description: ""
+            },
+            {
+                name: "",
+                type: "bool",
+                description: ""
+            }
+        ]
+    },
+    {
+        representations: [0x124],
+        group: 0,
+        name: "",
+        description: "",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "",
+                type: "int",
+                description: ""
+            },
+            {
+                name: "",
+                type: "float",
+                description: ""
+            }
+        ]
+    },
+    {
+        representations: [0x126],
+        group: 0,
+        name: "",
+        description: "",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "",
+                type: "int",
+                description: ""
+            },
+            {
+                name: "",
+                type: "bool",
+                description: ""
+            }
+        ]
+    },
+    {
+        representations: [0x127],
+        group: 0,
+        name: "",
+        description: "",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "",
+                type: "int",
+                description: ""
+            },
+            {
+                name: "",
+                type: "bool",
+                description: ""
+            }
+        ]
+    },
+    {
+        representations: [0x134],
+        group: 0,
+        name: "SetGenerator",
+        description: "Sets an object to spawn in other objects within the given intervals.",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "ID",
+                type: "int",
+                description: "ID of the generator that will spawn the objects."
+            },
+            {
+                name: "",
+                type: "int",
+                description: "Generally zero?"
+            },
+            {
+                name: "SGO_File",
+                type: "string",
+                description: "The object SGO to spawn."
+            },
+            {
+                name: "Amount",
+                type: "int",
+                description: "The max amount of units to spawn."
+            },
+            {
+                name: "HealthScale",
+                type: "float",
+                description: "A multiplier to the spawned unit's health."
+            },
+            {
+                name: "Rate",
+                type: "float",
+                description: "The rate, in seconds, at which to spawn in units."
+            },
+            {
+                name: "Interval",
+                type: "float",
+                description: "The interval, in seconds, to check if new units should spawn in."
+            },
+            {
+                name: "",
+                type: "bool",
+                description: ""
+            }
+        ]
+    },
+    {
+        representations: [0x15E],
+        group: 0,
+        name: "PlayPresetSE",
+        description: "Plays a sound effect directly to the speakers. Sound must be loaded to play.",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "SoundPreset",
+                type: "string",
+                description: "The sound effect preset to play, which can be found in SEPreset.SGO"
+            }
+        ]
+    },
+    {
+        representations: [0x164],
+        group: 0,
+        name: "SetAiObjectDirectionPoint",
+        description: "",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "",
+                type: "int",
+                description: ""
+            },
+            {
+                name: "",
+                type: "string",
+                description: ""
+            },
+            {
+                name: "",
+                type: "float",
+                description: ""
+            },
+            {
+                name: "",
+                type: "bool",
+                description: ""
+            }
+        ]
+    },
+    {
+        representations: [0x165],
+        group: 0,
+        name: "",
+        description: "",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "",
+                type: "int",
+                description: ""
+            },
+            {
+                name: "",
+                type: "int",
+                description: ""
+            },
+            {
+                name: "",
+                type: "float",
+                description: ""
+            },
+            {
+                name: "",
+                type: "bool",
+                description: ""
+            }
+        ]
+    },
+    {
+        representations: [0x166],
+        group: 0,
+        name: "",
+        description: "",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "",
+                type: "int",
+                description: ""
+            },
+            {
+                name: "",
+                type: "bool",
+                description: ""
+            }
+        ]
+    },
+    {
+        representations: [0x19A],
+        group: 0,
+        name: "",
+        description: "",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        []
+    },
+    {
+        representations: [0x1A4],
+        group: 0,
+        name: "",
+        description: "called 8 seconds after Ergi spawns in his 4.1 intro mission",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "",
+                type: "int",
+                description: "ID of object to affect?"
+            },
+            {
+                name: "",
+                type: "float",
+                description: "0f"
+            },
+            {
+                name: "",
+                type: "float",
+                description: "50f"
+            },
+            {
+                name: "",
+                type: "float",
+                description: "0f"
+            },
+            {
+                name: "",
+                type: "float",
+                description: "1000f"
+            },
+            {
+                name: "",
+                type: "float",
+                description: "4f"
+            }
+        ]
+    },
+    {
+        representations: [0x1A5],
+        group: 0,
+        name: "LookCameraToArea",
+        description: "Makes the player's camera look towards the given area. Only does anything when Camera Effects is turned on.",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "SphereShape",
+                type: "string",
+                description: "The RMPA shape to focus on. Must be a sphere."
+            },
+            {
+                name: "Time",
+                type: "float",
+                description: "The amount of seconds to look at the area."
+            }
+        ]
+    },
+    {
+        representations: [0x3E8],
+        group: 0,
+        name: "CreatePlayer",
+        description: "Creates the players at the provided spawnpoint.",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "Spawnpoint",
+                type: "string",
+                description: "The RMPA spawnpoint to place the players at."
+            }
+        ]
+    },
+    {
+        representations: [0x3E9],
+        group: 0,
+        name: "CreatePlayer2",
+        description: "Crashes?",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "Spawnpoint",
+                type: "string",
+                description: "The RMPA spawnpoint to place the players at?"
+            }
+        ]
+    },
+    {
+        representations: [0x3EA],
+        group: 0,
+        name: "CreatePlayer3",
+        description: "Crashes?",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "Spawnpoint",
+                type: "string",
+                description: "The RMPA spawnpoint to place the players at?"
+            }
+        ]
+    },
+    {
+        representations: [0x3EB],
+        group: 0,
+        name: "GetPlayerCount",
+        description: "Returns number of (local?) players.",
+        returnValue:
+        {
+            type: "int",
+            description: "The number of players present."
+        },
+        arguments:
+        []
+    },
+    {
+        representations: [0x3EC],
+        group: 0,
+        name: "",
+        description: "",
+        returnValue:
+        {
+            type: "int",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "",
+                type: "int",
+                description: ""
+            }
+        ]
+    },
+    {
+        representations: [0x3ED],
+        group: 0,
+        name: "",
+        description: "",
+        returnValue:
+        {
+            type: "int",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "",
+                type: "int",
+                description: ""
+            }
+        ]
+    },
+    {
+        representations: [0x3EE],
+        group: 0,
+        name: "",
+        description: "",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "",
+                type: "int",
+                description: ""
+            },
+            {
+                name: "",
+                type: "int",
+                description: ""
+            },
+            {
+                name: "",
+                type: "int",
+                description: ""
+            }
+        ]
+    },
+    {
+        representations: [0x3EF],
+        group: 0,
+        name: "",
+        description: "",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "",
+                type: "int",
+                description: ""
+            },
+            {
+                name: "",
+                type: "int",
+                description: ""
+            }
+        ]
+    },
+    {
+        representations: [0x3F2],
+        group: 0,
+        name: "CreateFriend",
+        description: "Creates a single ally at the given spawnpoint.",
+        returnValue:
+        {
+            type: "int",
+            description: "ID of object created."
+        },
+        arguments:
+        [
+            {
+                name: "Spawnpoint",
+                type: "string",
+                description: "The RMPA spawnpoint the object will spawn at."
+            },
+            {
+                name: "SGO_FileName",
+                type: "string",
+                description: "The object SGO to spawn."
+            },
+            {
+                name: "HealthScale",
+                type: "float",
+                description: "A multiplier to the object's health."
+            },
+            {
+                name: "CanRecruit",
+                type: "bool",
+                description: "If true, ally can be recruited by a player. Only functions for EDF soldiers."
+            }
+        ]
+    },
+    {
+        representations: [0x3F3],
+        group: 0,
+        name: "CreateFriendSquad",
+        description: "Creates an ally and followers at the given spawnpoint.",
+        returnValue:
+        {
+            type: "int",
+            description: "ID of the leader object created."
+        },
+        arguments:
+        [
+            {
+                name: "Spawnpoint",
+                type: "string",
+                description: "The RMPA spawnpoint the objects will spawn at."
+            },
+            {
+                name: "Radius",
+                type: "float",
+                description: "The radius to spawn the followers within."
+            },
+            {
+                name: "SGO_Leader",
+                type: "string",
+                description: "The object SGO to spawn as the leader."
+            },
+            {
+                name: "SGO_Follower",
+                type: "string",
+                description: "The object SGO to spawn as the followers."
+            },
+            {
+                name: "Count",
+                type: "int",
+                description: "The amount of followers to spawn."
+            },
+            {
+                name: "HealthScale",
+                type: "float",
+                description: "A multiplier to the objects' health."
+            },
+            {
+                name: "CanRecruit",
+                type: "bool",
+                description: "If true, leader can be recruited by a player. Only functions for EDF soldiers."
+            }
+        ]
+    },
+    {
+        representations: [0x3F4],
+        group: 0,
+        name: "CreateFriendGroup",
+        description: "Creates allies at the given spawnpoint within a radius.",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "Spawnpoint",
+                type: "string",
+                description: "The RMPA spawnpoint the objects will spawn at."
+            },
+            {
+                name: "Radius",
+                type: "float",
+                description: "The radius to spawn the allies within."
+            },
+            {
+                name: "SGO_FileName",
+                type: "string",
+                description: "The object SGO to spawn."
+            },
+            {
+                name: "Count",
+                type: "int",
+                description: "The amount of allies to spawn."
+            },
+            {
+                name: "HealthScale",
+                type: "float",
+                description: "A multiplier to the objects' health."
+            },
+            {
+                name: "CanRecruit",
+                type: "bool",
+                description: "If true, allies can be recruited by a player. Only functions for EDF soldiers."
+            }
+        ]
+    },
+    {
+        representations: [0x3F5],
+        group: 0,
+        name: "",
+        description: "",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "",
+                type: "int",
+                description: ""
+            },
+            {
+                name: "",
+                type: "string",
+                description: ""
+            },
+            {
+                name: "",
+                type: "float",
+                description: ""
+            },
+            {
+                name: "",
+                type: "string",
+                description: ""
+            },
+            {
+                name: "",
+                type: "int",
+                description: ""
+            },
+            {
+                name: "",
+                type: "float",
+                description: ""
+            }
+        ]
+    },
+    {
+        representations: [0x3FC],
+        group: 0,
+        name: "CreateNeutral",
+        description: "Creates a neutral object at the provided Spawnpoint.",
+        returnValue:
+        {
+            type: "int",
+            description: "ID of object created."
+        },
+        arguments:
+        [
+            {
+                name: "Spawnpoint",
+                type: "string",
+                description: "The RMPA spawnpoint the object will spawn at."
+            },
+            {
+                name: "SGO_FileName",
+                type: "string",
+                description: "The object SGO to spawn."
+            },
+            {
+                name: "HealthScale",
+                type: "float",
+                description: "A multiplier to the object's health."
+            }
+        ]
+    },
+    {
+        representations: [0x3FD],
+        group: 0,
+        name: "CreateVehicle",
+        description: "Creates a drivable vehicle at the provided Spawnpoint.",
+        returnValue:
+        {
+            type: "int",
+            description: "ID of object created."
+        },
+        arguments:
+        [
+            {
+                name: "Spawnpoint",
+                type: "string",
+                description: "The RMPA spawnpoint the object will spawn at."
+            },
+            {
+                name: "SGO_FileName",
+                type: "string",
+                description: "The object SGO to spawn. Some vehicles not marked as AI or MISSION may not work and crash the game."
+            }
+        ]
+    },
+    {
+        representations: [0x404],
+        group: 0,
+        name: "",
+        description: "",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "",
+                type: "int",
+                description: ""
+            },
+            {
+                name: "",
+                type: "bool",
+                description: ""
+            }
+        ]
+    },
+    {
+        representations: [0x41A],
+        group: 0,
+        name: "",
+        description: "",
+        returnValue:
+        {
+            type: "int",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "",
+                type: "int",
+                description: ""
+            },
+            {
+                name: "",
+                type: "int",
+                description: ""
+            }
+        ]
+    },
+    {
+        representations: [0x420],
+        group: 0,
+        name: "",
+        description: "",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "",
+                type: "int",
+                description: ""
+            }
+        ]
+    },
+    {
+        representations: [0x421],
+        group: 0,
+        name: "",
+        description: "",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "",
+                type: "int",
+                description: ""
+            },
+            {
+                name: "",
+                type: "bool",
+                description: ""
+            }
+        ]
+    },
+    {
+        representations: [0x505],
+        group: 0,
+        name: "",
+        description: "",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        []
+    },
+    {
+        representations: [0x610],
+        group: 0,
+        name: "",
+        description: "",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "",
+                type: "",
+                description: ""
+            },
+            {
+                name: "",
+                type: "",
+                description: ""
+            },
+            {
+                name: "",
+                type: "",
+                description: ""
+            },
+            {
+                name: "",
+                type: "",
+                description: ""
+            }
+        ]
+    },
+    {
+        representations: [0x7D0],
+        group: 0,
+        name: "CreateEnemy",
+        description: "Creates a single enemy at the given spawnpoint.",
+        returnValue:
+        {
+            type: "int",
+            description: "ID of object created."
+        },
+        arguments:
+        [
+            {
+                name: "Spawnpoint",
+                type: "string",
+                description: "The RMPA spawnpoint the object will spawn at."
+            },
+            {
+                name: "SGO_FileName",
+                type: "string",
+                description: "The object SGO to spawn."
+            },
+            {
+                name: "HealthScale",
+                type: "float",
+                description: "A multiplier to the object's health."
+            },
+            {
+                name: "HasAggro",
+                type: "bool",
+                description: "If true, enemy will spawn with aggro on player."
+            }
+        ]
+    },
+    {
+        representations: [0x7D1],
+        group: 0,
+        name: "CreateEnemy2",
+        description: "Creates a single enemy at the given spawnpoint. Unknown difference from the other.",
+        returnValue:
+        {
+            type: "int",
+            description: "ID of object created."
+        },
+        arguments:
+        [
+            {
+                name: "Spawnpoint",
+                type: "string",
+                description: "The RMPA spawnpoint the object will spawn at."
+            },
+            {
+                name: "SGO_FileName",
+                type: "string",
+                description: "The object SGO to spawn."
+            },
+            {
+                name: "HealthScale",
+                type: "float",
+                description: "A multiplier to the object's health."
+            },
+            {
+                name: "HasAggro",
+                type: "bool",
+                description: "If true, enemy will spawn with aggro on player."
+            }
+        ]
+    },
+    {
+        representations: [0x7D2],
+        group: 0,
+        name: "CreateEnemyGroup",
+        description: "Creates the provided number of enemies within the specified radius.",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "Spawnpoint",
+                type: "string",
+                description: "The RMPA spawnpoint the object will spawn at."
+            },
+            {
+                name: "Radius",
+                type: "float",
+                description: "The radius to spawn the enemies within."
+            },
+            {
+                name: "SGO_FileName",
+                type: "string",
+                description: "The object SGO to spawn."
+            },
+            {
+                name: "Count",
+                type: "int",
+                description: "The amount of enemies to spawn."
+            },
+            {
+                name: "HealthScale",
+                type: "float",
+                description: "A multiplier to the enemies' health."
+            },
+            {
+                name: "HasAggro",
+                type: "bool",
+                description: "If true, enemies will spawn with aggro on player."
+            }
+        ]
+    },
+    {
+        representations: [0x7D3],
+        group: 0,
+        name: "CreateEnemyGroup2",
+        description: "Creates the provided number of enemies within the specified radius. Unknown difference from the other.",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "Spawnpoint",
+                type: "string",
+                description: "The RMPA spawnpoint the object will spawn at."
+            },
+            {
+                name: "Radius",
+                type: "float",
+                description: "The radius to spawn the enemies within."
+            },
+            {
+                name: "SGO_FileName",
+                type: "string",
+                description: "The object SGO to spawn."
+            },
+            {
+                name: "Count",
+                type: "int",
+                description: "The amount of enemies to spawn."
+            },
+            {
+                name: "HealthScale",
+                type: "float",
+                description: "A multiplier to the enemies' health."
+            },
+            {
+                name: "HasAggro",
+                type: "bool",
+                description: "If true, enemies will spawn with aggro on player."
+            }
+        ]
+    },
+    {
+        representations: [0x7D4],
+        group: 0,
+        name: "CreateEnemyGroupGround",
+        description: "Creates the provided number of enemies by having them dig up through the ground. If the enemy can't do that, they will appear like normal.",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "Spawnpoint",
+                type: "string",
+                description: "The RMPA spawnpoint the object will spawn at."
+            },
+            {
+                name: "Radius",
+                type: "float",
+                description: "The radius to spawn the enemies within."
+            },
+            {
+                name: "SGO_FileName",
+                type: "string",
+                description: "The object SGO to spawn."
+            },
+            {
+                name: "Count",
+                type: "int",
+                description: "The amount of enemies to spawn."
+            },
+            {
+                name: "HealthScale",
+                type: "float",
+                description: "A multiplier to the enemies' health."
+            },
+            {
+                name: "HasAggro",
+                type: "bool",
+                description: "If true, enemies will spawn with aggro on player."
+            },
+            {
+                name: "Time",
+                type: "float",
+                description: "Generally how many seconds it will take for all enemies in total to have climbed from the ground."
+            }
+        ]
+    },
+    {
+        representations: [0x7D5],
+        group: 0,
+        name: "CreateEnemyGroupGround2",
+        description: "Creates the provided number of enemies by having them dig up through the ground. If the enemy can't do that, they will appear like normal. Unknown difference from the other.",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "Spawnpoint",
+                type: "string",
+                description: "The RMPA spawnpoint the object will spawn at."
+            },
+            {
+                name: "Radius",
+                type: "float",
+                description: "The radius to spawn the enemies within."
+            },
+            {
+                name: "SGO_FileName",
+                type: "string",
+                description: "The object SGO to spawn."
+            },
+            {
+                name: "Count",
+                type: "int",
+                description: "The amount of enemies to spawn."
+            },
+            {
+                name: "HealthScale",
+                type: "float",
+                description: "A multiplier to the enemies' health."
+            },
+            {
+                name: "HasAggro",
+                type: "bool",
+                description: "If true, enemies will spawn with aggro on player."
+            },
+            {
+                name: "Time",
+                type: "float",
+                description: "Generally how many seconds it will take for all enemies in total to have climbed from the ground."
+            }
+        ]
+    },
+    {
+        representations: [0x7D6],
+        group: 0,
+        name: "CreateFlyingEnemyGroup_Area",
+        description: "Creates the provided number of enemies inside of the given area.",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "ShapeNode",
+                type: "string",
+                description: "The RMPA shape to use as the area."
+            },
+            {
+                name: "SGO_FileName",
+                type: "string",
+                description: "The object SGO to spawn."
+            },
+            {
+                name: "Count",
+                type: "int",
+                description: "The amount of enemies to spawn."
+            },
+            {
+                name: "HealthScale",
+                type: "float",
+                description: "A multiplier to the enemies' health."
+            },
+            {
+                name: "HasAggro",
+                type: "bool",
+                description: "If true, enemies will spawn with aggro on player."
+            }
+        ]
+    },
+    {
+        representations: [0x7D7],
+        group: 0,
+        name: "CreateFlyingEnemyGroup_AreaRoute",
+        description: "Creates the provided number of enemies inside of the given area and makes them follow a route.",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "ShapeNode",
+                type: "string",
+                description: "The RMPA shape to use as the area."
+            },
+            {
+                name: "RouteNode",
+                type: "string",
+                description: "The RMPA route node the enemies will follow."
+            },
+            {
+                name: "SGO_FileName",
+                type: "string",
+                description: "The object SGO to spawn."
+            },
+            {
+                name: "Count",
+                type: "int",
+                description: "The amount of enemies to spawn."
+            },
+            {
+                name: "HealthScale",
+                type: "float",
+                description: "A multiplier to the enemies' health."
+            },
+            {
+                name: "HasAggro",
+                type: "bool",
+                description: "If true, enemies will spawn with aggro on player."
+            }
+        ]
+    },
+    {
+        representations: [0x7D8],
+        group: 0,
+        name: "CreateFlyingEnemyGroup_Area2",
+        description: "Creates the provided number of enemies inside of the given area. Unknown difference from other.",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "ShapeNode",
+                type: "string",
+                description: "The RMPA shape to use as the area."
+            },
+            {
+                name: "SGO_FileName",
+                type: "string",
+                description: "The object SGO to spawn."
+            },
+            {
+                name: "Count",
+                type: "int",
+                description: "The amount of enemies to spawn."
+            },
+            {
+                name: "HealthScale",
+                type: "float",
+                description: "A multiplier to the enemies' health."
+            },
+            {
+                name: "HasAggro",
+                type: "bool",
+                description: "If true, enemies will spawn with aggro on player."
+            }
+        ]
+    },
+    {
+        representations: [0x7D9],
+        group: 0,
+        name: "CreateEnemyGroupGround_Area",
+        description: "Creates the provided number of enemies inside of the given area, as well as making them crawl out of the ground.",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "ShapeNode",
+                type: "string",
+                description: "The RMPA shape to use as the area."
+            },
+            {
+                name: "SGO_FileName",
+                type: "string",
+                description: "The object SGO to spawn."
+            },
+            {
+                name: "Count",
+                type: "int",
+                description: "The amount of enemies to spawn."
+            },
+            {
+                name: "HealthScale",
+                type: "float",
+                description: "A multiplier to the enemies' health."
+            },
+            {
+                name: "HasAggro",
+                type: "bool",
+                description: "If true, enemies will spawn with aggro on player."
+            },
+            {
+                name: "Time",
+                type: "float",
+                description: "Generally how many seconds it will take for all enemies in total to have climbed from the ground."
+            }
+        ]
+    },
+    {
+        representations: [0x7DA],
+        group: 0,
+        name: "CreateFlyingEnemyGroup_AreaRoute2",
+        description: "Creates the provided number of enemies inside of the given area and makes them follow a route. Unknown difference from the other.",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "ShapeNode",
+                type: "string",
+                description: "The RMPA shape to use as the area."
+            },
+            {
+                name: "RouteNode",
+                type: "string",
+                description: "The RMPA route node the enemies will follow."
+            },
+            {
+                name: "SGO_FileName",
+                type: "string",
+                description: "The object SGO to spawn."
+            },
+            {
+                name: "Count",
+                type: "int",
+                description: "The amount of enemies to spawn."
+            },
+            {
+                name: "HealthScale",
+                type: "float",
+                description: "A multiplier to the enemies' health."
+            },
+            {
+                name: "HasAggro",
+                type: "bool",
+                description: "If true, enemies will spawn with aggro on player."
+            }
+        ]
+    },
+    {
+        representations: [0x7DB],
+        group: 0,
+        name: "CreateEnemySpawn",
+        description: "Creates a single enemy at the given spawnpoint by having them dig up through the ground (only?? i mean, it's called spawn not ground?). If the enemy can't do that, they will appear like normal.",
+        returnValue:
+        {
+            type: "int",
+            description: "ID of object created."
+        },
+        arguments:
+        [
+            {
+                name: "Spawnpoint",
+                type: "string",
+                description: "The RMPA spawnpoint the object will spawn at."
+            },
+            {
+                name: "SGO_FileName",
+                type: "string",
+                description: "The object SGO to spawn."
+            },
+            {
+                name: "HealthScale",
+                type: "float",
+                description: "A multiplier to the object's health."
+            },
+            {
+                name: "HasAggro",
+                type: "bool",
+                description: "If true, enemy will spawn with aggro on player."
+            }
+        ]
+    },
+    {
+        representations: [0x7E4],
+        group: 0,
+        name: "",
+        description: "",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "",
+                type: "int",
+                description: ""
+            },
+            {
+                name: "",
+                type: "string",
+                description: ""
+            },
+            {
+                name: "",
+                type: "float",
+                description: ""
+            },
+            {
+                name: "",
+                type: "string",
+                description: ""
+            },
+            {
+                name: "",
+                type: "int",
+                description: ""
+            },
+            {
+                name: "",
+                type: "float",
+                description: ""
+            },
+            {
+                name: "",
+                type: "bool",
+                description: ""
+            }
+        ]
+    },
+    {
+        representations: [0x7E5],
+        group: 0,
+        name: "",
+        description: "",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "",
+                type: "int",
+                description: ""
+            },
+            {
+                name: "",
+                type: "string",
+                description: ""
+            },
+            {
+                name: "",
+                type: "float",
+                description: ""
+            },
+            {
+                name: "",
+                type: "string",
+                description: ""
+            },
+            {
+                name: "",
+                type: "int",
+                description: ""
+            },
+            {
+                name: "",
+                type: "float",
+                description: ""
+            },
+            {
+                name: "",
+                type: "bool",
+                description: ""
+            },
+            {
+                name: "",
+                type: "float",
+                description: ""
+            }
+        ]
+    },
+    {
+        representations: [0x7E6],
+        group: 0,
+        name: "CreateFlyingEnemyGroup_OnRoute",
+        description: "Creates the provided number of enemies in a line along a route's path and makes (most of?) them follow that route.",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "RouteNode",
+                type: "string",
+                description: "The RMPA route node the enemies will spawn at and follow."
+            },
+            {
+                name: "Distance",
+                type: "float",
+                description: "General distance to spawn the enemies from each other."
+            },
+            {
+                name: "SGO_FileName",
+                type: "string",
+                description: "The object SGO to spawn."
+            },
+            {
+                name: "Count",
+                type: "int",
+                description: "The amount of enemies to spawn."
+            },
+            {
+                name: "HealthScale",
+                type: "float",
+                description: "A multiplier to the enemies' health."
+            },
+            {
+                name: "HasAggro",
+                type: "bool",
+                description: "If true, enemies will spawn with aggro on player."
+            }
+        ]
+    },
+    {
+        representations: [0x7E7],
+        group: 0,
+        name: "CreateEnemy3",
+        description: "Creates a single enemy at the given spawnpoint, with an extra parameter affecting health.",
+        returnValue:
+        {
+            type: "int",
+            description: "ID of object created."
+        },
+        arguments:
+        [
+            {
+                name: "Spawnpoint",
+                type: "string",
+                description: "The RMPA spawnpoint the object will spawn at."
+            },
+            {
+                name: "SGO_FileName",
+                type: "string",
+                description: "The object SGO to spawn."
+            },
+            {
+                name: "HealthScale",
+                type: "float",
+                description: "A multiplier to the object's health."
+            },
+            {
+                name: "HasAggro",
+                type: "bool",
+                description: "If true, enemy will spawn with aggro on player."
+            },
+            {
+                name: "HealthPercent",
+                type: "float",
+                description: "Appears to be a percentage value further multiplying health? 100f seems like 100 percent health."
+            }
+        ]
+    },
+    {
+        representations: [0x7EE],
+        group: 0,
+        name: "CreateEnemySquad",
+        description: "Creates an enemy and followers at the given spawnpoint.",
+        returnValue:
+        {
+            type: "int",
+            description: "ID of the leader object created."
+        },
+        arguments:
+        [
+            {
+                name: "Spawnpoint",
+                type: "string",
+                description: "The RMPA spawnpoint the object will spawn at."
+            },
+            {
+                name: "Radius",
+                type: "float",
+                description: "The radius to spawn the enemies within."
+            },
+            {
+                name: "SGO_Leader",
+                type: "string",
+                description: "The object SGO to spawn as the leader."
+            },
+            {
+                name: "HealthScaleLeader",
+                type: "float",
+                description: "A multiplier to the leader's health."
+            },
+            {
+                name: "SGO_Follower",
+                type: "string",
+                description: "The object SGO to spawn as the followers."
+            },
+            {
+                name: "Count",
+                type: "int",
+                description: "The amount of followers to spawn."
+            },
+            {
+                name: "HealthScaleFollower",
+                type: "float",
+                description: "A multiplier to the followers' health."
+            },
+            {
+                name: "HasAggro",
+                type: "bool",
+                description: "If true, enemies will spawn with aggro on player."
+            }
+        ]
+    },
+    {
+        representations: [0x898],
+        group: 0,
+        name: "",
+        description: "",
+        returnValue:
+        {
+            type: "int",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "",
+                type: "float",
+                description: ""
+            },
+            {
+                name: "",
+                type: "int",
+                description: ""
+            },
+            {
+                name: "",
+                type: "string",
+                description: ""
+            },
+            {
+                name: "",
+                type: "float",
+                description: ""
+            },
+            {
+                name: "",
+                type: "string",
+                description: ""
+            },
+            {
+                name: "",
+                type: "int",
+                description: ""
+            }
+        ]
+    },
+    {
+        representations: [0x899],
+        group: 0,
+        name: "",
+        description: "",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "",
+                type: "int",
+                description: ""
+            }
+        ]
+    },
+    {
+        representations: [0x89B],
+        group: 0,
+        name: "SetDropBoatAutoCruise",
+        description: "",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "",
+                type: "int",
+                description: ""
+            },
+            {
+                name: "",
+                type: "string",
+                description: ""
+            },
+            {
+                name: "",
+                type: "float",
+                description: ""
+            }
+        ]
+    },
+    {
+        representations: [0x8B8],
+        group: 0,
+        name: "",
+        description: "",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "",
+                type: "int",
+                description: ""
+            }
+        ]
+    },
+    {
+        representations: [0xC1C],
+        group: 0,
+        name: "SetRouteMovementSpeed",
+        description: "Sets an entity's route movement speed to the specified SpeedFactor.",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "ID",
+                type: "int",
+                description: "ID of the entity to affect."
+            },
+            {
+                name: "SpeedFactor",
+                type: "float",
+                description: "Multiplier to the entity's typical movement speed when going along a route."
+            }
+        ]
+    },
+    {
+        representations: [0xC1D],
+        group: 0,
+        name: "SetAiRoute",
+        description: "Sets an entity to follow along a route.",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "ID",
+                type: "int",
+                description: "ID of the entity to affect."
+            },
+            {
+                name: "RouteNode",
+                type: "string",
+                description: "RMPA route node the entity will start toward and move from."
+            }
+        ]
+    },
+    {
+        representations: [0xC1E],
+        group: 0,
+        name: "SetAiPath",
+        description: "Sets an entity to proceed along a path to navigate the map. Commonly used for Shield Bearers and Hectors.",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "ID",
+                type: "int",
+                description: "ID of the entity to affect."
+            },
+            {
+                name: "Path",
+                type: "string",
+                description: "Path the entity will move along. Usually set to NavigationMap, which exists within each map."
+            }
+        ]
+    },
+    {
+        representations: [0xC28],
+        group: 0,
+        name: "",
+        description: "",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "",
+                type: "int",
+                description: ""
+            },
+            {
+                name: "",
+                type: "float",
+                description: ""
+            }
+        ]
+    },
+    {
+        representations: [0xC29],
+        group: 0,
+        name: "",
+        description: "",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "",
+                type: "int",
+                description: ""
+            },
+            {
+                name: "",
+                type: "bool",
+                description: ""
+            }
+        ]
+    },
+    {
+        representations: [0xDAC],
+        group: 0,
+        name: "",
+        description: "",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "",
+                type: "int",
+                description: ""
+            }
+        ]
+    },
+    {
+        representations: [0xFA0],
+        group: 0,
+        name: "",
+        description: "",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "",
+                type: "string",
+                description: ""
+            }
+        ]
+    },
+    {
+        representations: [0xFA6],
+        group: 0,
+        name: "SetChatter",
+        description: "Modifies an object's ability to automatically talk. Useful when you want the object to say scripted dialogue. Works on EDF soldiers, as well as Colonists and Cosmonauts. Also applies to any of the object's followers.",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "ID",
+                type: "int",
+                description: "ID of the object to affect."
+            },
+            {
+                name: "CanTalk",
+                type: "bool",
+                description: "False disables the automatic chatter. True enables it."
+            }
+        ]
+    },
+    {
+        representations: [0x1396],
+        group: 0,
+        name: "",
+        description: "light object?",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "",
+                type: "int",
+                description: ""
+            },
+            {
+                name: "",
+                type: "float",
+                description: ""
+            },
+            {
+                name: "",
+                type: "float",
+                description: ""
+            }
+        ]
+    },
+    {
+        representations: [0x1397],
+        group: 0,
+        name: "",
+        description: "",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "",
+                type: "float",
+                description: ""
+            },
+            {
+                name: "",
+                type: "float",
+                description: ""
+            }
+        ]
+    },
+    {
+        representations: [0x139C],
+        group: 0,
+        name: "",
+        description: "",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "",
+                type: "float",
+                description: ""
+            },
+            {
+                name: "",
+                type: "float",
+                description: ""
+            },
+            {
+                name: "",
+                type: "float",
+                description: ""
+            }
+        ]
+    },
+    {
+        representations: [0x13EC],
+        group: 0,
+        name: "SetEffectSnow",
+        description: "Sets and applies snowy weather.",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "Depth1",
+                type: "float",
+                description: "The amount of bumpmap depth for the map decal? Typically 10f"
+            },
+            {
+                name: "Depth2",
+                type: "float",
+                description: "Further modification of the bumpmap depth for the map decal? Typically 0.1f"
+            },
+            {
+                name: "EdgeRadius",
+                type: "float",
+                description: "The amount of alpha to edge into the snow. Typically 0.05f, makes snow invisible by 0.5f."
+            },
+            {
+                name: "DecalVerticality",
+                type: "float",
+                description: "How much the map decal will appear on vertical walls and steep slopes. Typically 0.8f, a negative value adds more decal to straight walls but can flicker."
+            },
+            {
+                name: "Progress",
+                type: "float",
+                description: "Where the overall progress of the weather is initialized at. Typically 0.51f, zero and negatives are no weather, 0.7f is around max decal."
+            },
+            {
+                name: "DecalRed",
+                type: "float",
+                description: "The red colour value of the map decal. Typically 0.5f"
+            },
+            {
+                name: "DecalGreen",
+                type: "float",
+                description: "The red colour value of the map decal. Typically 0.5f"
+            },
+            {
+                name: "DecalBlue",
+                type: "float",
+                description: "The red colour value of the map decal. Typically 0.5f"
+            },
+            {
+                name: "SpecularRed",
+                type: "float",
+                description: "The red colour value of the map decal's specular light reflection. Typically 2f"
+            },
+            {
+                name: "SpecularGreen",
+                type: "float",
+                description: "The green colour value of the map decal's specular light reflection. Typically 2f"
+            },
+            {
+                name: "SpecularBlue",
+                type: "float",
+                description: "The blue colour value of the map decal's specular light reflection. Typically 2f"
+            },
+            {
+                name: "SpecularSize",
+                type: "float",
+                description: "That fourth specular property where low values widen/brighten it and high values shrink/darken it. ... Typically 100f"
+            },
+            {
+                name: "ParticleAmount",
+                type: "int",
+                description: "Affects the amount of particles that fall at once. Typically 4000"
+            },
+            {
+                name: "ParticleDistance",
+                type: "float",
+                description: "How far to render and space out the particles. Typically 40f"
+            },
+            {
+                name: "ParticleSpeed",
+                type: "float",
+                description: "The maximum speed the particles will fall at. Typically 0.08f"
+            }
+        ]
+    },
+    {
+        representations: [0x13ED],
+        group: 0,
+        name: "SetEffectRain",
+        description: "Sets and applies rainy weather.",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "Progress",
+                type: "float",
+                description: "Where the overall progress of the weather is initialized at. Typically 0.8f, zero and negatives are no weather, 0.7f is around max decal."
+            },
+            {
+                name: "Alpha",
+                type: "float",
+                description: "The alpha intensity of the map decal. Typically 0.9f"
+            },
+            {
+                name: "Brightness",
+                type: "float",
+                description: "The brightness of the map decal reflection? Typically 0.5f, lower values are brighter while higher values are darker."
+            },
+            {
+                name: "DecalSpeed",
+                type: "float",
+                description: "Speed of the running water on vertical and sloped surfaces. Typically 1f"
+            },
+            {
+                name: "DecalVerticality",
+                type: "float",
+                description: "How much the map decal will appear on vertical walls and steep slopes. Typically 1f, lower values add more decal to straight walls but may flicker."
+            },
+            {
+                name: "SpecularRed",
+                type: "float",
+                description: "The red colour value of the map decal's specular light reflection. Typically 2f"
+            },
+            {
+                name: "SpecularGreen",
+                type: "float",
+                description: "The green colour value of the map decal's specular light reflection. Typically 2f"
+            },
+            {
+                name: "SpecularBlue",
+                type: "float",
+                description: "The blue colour value of the map decal's specular light reflection. Typically 2f"
+            },
+            {
+                name: "SpecularSize",
+                type: "float",
+                description: "That fourth specular property where low values widen/brighten it and high values shrink/darken it. ... Typically 200f"
+            },
+            {
+                name: "ParticleAmount",
+                type: "int",
+                description: "Affects the amount of particles that fall at once. Typically 4000"
+            },
+            {
+                name: "ParticleDistance",
+                type: "float",
+                description: "How far to render and space out the particles. Typically 40f"
+            },
+            {
+                name: "ParticleSpeed",
+                type: "float",
+                description: "The maximum speed the particles will fall at. Typically 4f"
+            },
+            {
+                name: "ParticleAlpha",
+                type: "float",
+                description: "The alpha transparency of the rain particles. Typically 1f"
+            }
+        ]
+    },
+    {
+        representations: [0x13EE],
+        group: 0,
+        name: "SetEffectDust",
+        description: "Sets and applies sandstorm weather.",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "Progress",
+                type: "float",
+                description: "Where the overall progress of the weather is initialized at. Typically 0.2f, zero and negatives are no weather."
+            },
+            {
+                name: "ParticleAmount",
+                type: "int",
+                description: "Affects the amount of particles that fall at once. Typically 250"
+            },
+            {
+                name: "ParticleDistance",
+                type: "float",
+                description: "How far to render and space out the particles. Typically 10f"
+            },
+            {
+                name: "ParticleSpeed",
+                type: "float",
+                description: "The maximum speed the particles will move. Typically 0.3f"
+            },
+            {
+                name: "ParticleDirectionX",
+                type: "float",
+                description: "The X component of a 3D vector that affects the horizontal direction the particles move in. The game will normalize the rotation for you, treat these as small coordinates. An example is 0.2f"
+            },
+            {
+                name: "ParticleDirectionY",
+                type: "float",
+                description: "The Y component of a 3D vector that affects the vertical direction the particles move in. The game will normalize the rotation for you, treat these as small coordinates. An example is 0.1f"
+            },
+            {
+                name: "ParticleDirectionZ",
+                type: "float",
+                description: "The Z component of a 3D vector that affects the horizontal direction the particles move in. The game will normalize the rotation for you, treat these as small coordinates. An example is 0.2f"
+            }
+        ]
+    },
+    {
+        representations: [0x13EF],
+        group: 0,
+        name: "SetEffectFog",
+        description: "Sets and applies smoky fog weather.",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "Progress",
+                type: "float",
+                description: "Where the overall progress of the weather is initialized at. Typically 0.1f, zero and negatives are no weather."
+            },
+            {
+                name: "ParticleAmount",
+                type: "int",
+                description: "Affects the amount of particles that fall at once. Typically 250"
+            },
+            {
+                name: "ParticleDistance",
+                type: "float",
+                description: "How far to render and space out the particles. Typically 10f"
+            },
+            {
+                name: "ParticleSpeed",
+                type: "float",
+                description: "The maximum speed the particles will move. Typically 0.02f"
+            },
+            {
+                name: "ParticleDirectionX",
+                type: "float",
+                description: "The X component of a 3D vector that affects the horizontal direction the particles move in. The game will normalize the rotation for you, treat these as small coordinates. An example is -1f"
+            },
+            {
+                name: "ParticleDirectionY",
+                type: "float",
+                description: "The Y component of a 3D vector that affects the vertical direction the particles move in. The game will normalize the rotation for you, treat these as small coordinates. An example is 0f"
+            },
+            {
+                name: "ParticleDirectionZ",
+                type: "float",
+                description: "The Z component of a 3D vector that affects the horizontal direction the particles move in. The game will normalize the rotation for you, treat these as small coordinates. An example is 0.6f"
+            }
+        ]
+    },
+    {
+        representations: [0x141E],
+        group: 0,
+        name: "SetWeatherTransition",
+        description: "Causes the current weather to advance to the given progress value within the specified seconds.",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "Progress",
+                type: "float",
+                description: "Where the overall progress of the weather will end up at when done transitioning. Zero and negatives are no weather, 0.7f is generally max. See the respective weather function for typical game values."
+            },
+            {
+                name: "Time",
+                type: "float",
+                description: "How many seconds it will take to reach the progress destination."
+            }
+        ]
+    },
+    {
+        representations: [0x2328],
+        group: 0,
+        name: "CreateEventFactorWait",
+        description: "Creates an event factor that will call a registered event after TimeDelta seconds. Time is affected by BVM stalls.",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "TimeDelta",
+                type: "float",
+                description: "The time, in seconds, before the event is fired."
+            }
+        ]
+    },
+    {
+        representations: [0x2329],
+        group: 0,
+        name: "CreateEventFactorTimer",
+        description: "Creates an event factor that will call a registered event based on a timer since mission start(?).",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "",
+                type: "int",
+                description: ""
+            },
+            {
+                name: "TimeDelta",
+                type: "float",
+                description: "The time, in seconds, before the event is fired. Based on time since mission started?"
+            }
+        ]
+    },
+    {
+        representations: [0x232A],
+        group: 0,
+        name: "CreateEventFactorWait2",
+        description: "Creates an event factor that will call a registered event after TimeDelta seconds. Time will not stop when BVM is busy.",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "TimeDelta",
+                type: "float",
+                description: "The time, in seconds, before the event is fired."
+            }
+        ]
+    },
+    {
+        representations: [0x2354],
+        group: 0,
+        name: "CreateEventFactorAiMoveEnd",
+        description: "",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "ID",
+                type: "int",
+                description: "ID of the entity to keep track of."
+            }
+        ]
+    },
+    {
+        representations: [0x2355],
+        group: 0,
+        name: "CreateEventFactorAiMoveEndOrDie",
+        description: "",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "ID",
+                type: "int",
+                description: "ID of the entity to keep track of."
+            }
+        ]
+    },
+    {
+        representations: [0x235A],
+        group: 0,
+        name: "CreateEventFactorCheckFlagTrue?",
+        description: "",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "",
+                type: "int",
+                description: "Variable to test."
+            }
+        ]
+    },
+    {
+        representations: [0x235B],
+        group: 0,
+        name: "CreateEventFactorCheckFlagFalse?",
+        description: "",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "",
+                type: "int",
+                description: "Variable to test."
+            }
+        ]
+    },
+    {
+        representations: [0x235E],
+        group: 0,
+        name: "CreateEventFactorAiFollow",
+        description: "Creates an event factor that will call a registered event when the specified entity is recruited by a player.",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "Soldier",
+                type: "int",
+                description: "ID of the soldier to keep track of."
+            }
+        ]
+    },
+    {
+        representations: [0x238C],
+        group: 0,
+        name: "CreateEventFactorAllEnemyDestroy",
+        description: "Creates an event factor that will call a registered event once all enemies are defeated.",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "Delay",
+                type: "float",
+                description: "Seconds to wait to re-evaluate the enemy count? If there are more enemies when this timer expires, the event won't fire yet."
+            }
+        ]
+    },
+    {
+        representations: [0x2396],
+        group: 0,
+        name: "CreateEventFactorTeamObjectCount",
+        description: "Creates an event factor that will call a registered event once a team's living members are equal to or less than Count.",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "Team",
+                type: "int",
+                description: "The team to check. Generally: 0 = players, 1 = aliens, 2 = AI friendlies, 3 = neutral objects, 4 = fleeing civilians, 5 = drivable but non-piloted vehicles"
+            },
+            {
+                name: "Count",
+                type: "int",
+                description: "The amount of members remaining to call the event at."
+            }
+        ]
+    },
+    {
+        representations: [0x2398],
+        group: 0,
+        name: "CreateEventFactorAreaTeamObjectCount",
+        description: "Creates an event factor that will call a registered event once a team's living members inside of the specified shape are equal to or less than Count.",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "ShapeNode",
+                type: "string",
+                description: "The RMPA shape to use as the area."
+            },
+            {
+                name: "Team",
+                type: "int",
+                description: "The team to check. Generally: 0 = players, 1 = aliens, 2 = AI friendlies, 3 = neutral objects, 4 = fleeing civilians, 5 = drivable but non-piloted vehicles"
+            },
+            {
+                name: "Count",
+                type: "int",
+                description: "The amount of members remaining to call the event at."
+            }
+        ]
+    },
+    {
+        representations: [0x2399],
+        group: 0,
+        name: "CreateEventFactorTeamBigObjectCount",
+        description: "",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "Team",
+                type: "int",
+                description: "(Most likely) The team to check. Generally: 0 = players, 1 = aliens, 2 = AI friendlies, 3 = neutral objects, 4 = fleeing civilians, 5 = drivable but non-piloted vehicles"
+            },
+            {
+                name: "Count",
+                type: "int",
+                description: "(Most likely) The amount of members remaining to call the event at."
+            }
+        ]
+    },
+    {
+        representations: [0x239A],
+        group: 0,
+        name: "CreateEventFactorTeamGeneratorObjectCount",
+        description: "Creates an event factor that will call a registered event once the remaining enemy generators is equal to or less than Count.",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "Count",
+                type: "int",
+                description: "The amount of generators remaining to call the event at."
+            }
+        ]
+    },
+    {
+        representations: [0x239C],
+        group: 0,
+        name: "CreateEventFactorObjectGroupCount",
+        description: "Creates an event factor that will call a registered event...",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "",
+                type: "int",
+                description: ""
+            },
+            {
+                name: "",
+                type: "int",
+                description: ""
+            }
+        ]
+    },
+    {
+        representations: [0x239D],
+        group: 0,
+        name: "CreateEventFactorObjectGroupEncount",
+        description: "Creates an event factor that will call a registered event once...don't know, it's not working as expected.",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "",
+                type: "int",
+                description: ""
+            }
+        ]
+    },
+    {
+        representations: [0x23A0],
+        group: 0,
+        name: "CreateEventFactorTeamEncount",
+        description: "Creates an event factor that will call a registered event once an entity on the specified team is recognized as an immediate threat to AI soldiers.",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "Team",
+                type: "int",
+                description: "The team to check. Generally: 0 = players, 1 = aliens, 2 = AI friendlies, 3 = neutral objects, 4 = fleeing civilians, 5 = drivable but non-piloted vehicles. Mostly only useful for 0, 1, and 2. AI soldiers and players encount when they take damage from their enemy."
+            }
+        ]
+    },
+    {
+        representations: [0x23A1],
+        group: 0,
+        name: "CreateEventFactorTeamNotEncount",
+        description: "Creates an event factor that will call a registered event once no entities on the specified team are recognized as an immediate threat to AI soldiers. The flag this checks for is only removed at death.",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "Team",
+                type: "int",
+                description: "The team to check. Generally: 0 = players, 1 = aliens, 2 = AI friendlies, 3 = neutral objects, 4 = fleeing civilians, 5 = drivable but non-piloted vehicles."
+            }
+        ]
+    },
+    {
+        representations: [0x23B8],
+        group: 0,
+        name: "CreateEventFactorPlayerAreaCheck",
+        description: "Creates an event factor that will call a registered event once a player enters the specified area.",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "ShapeNode",
+                type: "string",
+                description: "The RMPA shape to use as the area."
+            }
+        ]
+    },
+    {
+        representations: [0x23F1],
+        group: 0,
+        name: "CreateEventFactorObjectDestroy",
+        description: "Creates an event factor that will call a registered event once the specified object is killed.",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "ID",
+                type: "string",
+                description: "ID of the object to check."
+            }
+        ]
+    },
+    {
+        representations: [0x23F2],
+        group: 0,
+        name: "CreateEventFactorObjectDelete",
+        description: "Creates an event factor that will call a registered event once the specified object is removed from the map.",
+        returnValue:
+        {
+            type: "void",
+            description: ""
+        },
+        arguments:
+        [
+            {
+                name: "ID",
+                type: "string",
+                description: "ID of the object to check."
+            }
+        ]
+    }
+]
