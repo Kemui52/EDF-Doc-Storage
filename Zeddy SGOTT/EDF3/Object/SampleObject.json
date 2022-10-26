@@ -1,0 +1,106 @@
+{
+  "format": "SGO",
+  "endian": "LE",
+  "variables": [
+    {"type": "string", "value": "SampleObject", "name": "class"},
+    {"type": "int", "value": 12345, "name": "SampleInteger"},
+    {"type": "float", "value": 1.2339999675750732, "name": "SampleFloat"},
+    {"type": "string", "value": "SampleString", "name": "SampleString"},
+    {
+      "type": "extra",
+      "value": "Ly8gLSotIGNvZGluZzogamFwYW5lc2Utc2hpZnQtamlzIC0qLQ0KLy8NCi8vIINUg5ODdoOLg0mDdYNXg0aDToNnkN2S6IN0g0CDQ4OLDQovLw0KLy8gJEhlYWRVUkw6IGh0dHBzOi8vcHJnX3N2bi9zdm4vcmVwb3MvRURGWF9Qcm9ncmFtL2JyYW5jaGVzL3VzL1Byb2dyYW0vIURhdGFTb3VyY2UvT2JqZWN0L0VERlZlaGljbGUvU2FtcGxlT2JqZWN0L1NhbXBsZU9iamVjdC5TZ3QgJA0KLy8gJElkOiBTYW1wbGVPYmplY3QuU2d0IDcwMSAyMDA2LTA2LTEzIDA4OjIwOjQ3WiBwcmdfdF9ub2d1Y2hpICQNCi8vDQoNCmNsYXNzID0gIlNhbXBsZU9iamVjdCI7DQoNCi8vIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLQ0KLy8gg2aBW4Negs2NRIKrj5+O6ILJkuiLYILFgquC6Q0KU2FtcGxlSW50ZWdlciA9IDEyMzQ1OwkJCQkvLyCQrpCUDQpTYW1wbGVGbG9hdCAgID0gMS4yMzRmOwkJCQkvLyCVgpOuj62QlA0KU2FtcGxlU3RyaW5nICA9ICJTYW1wbGVTdHJpbmciOwkJLy8glbaOmpfxDQpTYW1wbGVJbWFnZSAgID0gZmlsZShTYW1wbGVPYmplY3QuU2d0KTsgLy8gg3SDQINDg4uDQ4OBgVuDVw0KDQpTYW1wbGVBcnJheSA9IHsJCQkJCQkvLyCUepfxDQoJezEsIDExLjBmfSwNCgl7MiwgMTIuMGZ9LA0KCXszLCAxMy4wZn0sDQoJezQsIDE0LjBmfSwNCgl7NSwgMTUuMGZ9LA0KfTsNCg0KDQovLyAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tDQovLyCDTIODg2KDVoOFj+6V8Q0KY2FjaGUgPSB7DQoJeyJncHUiLCAiU2FtcGxlT2JqZWN0TW9kZWwuRHhtIiB9LA0KfTsNCg0KDQoNCg0KLy8gLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLQ0KLy8gY2xHYW1lT2JqZWN0X0Jhc2Ugg06DiYNYl3CCzI+JivqJu4/ulfENCmdvX0NhbWVyYSA9IHsNCiAgICAgICB7MC4wZiwgNS4wZiwgMC4wZn0sCQkvLyCDSoOBg4mSjZbaiMqSdQ0KICAgICAgIHswLjBmLCA1LjBmLC0yMC4wZn0sCQkvLyCSjZbaiMqSdYKpgueCzINKg4GDiYNJg3SDWoNig2cNCn07DQoNCi8vIJHPi3aTeA0KZ29fRHVyYWJpbGl0eSA9IDYwLjBmOw0KDQovLyCTR4LGgsyRmIv2i5eXow0KZ29fRW5jb3VudCA9IHsNCgk1MC4wZiwJCQkJCQkvLyCTR4LMgsaCzJGYi/aCyYtDgsOCrYuXl6MNCgkxNTAuMGYsCQkJCQkJLy8gk0eCzILGgsyRmIv2gvCWoZX7gtaSypJtgreC6YuXl6MNCn07DQoNCi8vIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0NCi8vIGNsQW5pbWF0aW9uT2JqZWN0X0Jhc2Ugg06DiYNYl3CCzI+JivqJu4/ulfENCi8vIIOCg2aDiw0KYW5fTW9kZWwgPSB7DQoJIlNhbXBsZU9iamVjdE1vZGVsLkR4bSIsCS8vIIOCg2aDi4NmgVuDXoLMg0GBW4NKg0ODdQ0KCXsNCgkJeyJTYW1wbGVPYmplY3RNb2RlbC5EeG0iLCAwLjBmIH0sIC8vIINBgVuDSoNDg3WCqYLnjuaC6I9vgrWCxJVcjqaCt4Lpg4KDZoOLg2aBW4NeDQoJfSwNCn07DQoNCi8vIINBg2qDgYFbg1aDh4OTg2aBW4NeDQphbl9BbmltYXRpb24gPSB7DQp9Ow0KDQoNCg0KDQoNCg==",
+      "name": "SampleImage"
+    },
+    {
+      "type": "ptr",
+      "value": [
+        {
+          "type": "ptr",
+          "value": [{"type": "int", "value": 1}, {"type": "float", "value": 11}]
+        },
+        {
+          "type": "ptr",
+          "value": [{"type": "int", "value": 2}, {"type": "float", "value": 12}]
+        },
+        {
+          "type": "ptr",
+          "value": [{"type": "int", "value": 3}, {"type": "float", "value": 13}]
+        },
+        {
+          "type": "ptr",
+          "value": [{"type": "int", "value": 4}, {"type": "float", "value": 14}]
+        },
+        {
+          "type": "ptr",
+          "value": [{"type": "int", "value": 5}, {"type": "float", "value": 15}]
+        }
+      ],
+      "name": "SampleArray"
+    },
+    {
+      "type": "ptr",
+      "value": [
+        {
+          "type": "ptr",
+          "value": [
+            {"type": "string", "value": "gpu"},
+            {"type": "string", "value": "SampleObjectModel.Dxm"}
+          ]
+        }
+      ],
+      "name": "cache"
+    },
+    {
+      "type": "ptr",
+      "value": [
+        {
+          "type": "ptr",
+          "value": [
+            {"type": "float", "value": 0},
+            {"type": "float", "value": 5},
+            {"type": "float", "value": 0}
+          ]
+        },
+        {
+          "type": "ptr",
+          "value": [
+            {"type": "float", "value": 0},
+            {"type": "float", "value": 5},
+            {"type": "float", "value": -20}
+          ]
+        }
+      ],
+      "name": "go_Camera"
+    },
+    {"type": "float", "value": 60, "name": "go_Durability"},
+    {
+      "type": "ptr",
+      "value": [
+        {"type": "float", "value": 50},
+        {"type": "float", "value": 150}
+      ],
+      "name": "go_Encount"
+    },
+    {
+      "type": "ptr",
+      "value": [
+        {"type": "string", "value": "SampleObjectModel.Dxm"},
+        {
+          "type": "ptr",
+          "value": [
+            {
+              "type": "ptr",
+              "value": [
+                {"type": "string", "value": "SampleObjectModel.Dxm"},
+                {"type": "float", "value": 0}
+              ]
+            }
+          ]
+        }
+      ],
+      "name": "an_Model"
+    },
+    {"type": "ptr", "value": null, "name": "an_Animation"}
+  ],
+  "version": 249503767
+}
