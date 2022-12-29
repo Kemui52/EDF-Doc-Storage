@@ -1,0 +1,6 @@
+; Author: Souzooka
+; Stops the game from crashing you or displaying weird strings when a mission string is invalid online.
+; https://github.com/KCreator/Earth-Defence-Force-Documentation/wiki/Useful-edits-to-EDF-5-game-executable#bugfix-to-mission-list-error
+
+65260:  44 8B 52 F8 44 39 D1 72 04 48 31 C0 C3 67 48 8D 0C 49 48 8D 04 8A 48 63 48 08 48 01 C1 48 63 41 08 48 01 C8 C3 ;
+556297: 41 8B CC E8 C1 EF B0 FF 48 85 C0 0F 84 CE 00 00 00 90 90 4C 8B C0 ;
