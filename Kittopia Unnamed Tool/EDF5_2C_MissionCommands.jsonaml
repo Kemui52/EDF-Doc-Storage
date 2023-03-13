@@ -1126,7 +1126,7 @@
         representations: [0x67],
         group: 0,
         name: "MapObjectDestroy2",
-        description: "Destroys map objects within the given area. Does not alert enemies. Destroys generators, eggs, and wasp nests, too?",
+        description: "Destroys map objects within the given area. Does not alert enemies. Destroys generators, eggs, and wasp nests, too? (potentially same criteria as BigObject?)",
         returnValue:
         {
             type: "void",
@@ -1156,7 +1156,7 @@
             {
                 name: "ShapeNode",
                 type: "string",
-                description: "The RMPA shape to use to find map objects. May need to be Sphero shape."
+                description: "The RMPA shape to use to find map objects. May need to be Sphere shape."
             }
         ]
     },
@@ -1164,7 +1164,7 @@
         representations: [0x69],
         group: 0,
         name: "MapObjectDestroy4",
-        description: "Causes game to crash?",
+        description: "Destroys certain objects within the given area. (Does this alert enemies?)",
         returnValue:
         {
             type: "void",
@@ -1175,7 +1175,12 @@
             {
                 name: "ShapeNode",
                 type: "string",
-                description: "The RMPA shape to use to find map objects."
+                description: "The RMPA shape to use to find map objects. May need to be Sphere shape."
+            },
+            {
+                name: "Option",
+                type: "int",
+                description: "What kind of objects will be destroyed. 0 = nothing, 1 = buildings, 2 = buildings & enemy structures. Enemy structures are anthills, nests, and generators (maybe more?)."
             }
         ]
     },
@@ -1194,7 +1199,7 @@
             {
                 name: "ShapeNode",
                 type: "string",
-                description: "The RMPA shape to use to find map objects. May need to be Sphero shape."
+                description: "The RMPA shape to use to find map objects. May need to be Sphere shape."
             }
         ]
     },
@@ -2124,7 +2129,7 @@
         representations: [0xCD],
         group: 0,
         name: "",
-        description: "",
+        description: "set no damage mode?",
         returnValue:
         {
             type: "void",
@@ -2499,7 +2504,7 @@
             {
                 name: "Team",
                 type: "int",
-                description: "The team to set the object to. 0 = players (white friendly), 1 = aliens (red enemy), 2 = AI friendlies (blue friendly), 3 = neutral objects (no radar, neutral), 4 = fleeing civilians (white friendly), 5 = drivable vehicles (yellow neutral, doesn't apply drivability)"
+                description: "The team to set the object to. 0 = players (white friendly), 1 = aliens (red enemy), 2 = AI friendlies (blue friendly), 3 = neutral objects (no radar, neutral), 4 = fleeing civilians (white friendly/neutral), 5 = drivable vehicles (yellow neutral, doesn't apply drivability)"
             }
         ]
     },
@@ -3565,7 +3570,7 @@
         representations: [0x1A4],
         group: 0,
         name: "",
-        description: "called 8 seconds after Ergi spawns in his 4.1 intro mission",
+        description: "Looks camera to object? Called 8 seconds after Ergi spawns in his 4.1 intro mission",
         returnValue:
         {
             type: "void",
@@ -4986,7 +4991,7 @@
         representations: [0x8B8],
         group: 0,
         name: "",
-        description: "Another object deleter?",
+        description: "Another object deleter? For destryoing transport ships with an animation?",
         returnValue:
         {
             type: "void",
