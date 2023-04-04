@@ -1019,10 +1019,10 @@
         ]
     },
     {
-        representations: [0x62],
+        representations: [0x62,0xC62],
         group: 0,
-        name: "",
-        description: "",
+        name: "LockAiObjectPosition",
+        description: "Locks the object in place, keeping it still for events or sniping.",
         returnValue:
         {
             type: "void",
@@ -1031,22 +1031,22 @@
         arguments:
         [
             {
-                name: "",
+                name: "ID",
                 type: "int",
-                description: ""
+                description: "ID of the object to lock in place."
             },
             {
-                name: "",
+                name: "Locked",
                 type: "bool",
-                description: ""
+                description: "True keeps the object in place, false lets it move again."
             }
         ]
     },
     {
-        representations: [0x63],
+        representations: [0x63,0xC63],
         group: 0,
-        name: "",
-        description: "",
+        name: "LockAiObjectDirection",
+        description: "Locks the object's current facing direction.",
         returnValue:
         {
             type: "void",
@@ -1055,14 +1055,14 @@
         arguments:
         [
             {
-                name: "",
+                name: "ID",
                 type: "int",
-                description: ""
+                description: "ID of the object to affect."
             },
             {
-                name: "",
+                name: "Locked",
                 type: "bool",
-                description: ""
+                description: "True keeps the object facing its current direction, false lets it look around again."
             }
         ]
     },
