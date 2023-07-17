@@ -140,8 +140,8 @@
     {
         representations: [0x8],
         group: 0,
-        name: "",
-        description: "",
+        name: "UnloadWorld",
+        description: "Removes the map, all items, all entities, and exits any running script. The world must be recreated with SetMap and CreatePlayer.",
         returnValue:
         {
             type: "void",
@@ -2504,7 +2504,7 @@
             {
                 name: "Team",
                 type: "int",
-                description: "The team to set the object to. 0 = players (white friendly), 1 = aliens (red enemy), 2 = AI friendlies (blue friendly), 3 = neutral objects (no radar, neutral), 4 = fleeing civilians (white friendly/neutral), 5 = drivable vehicles (yellow neutral, doesn't apply drivability)"
+                description: "The team to set the object to. 0 = players (white friendly), 1 = aliens (red enemy), 2 = AI friendlies (blue friendly), 3 = neutral objects (no radar, neutral), 4 = fleeing civilians (white friendly/neutral), 5 = drivable vehicles (yellow neutral, doesn't apply drivability), 6 = event objects"
             }
         ]
     },
@@ -5751,7 +5751,7 @@
             {
                 name: "Team",
                 type: "int",
-                description: "The team to check. Generally: 0 = players, 1 = aliens, 2 = AI friendlies, 3 = neutral objects, 4 = fleeing civilians, 5 = drivable but non-piloted vehicles"
+                description: "The team to check. Generally: 0 = players, 1 = aliens, 2 = AI friendlies, 3 = neutral objects, 4 = fleeing civilians, 5 = drivable but non-piloted vehicles, 6 = event objects"
             },
             {
                 name: "Count",
@@ -5780,7 +5780,7 @@
             {
                 name: "Team",
                 type: "int",
-                description: "The team to check. Generally: 0 = players, 1 = aliens, 2 = AI friendlies, 3 = neutral objects, 4 = fleeing civilians, 5 = drivable but non-piloted vehicles"
+                description: "The team to check. Generally: 0 = players, 1 = aliens, 2 = AI friendlies, 3 = neutral objects, 4 = fleeing civilians, 5 = drivable but non-piloted vehicles, 6 = event objects"
             },
             {
                 name: "Count",
@@ -5804,7 +5804,7 @@
             {
                 name: "Team",
                 type: "int",
-                description: "(Most likely) The team to check. Generally: 0 = players, 1 = aliens, 2 = AI friendlies, 3 = neutral objects, 4 = fleeing civilians, 5 = drivable but non-piloted vehicles"
+                description: "(Most likely) The team to check. Generally: 0 = players, 1 = aliens, 2 = AI friendlies, 3 = neutral objects, 4 = fleeing civilians, 5 = drivable but non-piloted vehicles, 6 = event objects"
             },
             {
                 name: "Count",
@@ -5890,7 +5890,7 @@
             {
                 name: "Team",
                 type: "int",
-                description: "The team to check. Generally: 0 = players, 1 = aliens, 2 = AI friendlies, 3 = neutral objects, 4 = fleeing civilians, 5 = drivable but non-piloted vehicles. Mostly only useful for 0, 1, and 2. AI soldiers and players encount when they take damage from their enemy."
+                description: "The team to check. Generally: 0 = players, 1 = aliens, 2 = AI friendlies, 3 = neutral objects, 4 = fleeing civilians, 5 = drivable but non-piloted vehicles, 6 = event objects. Mostly only useful for 0, 1, and 2. AI soldiers and players encount when they take damage from their enemy."
             }
         ]
     },
@@ -5909,7 +5909,7 @@
             {
                 name: "Team",
                 type: "int",
-                description: "The team to check. Generally: 0 = players, 1 = aliens, 2 = AI friendlies, 3 = neutral objects, 4 = fleeing civilians, 5 = drivable but non-piloted vehicles."
+                description: "The team to check. Generally: 0 = players, 1 = aliens, 2 = AI friendlies, 3 = neutral objects, 4 = fleeing civilians, 5 = drivable but non-piloted vehicles, 6 = event objects."
             }
         ]
     },
