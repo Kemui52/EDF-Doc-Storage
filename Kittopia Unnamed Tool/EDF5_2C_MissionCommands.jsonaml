@@ -5583,7 +5583,7 @@
         representations: [0x2329],
         group: 0,
         name: "CreateEventFactorTimer",
-        description: "Creates an event factor that will call a registered event based on a timer since mission start(?).",
+        description: "Creates an event factor that will call a registered event based on a timer since mission start. If the time has already passed, the event will fire immediately.",
         returnValue:
         {
             type: "void",
@@ -5599,7 +5599,7 @@
             {
                 name: "TimeDelta",
                 type: "float",
-                description: "The time, in seconds, before the event is fired. Based on time since mission started?"
+                description: "The time, in seconds, before the event is fired. Based on time since mission has started."
             }
         ]
     },
