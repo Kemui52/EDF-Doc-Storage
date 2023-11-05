@@ -861,7 +861,7 @@
         ]
     },
     {
-        representations: [0x42],
+        representations: [0x42,0x442],
         group: 0,
         name: "VsStartPosition",
         description: "Spawns the players at the provided versus location set, which is usually defined in the map's own RMPA.",
@@ -1126,7 +1126,7 @@
         representations: [0x67],
         group: 0,
         name: "MapObjectDestroy2",
-        description: "Destroys map objects within the given area. Does not alert enemies. Destroys generators, eggs, and wasp nests, too?",
+        description: "Destroys map objects within the given area. Can destroy generators, eggs, and wasp nests if their HP is below roughly 100k, too. May alert enemies if one of those objects is in the area.",
         returnValue:
         {
             type: "void",
@@ -2172,7 +2172,7 @@
         representations: [0xCF],
         group: 0,
         name: "",
-        description: "aggros all enemies with an int of 1?",
+        description: "aggros all objects on a team?",
         returnValue:
         {
             type: "void",
@@ -2181,9 +2181,9 @@
         arguments:
         [
             {
-                name: "",
+                name: "Team",
                 type: "int",
-                description: ""
+                description: "0 = players, 1 = aliens, 2 = AI friendlies, 3 = neutral objects, 4 = fleeing civilians, 5 = drivable but non-piloted vehicles, 6 = event objects"
             }
         ]
     },
@@ -2263,7 +2263,7 @@
         representations: [0xD5],
         group: 0,
         name: "SetObjectPosition",
-        description: "",
+        description: "Moves an object immediately to a spawnpoint.",
         returnValue:
         {
             type: "void",
@@ -2272,14 +2272,14 @@
         arguments:
         [
             {
-                name: "",
+                name: "ID",
                 type: "int",
-                description: ""
+                description: "ID of the object to affect."
             },
             {
-                name: "",
+                name: "Spawnpoint",
                 type: "string",
-                description: ""
+                description: "The RMPA spawnpoint the object will be moved to."
             }
         ]
     },
@@ -2728,7 +2728,7 @@
         representations: [0x101],
         group: 0,
         name: "CreateEventObject",
-        description: "Creates an object without AI(?) at the provided Spawnpoint.",
+        description: "Creates an object without AI(?) at the provided spawnpoint.",
         returnValue:
         {
             type: "int",
