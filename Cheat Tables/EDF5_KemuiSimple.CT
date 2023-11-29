@@ -4,7 +4,6 @@
     <CheatEntry>
       <ID>604</ID>
       <Description>"Soldier Pointer"</Description>
-      <LastState Value="268.4799805" RealAddress="28B2950A838"/>
       <VariableType>Float</VariableType>
       <Address>EDF5.exe+125AB70</Address>
       <Offsets>
@@ -19,77 +18,66 @@
           <ID>625</ID>
           <Description>"General Stuff"</Description>
           <Options moManualExpandCollapse="1"/>
-          <LastState Value="268.4799805" RealAddress="28B2950A838"/>
           <VariableType>Float</VariableType>
           <Address>+0</Address>
           <CheatEntries>
             <CheatEntry>
               <ID>624</ID>
               <Description>"Max Health"</Description>
-              <LastState Value="268.4799805" RealAddress="28B2950A838"/>
               <VariableType>Float</VariableType>
               <Address>+0</Address>
             </CheatEntry>
             <CheatEntry>
               <ID>661</ID>
               <Description>"Current Health"</Description>
-              <LastState Value="268.4799805" RealAddress="28B2950A83C"/>
               <VariableType>Float</VariableType>
               <Address>+4</Address>
             </CheatEntry>
             <CheatEntry>
               <ID>626</ID>
               <Description>"Base Energy"</Description>
-              <LastState Value="100" RealAddress="28B2950A844"/>
               <VariableType>Float</VariableType>
               <Address>+C</Address>
             </CheatEntry>
             <CheatEntry>
               <ID>627</ID>
               <Description>"Max Energy"</Description>
-              <LastState Value="100" RealAddress="28B2950A848"/>
               <VariableType>Float</VariableType>
               <Address>+10</Address>
             </CheatEntry>
             <CheatEntry>
               <ID>628</ID>
               <Description>"Current Energy"</Description>
-              <LastState Value="100" RealAddress="28B2950A84C"/>
               <VariableType>Float</VariableType>
               <Address>+14</Address>
             </CheatEntry>
             <CheatEntry>
               <ID>605</ID>
               <Description>"Pos X (return)"</Description>
-              <LastState Value="112.7080536" RealAddress="28B2950A6E0"/>
               <VariableType>Float</VariableType>
               <Address>-158</Address>
             </CheatEntry>
             <CheatEntry>
               <ID>622</ID>
               <Description>"Pos Y (return)"</Description>
-              <LastState Value="0.05000189692" RealAddress="28B2950A6E4"/>
               <VariableType>Float</VariableType>
               <Address>-154</Address>
             </CheatEntry>
             <CheatEntry>
               <ID>623</ID>
               <Description>"Pos Z (return)"</Description>
-              <LastState Value="44.55952454" RealAddress="28B2950A6E8"/>
               <VariableType>Float</VariableType>
               <Address>-150</Address>
             </CheatEntry>
             <CheatEntry>
               <ID>630</ID>
               <Description>"Player Num (don't pause!)"</Description>
-              <LastState Value="0" RealAddress="28B2950A87C"/>
               <VariableType>4 Bytes</VariableType>
               <Address>+44</Address>
             </CheatEntry>
             <CheatEntry>
               <ID>629</ID>
               <Description>"UI Elements"</Description>
-              <LastState Value="13" RealAddress="28B2950A890"/>
               <Color>808080</Color>
               <VariableType>4 Bytes</VariableType>
               <Address>+58</Address>
@@ -100,7 +88,6 @@
           <ID>517</ID>
           <Description>"Camera Stuff"</Description>
           <Options moManualExpandCollapse="1"/>
-          <LastState Value="43863D70" RealAddress="28B2950A838"/>
           <ShowAsHex>1</ShowAsHex>
           <VariableType>4 Bytes</VariableType>
           <Address>+0</Address>
@@ -111,7 +98,6 @@
               <DropDownList DisplayValueAsItem="1">00:off
 01:on
 </DropDownList>
-              <LastState Value="00" RealAddress="28B2950A780"/>
               <ShowAsHex>1</ShowAsHex>
               <VariableType>Byte</VariableType>
               <Address>-38-80</Address>
@@ -122,7 +108,6 @@
               <DropDownList DisplayValueAsItem="1">00:off
 01:on
 </DropDownList>
-              <LastState Value="00" RealAddress="28B2950A764"/>
               <ShowAsHex>1</ShowAsHex>
               <VariableType>Byte</VariableType>
               <Address>-54-80</Address>
@@ -130,42 +115,36 @@
             <CheatEntry>
               <ID>515</ID>
               <Description>"Look X"</Description>
-              <LastState Value="0" RealAddress="28B2950A740"/>
               <VariableType>Float</VariableType>
               <Address>-F8</Address>
             </CheatEntry>
             <CheatEntry>
               <ID>514</ID>
               <Description>"Look Y"</Description>
-              <LastState Value="1.799999952" RealAddress="28B2950A744"/>
               <VariableType>Float</VariableType>
               <Address>-F4</Address>
             </CheatEntry>
             <CheatEntry>
               <ID>513</ID>
               <Description>"Look Z"</Description>
-              <LastState Value="0" RealAddress="28B2950A748"/>
               <VariableType>Float</VariableType>
               <Address>-F0</Address>
             </CheatEntry>
             <CheatEntry>
               <ID>511</ID>
               <Description>"Cam X"</Description>
-              <LastState Value="0" RealAddress="28B2950A750"/>
               <VariableType>Float</VariableType>
               <Address>-E8</Address>
             </CheatEntry>
             <CheatEntry>
               <ID>510</ID>
               <Description>"Cam Y"</Description>
-              <LastState Value="1.799999952" RealAddress="28B2950A754"/>
               <VariableType>Float</VariableType>
               <Address>-E4</Address>
             </CheatEntry>
             <CheatEntry>
               <ID>509</ID>
               <Description>"Cam Z"</Description>
-              <LastState Value="-3.5" RealAddress="28B2950A758"/>
               <VariableType>Float</VariableType>
               <Address>-E0</Address>
             </CheatEntry>
@@ -176,7 +155,6 @@
 0.1000000015:tanks
 0:frozen
 </DropDownList>
-              <LastState Value="1" RealAddress="28B2950A760"/>
               <VariableType>Float</VariableType>
               <Address>-58-80</Address>
             </CheatEntry>
@@ -187,7 +165,6 @@
 3F800000:default
 3F400000:farthest
 </DropDownList>
-              <LastState Value="3F800000" RealAddress="28B2950A7A0"/>
               <ShowAsHex>1</ShowAsHex>
               <VariableType>Float</VariableType>
               <Address>-18-80</Address>
@@ -195,7 +172,6 @@
             <CheatEntry>
               <ID>512</ID>
               <Description>"Cam Scale from Map Root"</Description>
-              <LastState Value="1" RealAddress="28B2950A75C"/>
               <VariableType>Float</VariableType>
               <Address>-5C-80</Address>
             </CheatEntry>
@@ -205,7 +181,6 @@
               <DropDownList DisplayValueAsItem="1">1:default
 -1:reversed
 </DropDownList>
-              <LastState Value="1" RealAddress="28B2950A74C"/>
               <VariableType>Float</VariableType>
               <Address>-6C-80</Address>
             </CheatEntry>
@@ -215,7 +190,6 @@
           <ID>518</ID>
           <Description>"Team Stuff"</Description>
           <Options moManualExpandCollapse="1"/>
-          <LastState Value="43863D70" RealAddress="28B2950A838"/>
           <ShowAsHex>1</ShowAsHex>
           <VariableType>4 Bytes</VariableType>
           <Address>+0</Address>
@@ -227,7 +201,6 @@
 01:alien team, no aliens on radar
 03:friend and foe to both
 </DropDownList>
-              <LastState Value="00" RealAddress="28B2950A858"/>
               <ShowAsHex>1</ShowAsHex>
               <VariableType>Byte</VariableType>
               <Address>+20</Address>
@@ -239,7 +212,6 @@
 01:alien team
 03:friend and foe to both
 </DropDownList>
-              <LastState Value="00" RealAddress="28B2950A85C"/>
               <ShowAsHex>1</ShowAsHex>
               <VariableType>Byte</VariableType>
               <Address>+24</Address>
@@ -250,7 +222,6 @@
               <DropDownList DisplayValueAsItem="1">00:default
 01:ignore
 </DropDownList>
-              <LastState Value="00" RealAddress="28B2950A8DC"/>
               <ShowAsHex>1</ShowAsHex>
               <VariableType>Byte</VariableType>
               <Address>+A4</Address>
@@ -261,7 +232,6 @@
           <ID>575</ID>
           <Description>"Map Bounds (Soldier)"</Description>
           <Options moManualExpandCollapse="1"/>
-          <LastState Value="1132871024" RealAddress="28B2950A838"/>
           <VariableType>4 Bytes</VariableType>
           <Address>+0</Address>
           <CheatEntries>
@@ -269,49 +239,42 @@
               <ID>582</ID>
               <Description>"Boundary Temp"</Description>
               <Options moManualExpandCollapse="1"/>
-              <LastState Value="1132871024" RealAddress="28B2950A838"/>
               <VariableType>4 Bytes</VariableType>
               <Address>+0</Address>
               <CheatEntries>
                 <CheatEntry>
                   <ID>574</ID>
                   <Description>"Boundary X Low"</Description>
-                  <LastState Value="-1000" RealAddress="28B2950B330"/>
                   <VariableType>Float</VariableType>
                   <Address>+AF8</Address>
                 </CheatEntry>
                 <CheatEntry>
                   <ID>576</ID>
                   <Description>"Boundary Y Low"</Description>
-                  <LastState Value="-1000" RealAddress="28B2950B334"/>
                   <VariableType>Float</VariableType>
                   <Address>+AFC</Address>
                 </CheatEntry>
                 <CheatEntry>
                   <ID>577</ID>
                   <Description>"Boundary Z Low"</Description>
-                  <LastState Value="-1000" RealAddress="28B2950B338"/>
                   <VariableType>Float</VariableType>
                   <Address>+B00</Address>
                 </CheatEntry>
                 <CheatEntry>
                   <ID>578</ID>
                   <Description>"Boundary X High"</Description>
-                  <LastState Value="1000" RealAddress="28B2950B340"/>
                   <VariableType>Float</VariableType>
                   <Address>+B08</Address>
                 </CheatEntry>
                 <CheatEntry>
                   <ID>579</ID>
                   <Description>"Boundary Y High"</Description>
-                  <LastState Value="500" RealAddress="28B2950B344"/>
                   <VariableType>Float</VariableType>
                   <Address>+B0C</Address>
                 </CheatEntry>
                 <CheatEntry>
                   <ID>573</ID>
                   <Description>"Boundary Z High"</Description>
-                  <LastState Value="1000" RealAddress="28B2950B348"/>
                   <VariableType>Float</VariableType>
                   <Address>+B10</Address>
                 </CheatEntry>
@@ -321,56 +284,48 @@
               <ID>581</ID>
               <Description>"Boundary Static"</Description>
               <Options moManualExpandCollapse="1"/>
-              <LastState Value="1132871024" RealAddress="28B2950A838"/>
               <VariableType>4 Bytes</VariableType>
               <Address>+0</Address>
               <CheatEntries>
                 <CheatEntry>
                   <ID>580</ID>
                   <Description>"Boundary X Low"</Description>
-                  <LastState Value="-1000" RealAddress="28B2950B350"/>
                   <VariableType>Float</VariableType>
                   <Address>+B18</Address>
                 </CheatEntry>
                 <CheatEntry>
                   <ID>583</ID>
                   <Description>"Boundary Y Low"</Description>
-                  <LastState Value="-1000" RealAddress="28B2950B354"/>
                   <VariableType>Float</VariableType>
                   <Address>+B1C</Address>
                 </CheatEntry>
                 <CheatEntry>
                   <ID>584</ID>
                   <Description>"Boundary Z Low"</Description>
-                  <LastState Value="-1000" RealAddress="28B2950B358"/>
                   <VariableType>Float</VariableType>
                   <Address>+B20</Address>
                 </CheatEntry>
                 <CheatEntry>
                   <ID>585</ID>
                   <Description>"Boundary X High"</Description>
-                  <LastState Value="1000" RealAddress="28B2950B360"/>
                   <VariableType>Float</VariableType>
                   <Address>+B28</Address>
                 </CheatEntry>
                 <CheatEntry>
                   <ID>586</ID>
                   <Description>"Boundary Y High"</Description>
-                  <LastState Value="500" RealAddress="28B2950B364"/>
                   <VariableType>Float</VariableType>
                   <Address>+B2C</Address>
                 </CheatEntry>
                 <CheatEntry>
                   <ID>587</ID>
                   <Description>"Boundary Z High"</Description>
-                  <LastState Value="1000" RealAddress="28B2950B368"/>
                   <VariableType>Float</VariableType>
                   <Address>+B30</Address>
                 </CheatEntry>
                 <CheatEntry>
                   <ID>588</ID>
                   <Description>"Boundary Addition"</Description>
-                  <LastState Value="0" RealAddress="28B2950B370"/>
                   <VariableType>Float</VariableType>
                   <Address>+B38</Address>
                 </CheatEntry>
@@ -383,7 +338,6 @@
     <CheatEntry>
       <ID>537</ID>
       <Description>"BGM Volume (Global)"</Description>
-      <LastState Value="3E808312" RealAddress="28B7B3C81F0"/>
       <ShowAsHex>1</ShowAsHex>
       <VariableType>Float</VariableType>
       <Address>"EDF5.exe"+0125AB30</Address>
@@ -395,7 +349,6 @@
           <ID>553</ID>
           <Description>"Game Settings"</Description>
           <Options moManualExpandCollapse="1"/>
-          <LastState Value="3E808312" RealAddress="28B7B3C81F0"/>
           <ShowAsHex>1</ShowAsHex>
           <VariableType>Float</VariableType>
           <Address>+0</Address>
@@ -403,21 +356,18 @@
             <CheatEntry>
               <ID>539</ID>
               <Description>"SE Volume"</Description>
-              <LastState Value="0.2709999681" RealAddress="28B7B3C81F4"/>
               <VariableType>Float</VariableType>
               <Address>+4</Address>
             </CheatEntry>
             <CheatEntry>
               <ID>538</ID>
               <Description>"BGM Volume"</Description>
-              <LastState Value="0.2509999871" RealAddress="28B7B3C81F0"/>
               <VariableType>Float</VariableType>
               <Address>+0</Address>
             </CheatEntry>
             <CheatEntry>
               <ID>540</ID>
               <Description>"Voice Volume"</Description>
-              <LastState Value="0.3309999704" RealAddress="28B7B3C81F8"/>
               <VariableType>Float</VariableType>
               <Address>+8</Address>
             </CheatEntry>
@@ -429,7 +379,6 @@
 02:Surround LR
 03:All
 </DropDownList>
-              <LastState Value="00" RealAddress="28B7B3C8200"/>
               <ShowAsHex>1</ShowAsHex>
               <VariableType>Byte</VariableType>
               <Address>+10</Address>
@@ -438,7 +387,6 @@
               <ID>552</ID>
               <Description>"P1 Specific"</Description>
               <Options moManualExpandCollapse="1"/>
-              <LastState Value="3E808312" RealAddress="28B7B3C81F0"/>
               <ShowAsHex>1</ShowAsHex>
               <VariableType>Float</VariableType>
               <Address>+0</Address>
@@ -449,7 +397,6 @@
                   <DropDownList DisplayValueAsItem="1">00:Off
 01:On
 </DropDownList>
-                  <LastState Value="01" RealAddress="28B7B3C8215"/>
                   <ShowAsHex>1</ShowAsHex>
                   <VariableType>Byte</VariableType>
                   <Address>+25</Address>
@@ -457,21 +404,18 @@
                 <CheatEntry>
                   <ID>565</ID>
                   <Description>"UI Mouse Sensitivity?"</Description>
-                  <LastState Value="0" RealAddress="28B7B3D28B4"/>
                   <VariableType>Float</VariableType>
                   <Address>+A6C4</Address>
                 </CheatEntry>
                 <CheatEntry>
                   <ID>548</ID>
                   <Description>"Rotation Speed"</Description>
-                  <LastState Value="0.7009999752" RealAddress="28B7B3C8218"/>
                   <VariableType>Float</VariableType>
                   <Address>+28</Address>
                 </CheatEntry>
                 <CheatEntry>
                   <ID>566</ID>
                   <Description>"Rotation Lerp"</Description>
-                  <LastState Value="1" RealAddress="28B7B3C821C"/>
                   <VariableType>Float</VariableType>
                   <Address>+2C</Address>
                 </CheatEntry>
@@ -481,7 +425,6 @@
                   <DropDownList DisplayValueAsItem="1">00:Normal
 01:Inverted
 </DropDownList>
-                  <LastState Value="01" RealAddress="28B7B3C8210"/>
                   <ShowAsHex>1</ShowAsHex>
                   <VariableType>Byte</VariableType>
                   <Address>+20</Address>
@@ -492,7 +435,6 @@
                   <DropDownList DisplayValueAsItem="1">00:Normal
 01:Inverted
 </DropDownList>
-                  <LastState Value="00" RealAddress="28B7B3C820C"/>
                   <ShowAsHex>1</ShowAsHex>
                   <VariableType>Byte</VariableType>
                   <Address>+1C</Address>
@@ -503,7 +445,6 @@
                   <DropDownList DisplayValueAsItem="1">00:Off
 01:On
 </DropDownList>
-                  <LastState Value="01" RealAddress="28B7B3C8214"/>
                   <ShowAsHex>1</ShowAsHex>
                   <VariableType>Byte</VariableType>
                   <Address>+24</Address>
@@ -514,7 +455,6 @@
                   <DropDownList DisplayValueAsItem="1">00:Off
 01:On
 </DropDownList>
-                  <LastState Value="01" RealAddress="28B7B3C8216"/>
                   <ShowAsHex>1</ShowAsHex>
                   <VariableType>Byte</VariableType>
                   <Address>+26</Address>
@@ -526,7 +466,6 @@
 01:Middle
 02:Small
 </DropDownList>
-                  <LastState Value="00" RealAddress="28B7B3C8200"/>
                   <ShowAsHex>1</ShowAsHex>
                   <Color>808080</Color>
                   <VariableType>Byte</VariableType>
@@ -538,7 +477,6 @@
               <ID>557</ID>
               <Description>"P2 Specific (not done)"</Description>
               <Options moManualExpandCollapse="1"/>
-              <LastState Value="3E808312" RealAddress="28B7B3C81F0"/>
               <ShowAsHex>1</ShowAsHex>
               <Color>808080</Color>
               <VariableType>Float</VariableType>
@@ -547,7 +485,6 @@
                 <CheatEntry>
                   <ID>562</ID>
                   <Description>"Rotation Speed"</Description>
-                  <LastState Value="1.541428311E-44" RealAddress="28B7B3C8668"/>
                   <Color>808080</Color>
                   <VariableType>Float</VariableType>
                   <Address>+478</Address>
@@ -555,7 +492,6 @@
                 <CheatEntry>
                   <ID>567</ID>
                   <Description>"Rotation Smooth?"</Description>
-                  <LastState Value="1.261168618E-44" RealAddress="28B7B3C866C"/>
                   <Color>808080</Color>
                   <VariableType>Float</VariableType>
                   <Address>+47C</Address>
@@ -566,7 +502,6 @@
                   <DropDownList DisplayValueAsItem="1">00:Normal
 01:Inverted
 </DropDownList>
-                  <LastState Value="02" RealAddress="28B7B3C8660"/>
                   <ShowAsHex>1</ShowAsHex>
                   <Color>808080</Color>
                   <VariableType>Byte</VariableType>
@@ -578,7 +513,6 @@
                   <DropDownList DisplayValueAsItem="1">00:Normal
 01:Inverted
 </DropDownList>
-                  <LastState Value="03" RealAddress="28B7B3C865C"/>
                   <ShowAsHex>1</ShowAsHex>
                   <Color>808080</Color>
                   <VariableType>Byte</VariableType>
@@ -590,7 +524,6 @@
                   <DropDownList DisplayValueAsItem="1">00:Off
 01:On
 </DropDownList>
-                  <LastState Value="0A" RealAddress="28B7B3C8664"/>
                   <ShowAsHex>1</ShowAsHex>
                   <Color>808080</Color>
                   <VariableType>Byte</VariableType>
@@ -602,7 +535,6 @@
                   <DropDownList DisplayValueAsItem="1">00:Off
 01:On
 </DropDownList>
-                  <LastState Value="00" RealAddress="28B7B3C8665"/>
                   <ShowAsHex>1</ShowAsHex>
                   <Color>808080</Color>
                   <VariableType>Byte</VariableType>
@@ -614,7 +546,6 @@
                   <DropDownList DisplayValueAsItem="1">00:Off
 01:On
 </DropDownList>
-                  <LastState Value="00" RealAddress="28B7B3C8666"/>
                   <ShowAsHex>1</ShowAsHex>
                   <Color>808080</Color>
                   <VariableType>Byte</VariableType>
@@ -623,7 +554,6 @@
                 <CheatEntry>
                   <ID>561</ID>
                   <Description>"Not C4???"</Description>
-                  <LastState Value="00" RealAddress="28B7B3C8667"/>
                   <ShowAsHex>1</ShowAsHex>
                   <Color>808080</Color>
                   <VariableType>Byte</VariableType>
@@ -636,7 +566,6 @@
 01:Middle
 02:Small
 </DropDownList>
-                  <LastState Value="04" RealAddress="28B7B3C8658"/>
                   <ShowAsHex>1</ShowAsHex>
                   <Color>808080</Color>
                   <VariableType>Byte</VariableType>
@@ -650,7 +579,6 @@
               <DropDownList DisplayValueAsItem="1">00:Off
 01:On
 </DropDownList>
-              <LastState Value="00" RealAddress="28B7B3CD66D"/>
               <ShowAsHex>1</ShowAsHex>
               <VariableType>Byte</VariableType>
               <Address>+547D</Address>
@@ -661,7 +589,6 @@
           <ID>569</ID>
           <Description>"Globals"</Description>
           <Options moManualExpandCollapse="1"/>
-          <LastState Value="3E808312" RealAddress="28B7B3C81F0"/>
           <ShowAsHex>1</ShowAsHex>
           <VariableType>Float</VariableType>
           <Address>+0</Address>
@@ -669,7 +596,6 @@
             <CheatEntry>
               <ID>570</ID>
               <Description>"Current Mission"</Description>
-              <LastState Value="11" RealAddress="28B7B3C8058"/>
               <VariableType>Byte</VariableType>
               <Address>-198</Address>
             </CheatEntry>
@@ -682,7 +608,6 @@
 03:Hardest
 04:Inferno
 </DropDownList>
-              <LastState Value="01" RealAddress="28B7B3C805C"/>
               <ShowAsHex>1</ShowAsHex>
               <VariableType>Byte</VariableType>
               <Address>-194</Address>
@@ -690,7 +615,6 @@
             <CheatEntry>
               <ID>554</ID>
               <Description>"Savegame Mission"</Description>
-              <LastState Value="11" RealAddress="28B7B3CD674"/>
               <VariableType>Byte</VariableType>
               <Address>+5484</Address>
             </CheatEntry>
@@ -703,7 +627,6 @@
 03:Hardest
 04:Inferno
 </DropDownList>
-              <LastState Value="01" RealAddress="28B7B3CD678"/>
               <ShowAsHex>1</ShowAsHex>
               <VariableType>Byte</VariableType>
               <Address>+5488</Address>
@@ -711,7 +634,6 @@
             <CheatEntry>
               <ID>648</ID>
               <Description>"Armor Acquisition Max"</Description>
-              <LastState Value="3E808312" RealAddress="28B7B3C81F0"/>
               <ShowAsHex>1</ShowAsHex>
               <VariableType>Float</VariableType>
               <Address>+0</Address>
@@ -719,28 +641,24 @@
                 <CheatEntry>
                   <ID>649</ID>
                   <Description>"Ranger"</Description>
-                  <LastState Value="107" RealAddress="28B7B3CED34"/>
                   <VariableType>4 Bytes</VariableType>
                   <Address>+6D24-1E0</Address>
                 </CheatEntry>
                 <CheatEntry>
                   <ID>650</ID>
                   <Description>"Wing Diver"</Description>
-                  <LastState Value="46" RealAddress="28B7B3CED38"/>
                   <VariableType>4 Bytes</VariableType>
                   <Address>+6D28-1E0</Address>
                 </CheatEntry>
                 <CheatEntry>
                   <ID>652</ID>
                   <Description>"Air Raider"</Description>
-                  <LastState Value="29" RealAddress="28B7B3CED3C"/>
                   <VariableType>4 Bytes</VariableType>
                   <Address>+6D2C-1E0</Address>
                 </CheatEntry>
                 <CheatEntry>
                   <ID>651</ID>
                   <Description>"Fencer"</Description>
-                  <LastState Value="45" RealAddress="28B7B3CED40"/>
                   <VariableType>4 Bytes</VariableType>
                   <Address>+6D30-1E0</Address>
                 </CheatEntry>
@@ -756,7 +674,6 @@
       <DropDownList DisplayValueAsItem="1">00:off
 01:on
 </DropDownList>
-      <LastState Value="01" RealAddress="28B6F188AEC"/>
       <ShowAsHex>1</ShowAsHex>
       <VariableType>Byte</VariableType>
       <Address>EDF5.exe+1259680</Address>
@@ -846,9 +763,19 @@ dealloc(newmem)
       <DropDownList DisplayValueAsItem="1">32:Normal
 24:No HUD
 </DropDownList>
-      <LastState Value="32" RealAddress="7FF7CFF130BC"/>
       <VariableType>Byte</VariableType>
       <Address>EDF5.exe+4B30BC</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>662</ID>
+      <Description>"No Sprinting Zoom {stafern}"</Description>
+      <DropDownList DisplayValueAsItem="1">F3 0F 58 0D DE 60 C0 00:Default
+90 90 90 90 90 90 90 90:No Zoom
+</DropDownList>
+      <ShowAsHex>1</ShowAsHex>
+      <VariableType>Array of byte</VariableType>
+      <ByteLength>8</ByteLength>
+      <Address>EDF5.exe+2E010A</Address>
     </CheatEntry>
   </CheatEntries>
   <UserdefinedSymbols>

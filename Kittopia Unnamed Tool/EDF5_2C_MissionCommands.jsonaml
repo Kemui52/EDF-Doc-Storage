@@ -2212,7 +2212,7 @@
         ]
     },
     {
-        representations: [0xD1],
+        representations: [0xD1,0xBD1],
         group: 0,
         name: "MultiplyObjectHealth",
         description: "Multiplies the object's current health by the given percentage. Can decrease or increase health, but will not go past max health.",
