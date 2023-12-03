@@ -2284,10 +2284,10 @@
         ]
     },
     {
-        representations: [0xD6],
+        representations: [0xD6,0xBD6],
         group: 0,
-        name: "",
-        description: "",
+        name: "SetPlayerInvincible",
+        description: "Sets the player to take no damage. Used in the tutorial.",
         returnValue:
         {
             type: "void",
@@ -2296,17 +2296,17 @@
         arguments:
         [
             {
-                name: "",
+                name: "IsInvincible",
                 type: "bool",
-                description: ""
+                description: "Set to true for no damage, set to false to return to normal."
             }
         ]
     },
     {
-        representations: [0xD7],
+        representations: [0xD7,0xBD7],
         group: 0,
-        name: "",
-        description: "",
+        name: "SetPlayerNeutral",
+        description: "Puts the player on the neutral team so enemies don't aggro them. Used in the tutorial.",
         returnValue:
         {
             type: "void",
@@ -2315,9 +2315,9 @@
         arguments:
         [
             {
-                name: "",
+                name: "IsNeutral",
                 type: "bool",
-                description: ""
+                description: "Set to true for neutral team, set to false to return to the player team."
             }
         ]
     },
