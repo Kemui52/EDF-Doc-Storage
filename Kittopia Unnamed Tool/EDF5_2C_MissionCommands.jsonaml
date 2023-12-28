@@ -86,7 +86,7 @@
         ]
     },
     {
-        representations: [0x4],
+        representations: [0x4,0x1004],
         group: 0,
         name: "",
         description: "",
@@ -1768,7 +1768,7 @@
         ]
     },
     {
-        representations: [0xA2],
+        representations: [0xA2,0xFA2],
         group: 0,
         name: "",
         description: "",
@@ -2815,36 +2815,36 @@
         ]
     },
     {
-        representations: [0x106],
+        representations: [0x106,0x1006],
         group: 0,
         name: "",
         description: "",
         returnValue:
         {
             type: "void",
-            description: ""
+            description: "play voice with gesture"
         },
         arguments:
         [
             {
                 name: "",
                 type: "int",
-                description: ""
+                description: "ID"
             },
             {
                 name: "",
                 type: "string",
-                description: ""
+                description: "voice"
             },
             {
                 name: "",
                 type: "string",
-                description: ""
+                description: "anim"
             },
             {
                 name: "",
                 type: "float",
-                description: ""
+                description: "a float"
             }
         ]
     },
@@ -4111,7 +4111,7 @@
         ]
     },
     {
-        representations: [0x505],
+        representations: [0x505,0x1005],
         group: 0,
         name: "",
         description: "",
@@ -5105,8 +5105,8 @@
     {
         representations: [0xC29],
         group: 0,
-        name: "",
-        description: "",
+        name: "SetAiIgnoreNavMesh",
+        description: "Causes AI soldiers to ignore the nav mesh and move straight to their waypoints.",
         returnValue:
         {
             type: "void",
@@ -5115,14 +5115,14 @@
         arguments:
         [
             {
-                name: "",
+                name: "ID",
                 type: "int",
-                description: ""
+                description: "ID of the object to affect."
             },
             {
-                name: "",
+                name: "WillIgnore",
                 type: "bool",
-                description: ""
+                description: "Whether the object will ignore the nav mesh."
             }
         ]
     },
