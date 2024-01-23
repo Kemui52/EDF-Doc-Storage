@@ -1978,7 +1978,7 @@
         ]
     },
     {
-        representations: [0xB9],
+        representations: [0xB9,0xBB9],
         group: 0,
         name: "",
         description: "deletes provided object? if squad leader, deletes the (original?) followers, too",
@@ -2485,7 +2485,7 @@
         ]
     },
     {
-        representations: [0xEC],
+        representations: [0xEC,0xBEC],
         group: 0,
         name: "SetObjectTeam",
         description: "Changes the specified object to be on the desired team.",
