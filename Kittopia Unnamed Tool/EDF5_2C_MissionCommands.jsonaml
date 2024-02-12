@@ -947,10 +947,10 @@
         ]
     },
     {
-        representations: [0x4F],
+        representations: [0x4F,0xC4F],
         group: 0,
-        name: "",
-        description: "",
+        name: "SetRecruitable",
+        description: "Marks an object as recruitable by the player. Only feasibly works on soldiers.",
         returnValue:
         {
             type: "void",
@@ -959,14 +959,14 @@
         arguments:
         [
             {
-                name: "",
+                name: "ID",
                 type: "int",
-                description: ""
+                description: "ID of the object to change recruitability"
             },
             {
-                name: "",
+                name: "CanRecruit",
                 type: "bool",
-                description: ""
+                description: "Whether to make the object recruitable or not."
             }
         ]
     },
