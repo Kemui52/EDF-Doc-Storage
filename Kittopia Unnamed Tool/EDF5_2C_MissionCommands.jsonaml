@@ -1241,7 +1241,7 @@
         representations: [0x75],
         group: 0,
         name: "",
-        description: "",
+        description: "can spawn an airstrike or entity on top of an entity on neutral team?",
         returnValue:
         {
             type: "void",
