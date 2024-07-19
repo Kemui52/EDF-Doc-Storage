@@ -1,0 +1,5 @@
+; Author: stafern
+182CC4: 02; Where to check the SceneType (00=above ground, 01=underground). Default is 00.
+182CE3: 02; Where it is determined whether the target vehicle can(01) or cannot(00) be generated underground. Default is 00.
+
+; Some air strikes will not be available, so please turn them off if you have trouble.

@@ -1,0 +1,4 @@
+; Author: BlueAmulet, inspired by Souzooka's chat length patch
+495465: 31 C9 90
+49546A: u32! 680 ; Width of the text input dialog. Default 400
+4FCF38: u8!  128 ; Maximum amount of characters in chat message. Default 32

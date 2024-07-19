@@ -1,0 +1,5 @@
+; Author: Imperial
+A0BE04: 00 00 00
+
+; Kemui52: Theoretically reduces lag in the online equipment menu. However,
+; some reports suggest this is a placebo. There is no evidence this fix does anything.

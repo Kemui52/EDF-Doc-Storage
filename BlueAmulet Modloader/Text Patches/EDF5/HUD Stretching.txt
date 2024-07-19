@@ -1,0 +1,23 @@
+; Author: BlueAmulet, values by Kemui52
+; To use, uncomment (remove semicolon of) the line you wish to use and comment out (add semicolon to) the rest.
+;4B30BC: 20 ;default
+;4B30BC: 1C
+;4B30BC: 14
+;4B30BC: 10
+;4B30BC: 0C
+;4B30BC: 00
+;4B30BC: FC 33
+;4B30BC: F8 33
+;4B30BC: F4 33
+;4B30BC: F0 33
+;4B30BC: E0 33
+;4B30BC: D0 33 ;ultrawide, not as stretched
+;4B30BC: C0 33
+;4B30BC: B0 33
+;4B30BC: A0 33 ;potential ultrawide value, but stretchy
+;4B30BC: 90 33
+;4B30BC: 80 33
+;4B30BC: 70 33
+
+; You can try lower values if you really want to. Be sure to go down by 10s.
+; If the title is a black screen, then close the game and try another value.

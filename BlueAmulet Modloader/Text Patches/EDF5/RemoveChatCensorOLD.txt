@@ -1,0 +1,3 @@
+; Author: Souzooka
+: Original version.
+3EF7D2: EB

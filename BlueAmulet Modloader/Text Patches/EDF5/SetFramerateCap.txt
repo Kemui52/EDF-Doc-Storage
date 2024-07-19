@@ -1,0 +1,7 @@
+; Author: Souzooka
+; https://discord.com/channels/207292314064781312/599213952865665044/607206501224022016
+;60F598: 89 88 08 3C ; 1/120f
+60F598: 89 88 08 3D ;  1/30f
+;60F598: 89 88 88 3C ; 1/60f default
+
+;610A08: 00 00 ; NOP to disable Sleep function? doesn't seem to help 120fps

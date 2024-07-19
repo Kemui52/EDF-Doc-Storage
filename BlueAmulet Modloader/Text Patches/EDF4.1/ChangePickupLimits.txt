@@ -1,0 +1,5 @@
+; Author: FevGrave, Stafern
+1AE0D7: u32! 1024 ; Maximum number of pickups on a map at one time. Default 128
+
+1AF13D: u32! 2048 ;Maximum number of pickups per mission. Default 1024
+1AF165: u32! 2048 ;Synchronize with above value

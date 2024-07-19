@@ -1,0 +1,3 @@
+; Author: stafern
+; Removes the zoom-in while sprinting as Ranger.
+2E010A: 90 90 90 90 90 90 90 90

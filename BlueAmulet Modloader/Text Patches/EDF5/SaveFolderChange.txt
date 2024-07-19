@@ -1,0 +1,5 @@
+; Author FevGrave
+; EC3A0C + 1800 = 0xEC520C
+; HEX REP _MODSAVES
+; https://www.pcgamingwiki.com/wiki/Earth_Defense_Force_5#Configuration_file.28s.29_location
+EC520C: 5F 00 4D 00 4F 00 44 00 53 00 41 00 56 00 45 00 53 00 5C 00 00 00

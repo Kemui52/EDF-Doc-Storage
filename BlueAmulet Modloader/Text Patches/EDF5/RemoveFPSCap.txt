@@ -1,0 +1,5 @@
+; Author: BlueAmulet
+
+60FDDD: EB ; always jmp. default 75
+
+; Kemui52: Due to how the game works, the FPS cannot seem to increase much beyond 60. Some other techno-magic must still be in play.

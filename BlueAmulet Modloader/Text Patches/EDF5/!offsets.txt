@@ -1,0 +1,5 @@
+This is not a patch! This is a doc listing the address differences between the EXE and text patch offsets.
+EDF 5:
+      0 to  C957FF: +C00
+ C95800 to 10E7DFF: +1800
+10E7E00 to 11D15FF: +2200

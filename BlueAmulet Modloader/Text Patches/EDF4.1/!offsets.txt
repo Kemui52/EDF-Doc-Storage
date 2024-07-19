@@ -1,0 +1,5 @@
+This is not a patch! This is a doc listing the address differences between the EXE and text patch offsets.
+EDF 4.1:
+      0 to  916FFF: +C00
+ 917000 to  C2D1FF: +1000
+ C2D200 to  C83BFF: +1E00

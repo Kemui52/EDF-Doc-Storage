@@ -1,0 +1,2 @@
+; Author: BlueAmulet, inspired by Souzooka's censor removal patch
+358C70: EB 6E 90 90
