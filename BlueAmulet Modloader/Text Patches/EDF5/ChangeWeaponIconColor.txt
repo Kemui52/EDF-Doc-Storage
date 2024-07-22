@@ -1,0 +1,12 @@
+; Author: Auk233,redone
+118C2A0: f32! 0.0 ; Color R Default 0.0
+118C2A4: f32! 1.0 ; Color G Default 0.5
+118C2A8: f32! 0.5 ; Color B Default 1.0
+118C2AC: f32! 1.0 ; Alpha Default 1.0
+118C2B0: f32! 0.7 ; Color R When Reloading Default 0.7
+118C2B4: f32! 0.0 ; Color G When Reloading Default 0.0
+118C2B8: f32! 0.0 ; Color B When Reloading Default 0.0
+118C2BC: f32! 1.0 ; Alpha When Reloading Default 1.0
+
+
+;Kemui52: Changes only the weapon icon's hardcoded colors. Intended for matching with other UI mods, but can be used for customization.

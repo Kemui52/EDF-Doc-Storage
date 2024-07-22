@@ -1,0 +1,8 @@
+; Author: FevGrave
+; Remark: Changes Save folder name to "EDF4.M"
+; Added Offset + Source = Final Address: 0X1000 + A25134 = A26134
+; FOR EARTH DEFENSE FORCE: 4.1
+
+A26134: 45 00 44 00 46 00 34 00 2E 00 4D
+A261FC: 45 00 44 00 46 00 34 00 2E 00 4D
+A26704: 45 00 44 00 46 00 34 00 2E 00 4D
