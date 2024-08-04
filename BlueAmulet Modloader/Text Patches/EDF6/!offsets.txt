@@ -1,0 +1,5 @@
+This is not a patch! This is a doc listing the address differences between the EXE and text patch offsets.
+EDF 6 (EDF.dll):
+      0 to 174F9FF: +C00
+174FA00 to 1F4D5FF: +1600
+1F4D600 to 20ABC00: +1A00

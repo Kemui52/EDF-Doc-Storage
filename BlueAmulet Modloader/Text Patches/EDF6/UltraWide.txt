@@ -1,0 +1,19 @@
+; Author: Nynapi - found the addresses, Fevgrave - converted into txt patch
+; Added Offset + Source = Final Address: 0X1600 + 0x0180C7E8 = 180DDE8
+; FOR EARTH DEFENSE FORCE: 6
+
+; Screen Size | USE ONLY ONE 
+;180DDE8: AB AA AA 40 ; (5760x1080)
+180DDE8: 39 8E 63 40 ; (3840X1080, 5120x1440)
+;180DDE8: 9A 99 19 40 ; (3840x1600)
+;180DDE8: 8E E3 18 40 ; (3440x1440)
+;180DDE8: 26 B4 17 40 ; (2560x1080)
+;180DDE8: CD CC CC 3F ; (1280x800, 1920x1200, 2560x1600)
+;180DDE8: 55 55 D5 3F ; (1280x768)
+
+; Fix Chat Bubble Alignment
+17F2756: FA C3 00 00
+17F286C: 85 EB D1 3E
+
+; Change FOV Value
+1761A10: f32! 1.0 ;Default 0.7853982

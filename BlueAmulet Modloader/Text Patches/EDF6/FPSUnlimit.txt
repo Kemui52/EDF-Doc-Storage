@@ -1,0 +1,4 @@
+; Author: Souzooka
+; Caps the game to your screen's refresh rate.
+119F365: 90 90 90 90 90 90
+119F374: 90 90

@@ -1,0 +1,2 @@
+; Author: Nynapi
+1761A10: f32! 1.0 ;  Default 0.7853982

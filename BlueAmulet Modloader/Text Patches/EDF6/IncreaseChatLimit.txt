@@ -1,0 +1,7 @@
+; Author: Souzooka
+7D1243: s32! 128 ;set your character limit here.
+7D12F2: 90 90 90
+
+7D1330: 41 B8
+7D1332: s32! 672 ;chat window length. replace the number with other numbers to adjust to your liking.
+7D1336: 90

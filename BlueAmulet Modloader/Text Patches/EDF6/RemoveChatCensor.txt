@@ -1,0 +1,2 @@
+; Author: Souzooka, BlueAmulet
+71E4A2: 90 E9
