@@ -1,0 +1,4 @@
+; Author: MoistGoat
+; Removes automatic climbing over obstacles
+
+57BCF4: 90 90 90 90 90 90 90
