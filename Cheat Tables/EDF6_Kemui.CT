@@ -1818,7 +1818,7 @@ end );
           <AssemblerScript>[ENABLE]
 {$lua}
 --Press a key to switch shoulders, by Kemui52.
---The key or button to use is around lines 21 and 33 as a keycode or X360 state.
+--The key or button to use is around line 21 as a keycode or X360 state.
 local f = createForm( true )
 f.setCaption("Host for 3P Shoulder Switcher")
 local t = createTimer( f, true )
@@ -1835,7 +1835,7 @@ else
  InitialDelay = InitialDelay + 1
 end
 if ActWind == getForegroundProcess() then
---if isKeyPressed(109) then --numpad minus
+--if isKeyPressed(192) then --tilde key
 if getXBox360ControllerState().GAMEPAD_BACK == true then
  if SwopHeld == 0 then
   SwopHeld = 1
@@ -1846,13 +1846,29 @@ if getXBox360ControllerState().GAMEPAD_BACK == true then
   writeFloat(CamX, CamXVal * -1);
   writeFloat(LookX, LookXVal * -1);
  end
+else
+  SwopHeld = 0
 end
---if not isKeyPressed(109) then
-if not getXBox360ControllerState().GAMEPAD_BACK == true then
- SwopHeld = 0
 end
-end end );
+end );
+--[[
+    GAMEPAD_DPAD_UP : D-PAD Up (boolean)
+    GAMEPAD_DPAD_DOWN: D-PAD Down (boolean)
+    GAMEPAD_DPAD_LEFT: D-PAD Left (boolean)
+    GAMEPAD_DPAD_RIGHT: D-PAD Right (boolean)
+    GAMEPAD_START: Start button (boolean)
+    GAMEPAD_BACK: Back button (boolean)
+    GAMEPAD_LEFT_THUMB: Left thumb stick down (boolean)
+    GAMEPAD_RIGHT_THUMB: Right thumb stick down (boolean)
 
+    GAMEPAD_LEFT_SHOULDER: Left shoulder button (boolean)
+    GAMEPAD_RIGHT_SHOULDER: Right shoulder button (boolean)
+
+    GAMEPAD_A: A button (boolean)
+    GAMEPAD_B: B button (boolean)
+    GAMEPAD_X: X button (boolean)
+    GAMEPAD_Y: Y button (boolean)
+--]]
 {$asm}
 [DISABLE]
 
@@ -1926,18 +1942,6 @@ end end );
               <Address>+98</Address>
             </CheatEntry>
             <CheatEntry>
-              <ID>356764</ID>
-              <Description>"Float"</Description>
-              <VariableType>Float</VariableType>
-              <Address>+30C</Address>
-            </CheatEntry>
-            <CheatEntry>
-              <ID>356765</ID>
-              <Description>"4 Bytes"</Description>
-              <VariableType>4 Bytes</VariableType>
-              <Address>+31C</Address>
-            </CheatEntry>
-            <CheatEntry>
               <ID>1337192562</ID>
               <Description>"No. of UI Elements"</Description>
               <ShowAsSigned>0</ShowAsSigned>
@@ -1955,15 +1959,293 @@ end end );
             </CheatEntry>
             <CheatEntry>
               <ID>356887</ID>
-              <Description>"pick up radius?"</Description>
+              <Description>"Pickup Radius Min"</Description>
               <VariableType>Float</VariableType>
               <Address>+1B48</Address>
             </CheatEntry>
             <CheatEntry>
               <ID>356888</ID>
-              <Description>"pick up radius?"</Description>
+              <Description>"Pickup Radius"</Description>
               <VariableType>Float</VariableType>
               <Address>+1B4C</Address>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1337192613</ID>
+          <Description>"Control Stuff"</Description>
+          <Options moManualExpandCollapse="1"/>
+          <ShowAsHex>1</ShowAsHex>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>+0</Address>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>1337192598</ID>
+              <Description>"i'm controller"</Description>
+              <ShowAsHex>1</ShowAsHex>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>8 Bytes</VariableType>
+              <Address>+1540</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1337192601</ID>
+              <Description>"i'm object"</Description>
+              <ShowAsHex>1</ShowAsHex>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>8 Bytes</VariableType>
+              <Address>+1548</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1337192602</ID>
+              <Description>"i'm control"</Description>
+              <ShowAsHex>1</ShowAsHex>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>8 Bytes</VariableType>
+              <Address>+1550</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1337192611</ID>
+              <Description>"Control Parent?"</Description>
+              <ShowAsHex>1</ShowAsHex>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>8 Bytes</VariableType>
+              <Address>+30</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1337192620</ID>
+              <Description>"Player Parent?"</Description>
+              <ShowAsHex>1</ShowAsHex>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>8 Bytes</VariableType>
+              <Address>+340</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1337192621</ID>
+              <Description>"Player Parent?"</Description>
+              <ShowAsHex>1</ShowAsHex>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>8 Bytes</VariableType>
+              <Address>+340</Address>
+              <Offsets>
+                <Offset>0</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1337192599</ID>
+              <Description>"controller ptr"</Description>
+              <ShowAsHex>1</ShowAsHex>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>8 Bytes</VariableType>
+              <Address>+1540</Address>
+              <Offsets>
+                <Offset>0</Offset>
+              </Offsets>
+              <CheatEntries>
+                <CheatEntry>
+                  <ID>1337192600</ID>
+                  <Description>"controlling me"</Description>
+                  <ShowAsHex>1</ShowAsHex>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>8 Bytes</VariableType>
+                  <Address>+260</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>1337192612</ID>
+                  <Description>"Buttons Pressed"</Description>
+                  <DropDownList DisplayValueAsItem="1">01:A
+02:B
+04:X
+08:Y
+10:LB
+20:RB
+40:LStick
+80:RStick
+</DropDownList>
+                  <ShowAsHex>1</ShowAsHex>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Byte</VariableType>
+                  <Address>+2E8</Address>
+                </CheatEntry>
+              </CheatEntries>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1337192603</ID>
+              <Description>"object ptr"</Description>
+              <ShowAsHex>1</ShowAsHex>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>8 Bytes</VariableType>
+              <Address>+1548</Address>
+              <Offsets>
+                <Offset>0</Offset>
+              </Offsets>
+              <CheatEntries>
+                <CheatEntry>
+                  <ID>1337192610</ID>
+                  <Description>"Control Parent?"</Description>
+                  <ShowAsHex>1</ShowAsHex>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>8 Bytes</VariableType>
+                  <Address>+30</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>1337192605</ID>
+                  <Description>"Base Health"</Description>
+                  <VariableType>Float</VariableType>
+                  <Address>+2EC</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>1337192606</ID>
+                  <Description>"Max Health"</Description>
+                  <VariableType>Float</VariableType>
+                  <Address>+2F4</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>1337192607</ID>
+                  <Description>"Current Health"</Description>
+                  <VariableType>Float</VariableType>
+                  <Address>+2F8</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>1337192622</ID>
+                  <Description>"Player Parent?"</Description>
+                  <ShowAsHex>1</ShowAsHex>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>8 Bytes</VariableType>
+                  <Address>+340</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>1337192609</ID>
+                  <Description>"Controller Parent?"</Description>
+                  <ShowAsHex>1</ShowAsHex>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>8 Bytes</VariableType>
+                  <Address>+608</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>1337192608</ID>
+                  <Description>"Can Be Entered"</Description>
+                  <ShowAsHex>1</ShowAsHex>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Byte</VariableType>
+                  <Address>+618</Address>
+                </CheatEntry>
+              </CheatEntries>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1337192604</ID>
+              <Description>"control ptr"</Description>
+              <ShowAsHex>1</ShowAsHex>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>8 Bytes</VariableType>
+              <Address>+1550</Address>
+              <Offsets>
+                <Offset>0</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1337192623</ID>
+              <Description>"loose object"</Description>
+              <ShowAsHex>1</ShowAsHex>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>8 Bytes</VariableType>
+              <Address>1E301197EDC-2EC</Address>
+              <CheatEntries>
+                <CheatEntry>
+                  <ID>1337192624</ID>
+                  <Description>"Control Parent?"</Description>
+                  <ShowAsHex>1</ShowAsHex>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>8 Bytes</VariableType>
+                  <Address>+30</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>1337192625</ID>
+                  <Description>"Base Health"</Description>
+                  <VariableType>Float</VariableType>
+                  <Address>+2EC</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>1337192626</ID>
+                  <Description>"Max Health"</Description>
+                  <VariableType>Float</VariableType>
+                  <Address>+2F4</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>1337192627</ID>
+                  <Description>"Current Health"</Description>
+                  <VariableType>Float</VariableType>
+                  <Address>+2F8</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>1337192631</ID>
+                  <Description>"?"</Description>
+                  <DropDownList DisplayValueAsItem="1">00000000:event
+00000001:player
+</DropDownList>
+                  <ShowAsHex>1</ShowAsHex>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>4 Bytes</VariableType>
+                  <Address>+31C</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>1337192635</ID>
+                  <Description>"?"</Description>
+                  <DropDownList DisplayValueAsItem="1">00000000:player
+FFFFFFFF:event
+</DropDownList>
+                  <ShowAsHex>1</ShowAsHex>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>4 Bytes</VariableType>
+                  <Address>+338</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>1337192628</ID>
+                  <Description>"Player Parent?"</Description>
+                  <ShowAsHex>1</ShowAsHex>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <Color>008000</Color>
+                  <VariableType>8 Bytes</VariableType>
+                  <Address>+340</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>1337192632</ID>
+                  <Description>"?"</Description>
+                  <DropDownList DisplayValueAsItem="1">00000001:player
+FFFFFFFF:event
+</DropDownList>
+                  <ShowAsHex>1</ShowAsHex>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>4 Bytes</VariableType>
+                  <Address>+34C</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>1337192633</ID>
+                  <Description>"?"</Description>
+                  <DropDownList DisplayValueAsItem="1">0000000B:player
+0000000E:player
+FFFFFFFF:event
+</DropDownList>
+                  <ShowAsHex>1</ShowAsHex>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>4 Bytes</VariableType>
+                  <Address>+350</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>1337192634</ID>
+                  <Description>"Control Flags?"</Description>
+                  <DropDownList DisplayValueAsItem="1">00000001:Controllable!
+00000101:player
+00000100:player
+00000000:event
+</DropDownList>
+                  <ShowAsHex>1</ShowAsHex>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <Color>008000</Color>
+                  <VariableType>4 Bytes</VariableType>
+                  <Address>+354</Address>
+                </CheatEntry>
+              </CheatEntries>
             </CheatEntry>
           </CheatEntries>
         </CheatEntry>
@@ -2696,8 +2978,42 @@ end end );
         </CheatEntry>
       </CheatEntries>
     </CheatEntry>
+    <CheatEntry>
+      <ID>1337192614</ID>
+      <Description>"No description"</Description>
+      <VariableType>Float</VariableType>
+      <Address>26AD6D892CC</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>1337192615</ID>
+      <Description>"No description"</Description>
+      <VariableType>Float</VariableType>
+      <Address>26AD6D89614</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>1337192616</ID>
+      <Description>"No description"</Description>
+      <VariableType>Float</VariableType>
+      <Address>26AD6D8A094</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>1337192617</ID>
+      <Description>"No description"</Description>
+      <VariableType>Float</VariableType>
+      <Address>26AD6D8AB14</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>1337192618</ID>
+      <Description>"No description"</Description>
+      <VariableType>Float</VariableType>
+      <Address>26AD6D8B594</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>1337192619</ID>
+      <Description>"No description"</Description>
+      <VariableType>Float</VariableType>
+      <Address>26AD6D8EEEC</Address>
+    </CheatEntry>
   </CheatEntries>
   <UserdefinedSymbols/>
-  <LuaScript>
-</LuaScript>
 </CheatTable>
