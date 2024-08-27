@@ -1973,723 +1973,6 @@ end );
           </CheatEntries>
         </CheatEntry>
         <CheatEntry>
-          <ID>1337192613</ID>
-          <Description>"Control Stuff"</Description>
-          <Options moManualExpandCollapse="1"/>
-          <ShowAsHex>1</ShowAsHex>
-          <ShowAsSigned>0</ShowAsSigned>
-          <VariableType>4 Bytes</VariableType>
-          <Address>+0</Address>
-          <CheatEntries>
-            <CheatEntry>
-              <ID>1337192598</ID>
-              <Description>"i'm controller"</Description>
-              <ShowAsHex>1</ShowAsHex>
-              <ShowAsSigned>0</ShowAsSigned>
-              <VariableType>8 Bytes</VariableType>
-              <Address>+1540</Address>
-            </CheatEntry>
-            <CheatEntry>
-              <ID>1337192601</ID>
-              <Description>"i'm object"</Description>
-              <ShowAsHex>1</ShowAsHex>
-              <ShowAsSigned>0</ShowAsSigned>
-              <VariableType>8 Bytes</VariableType>
-              <Address>+1548</Address>
-            </CheatEntry>
-            <CheatEntry>
-              <ID>1337192602</ID>
-              <Description>"i'm control (ui)"</Description>
-              <ShowAsHex>1</ShowAsHex>
-              <ShowAsSigned>0</ShowAsSigned>
-              <VariableType>8 Bytes</VariableType>
-              <Address>+1550</Address>
-            </CheatEntry>
-            <CheatEntry>
-              <ID>1337192611</ID>
-              <Description>"Control Parent?"</Description>
-              <ShowAsHex>1</ShowAsHex>
-              <ShowAsSigned>0</ShowAsSigned>
-              <VariableType>8 Bytes</VariableType>
-              <Address>+30</Address>
-            </CheatEntry>
-            <CheatEntry>
-              <ID>1337192620</ID>
-              <Description>"Player Parent"</Description>
-              <ShowAsHex>1</ShowAsHex>
-              <ShowAsSigned>0</ShowAsSigned>
-              <Color>008000</Color>
-              <VariableType>8 Bytes</VariableType>
-              <Address>+340</Address>
-            </CheatEntry>
-            <CheatEntry>
-              <ID>1337192621</ID>
-              <Description>"Player Parent ptr"</Description>
-              <ShowAsHex>1</ShowAsHex>
-              <ShowAsSigned>0</ShowAsSigned>
-              <VariableType>8 Bytes</VariableType>
-              <Address>+340</Address>
-              <Offsets>
-                <Offset>0</Offset>
-              </Offsets>
-            </CheatEntry>
-            <CheatEntry>
-              <ID>1337192599</ID>
-              <Description>"controller ptr"</Description>
-              <ShowAsHex>1</ShowAsHex>
-              <ShowAsSigned>0</ShowAsSigned>
-              <VariableType>8 Bytes</VariableType>
-              <Address>+1540</Address>
-              <Offsets>
-                <Offset>0</Offset>
-              </Offsets>
-              <CheatEntries>
-                <CheatEntry>
-                  <ID>1337192600</ID>
-                  <Description>"my object"</Description>
-                  <ShowAsHex>1</ShowAsHex>
-                  <ShowAsSigned>0</ShowAsSigned>
-                  <VariableType>8 Bytes</VariableType>
-                  <Address>+8</Address>
-                </CheatEntry>
-                <CheatEntry>
-                  <ID>1337192695</ID>
-                  <Description>"controlling me"</Description>
-                  <ShowAsHex>1</ShowAsHex>
-                  <ShowAsSigned>0</ShowAsSigned>
-                  <VariableType>8 Bytes</VariableType>
-                  <Address>+260</Address>
-                </CheatEntry>
-                <CheatEntry>
-                  <ID>1337192612</ID>
-                  <Description>"Buttons Pressed"</Description>
-                  <DropDownList DisplayValueAsItem="1">01:A
-02:B
-04:X
-08:Y
-10:LB
-20:RB
-40:LStick
-80:RStick
-</DropDownList>
-                  <ShowAsHex>1</ShowAsHex>
-                  <ShowAsSigned>0</ShowAsSigned>
-                  <VariableType>Byte</VariableType>
-                  <Address>+2E8</Address>
-                </CheatEntry>
-              </CheatEntries>
-            </CheatEntry>
-            <CheatEntry>
-              <ID>1337192603</ID>
-              <Description>"object ptr"</Description>
-              <ShowAsHex>1</ShowAsHex>
-              <ShowAsSigned>0</ShowAsSigned>
-              <VariableType>8 Bytes</VariableType>
-              <Address>+1548</Address>
-              <Offsets>
-                <Offset>0</Offset>
-              </Offsets>
-              <CheatEntries>
-                <CheatEntry>
-                  <ID>1337192610</ID>
-                  <Description>"Control Parent?"</Description>
-                  <ShowAsHex>1</ShowAsHex>
-                  <ShowAsSigned>0</ShowAsSigned>
-                  <VariableType>8 Bytes</VariableType>
-                  <Address>+30</Address>
-                </CheatEntry>
-                <CheatEntry>
-                  <ID>1337192605</ID>
-                  <Description>"Base Health"</Description>
-                  <VariableType>Float</VariableType>
-                  <Address>+2EC</Address>
-                </CheatEntry>
-                <CheatEntry>
-                  <ID>1337192606</ID>
-                  <Description>"Max Health"</Description>
-                  <VariableType>Float</VariableType>
-                  <Address>+2F4</Address>
-                </CheatEntry>
-                <CheatEntry>
-                  <ID>1337192607</ID>
-                  <Description>"Current Health"</Description>
-                  <VariableType>Float</VariableType>
-                  <Address>+2F8</Address>
-                </CheatEntry>
-                <CheatEntry>
-                  <ID>1337192622</ID>
-                  <Description>"Player Parent?"</Description>
-                  <ShowAsHex>1</ShowAsHex>
-                  <ShowAsSigned>0</ShowAsSigned>
-                  <VariableType>8 Bytes</VariableType>
-                  <Address>+340</Address>
-                </CheatEntry>
-                <CheatEntry>
-                  <ID>1337192609</ID>
-                  <Description>"Controller Parent?"</Description>
-                  <ShowAsHex>1</ShowAsHex>
-                  <ShowAsSigned>0</ShowAsSigned>
-                  <VariableType>8 Bytes</VariableType>
-                  <Address>+608</Address>
-                </CheatEntry>
-                <CheatEntry>
-                  <ID>1337192608</ID>
-                  <Description>"Can Be Entered"</Description>
-                  <ShowAsHex>1</ShowAsHex>
-                  <ShowAsSigned>0</ShowAsSigned>
-                  <VariableType>Byte</VariableType>
-                  <Address>+618</Address>
-                </CheatEntry>
-              </CheatEntries>
-            </CheatEntry>
-            <CheatEntry>
-              <ID>1337192604</ID>
-              <Description>"control (ui) ptr"</Description>
-              <ShowAsHex>1</ShowAsHex>
-              <ShowAsSigned>0</ShowAsSigned>
-              <VariableType>8 Bytes</VariableType>
-              <Address>+1550</Address>
-              <Offsets>
-                <Offset>0</Offset>
-              </Offsets>
-            </CheatEntry>
-            <CheatEntry>
-              <ID>1337192623</ID>
-              <Description>"loose object"</Description>
-              <ShowAsHex>1</ShowAsHex>
-              <ShowAsSigned>0</ShowAsSigned>
-              <VariableType>8 Bytes</VariableType>
-              <Address>1629E04AB6C-2EC</Address>
-              <CheatEntries>
-                <CheatEntry>
-                  <ID>1337192640</ID>
-                  <Description>"Control Parent?"</Description>
-                  <ShowAsHex>1</ShowAsHex>
-                  <ShowAsSigned>0</ShowAsSigned>
-                  <VariableType>8 Bytes</VariableType>
-                  <Address>+30</Address>
-                </CheatEntry>
-                <CheatEntry>
-                  <ID>1337192625</ID>
-                  <Description>"Base Health"</Description>
-                  <VariableType>Float</VariableType>
-                  <Address>+2EC</Address>
-                </CheatEntry>
-                <CheatEntry>
-                  <ID>1337192626</ID>
-                  <Description>"Max Health"</Description>
-                  <VariableType>Float</VariableType>
-                  <Address>+2F4</Address>
-                </CheatEntry>
-                <CheatEntry>
-                  <ID>1337192627</ID>
-                  <Description>"Current Health"</Description>
-                  <VariableType>Float</VariableType>
-                  <Address>+2F8</Address>
-                </CheatEntry>
-                <CheatEntry>
-                  <ID>1337192636</ID>
-                  <Description>"Team Damage Byte"</Description>
-                  <DropDownList DisplayValueAsItem="1">00:default
-01:alien team, no aliens on radar
-03:friend and foe to both
-</DropDownList>
-                  <ShowAsHex>1</ShowAsHex>
-                  <ShowAsSigned>0</ShowAsSigned>
-                  <VariableType>4 Bytes</VariableType>
-                  <Address>+314</Address>
-                </CheatEntry>
-                <CheatEntry>
-                  <ID>1337192637</ID>
-                  <Description>"Team React Byte"</Description>
-                  <DropDownList DisplayValueAsItem="1">00:default
-01:alien team
-03:friend and foe to both
-</DropDownList>
-                  <ShowAsHex>1</ShowAsHex>
-                  <ShowAsSigned>0</ShowAsSigned>
-                  <VariableType>4 Bytes</VariableType>
-                  <Address>+318</Address>
-                </CheatEntry>
-                <CheatEntry>
-                  <ID>1337192631</ID>
-                  <Description>"?"</Description>
-                  <DropDownList DisplayValueAsItem="1">00000000:event
-00000001:player
-</DropDownList>
-                  <ShowAsHex>1</ShowAsHex>
-                  <ShowAsSigned>0</ShowAsSigned>
-                  <VariableType>4 Bytes</VariableType>
-                  <Address>+31C</Address>
-                </CheatEntry>
-                <CheatEntry>
-                  <ID>1337192635</ID>
-                  <Description>"?"</Description>
-                  <DropDownList DisplayValueAsItem="1">00000000:player
-FFFFFFFF:event
-</DropDownList>
-                  <ShowAsHex>1</ShowAsHex>
-                  <ShowAsSigned>0</ShowAsSigned>
-                  <VariableType>4 Bytes</VariableType>
-                  <Address>+338</Address>
-                </CheatEntry>
-                <CheatEntry>
-                  <ID>1337192628</ID>
-                  <Description>"Player Parent"</Description>
-                  <ShowAsHex>1</ShowAsHex>
-                  <ShowAsSigned>0</ShowAsSigned>
-                  <Color>008000</Color>
-                  <VariableType>8 Bytes</VariableType>
-                  <Address>+340</Address>
-                </CheatEntry>
-                <CheatEntry>
-                  <ID>1337192632</ID>
-                  <Description>"?"</Description>
-                  <DropDownList DisplayValueAsItem="1">00000001:player
-FFFFFFFF:event
-</DropDownList>
-                  <ShowAsHex>1</ShowAsHex>
-                  <ShowAsSigned>0</ShowAsSigned>
-                  <VariableType>4 Bytes</VariableType>
-                  <Address>+34C</Address>
-                </CheatEntry>
-                <CheatEntry>
-                  <ID>1337192638</ID>
-                  <Description>"?"</Description>
-                  <DropDownList DisplayValueAsItem="1">0000000B:player
-0000000E:player
-FFFFFFFF:event
-</DropDownList>
-                  <ShowAsHex>1</ShowAsHex>
-                  <ShowAsSigned>0</ShowAsSigned>
-                  <VariableType>4 Bytes</VariableType>
-                  <Address>+350</Address>
-                </CheatEntry>
-                <CheatEntry>
-                  <ID>1337192634</ID>
-                  <Description>"Control Flags"</Description>
-                  <DropDownList DisplayValueAsItem="1">00000101:player
-00000100:player paused
-00000001:Controllable!
-00000000:event
-</DropDownList>
-                  <ShowAsHex>1</ShowAsHex>
-                  <ShowAsSigned>0</ShowAsSigned>
-                  <Color>008000</Color>
-                  <VariableType>4 Bytes</VariableType>
-                  <Address>+354</Address>
-                </CheatEntry>
-                <CheatEntry>
-                  <ID>1337192633</ID>
-                  <Description>"ptr"</Description>
-                  <DropDownList DisplayValueAsItem="1">0000000B:player
-0000000E:player
-FFFFFFFF:event
-</DropDownList>
-                  <ShowAsHex>1</ShowAsHex>
-                  <ShowAsSigned>0</ShowAsSigned>
-                  <VariableType>4 Bytes</VariableType>
-                  <Address>+d18</Address>
-                  <Offsets>
-                    <Offset>0</Offset>
-                    <Offset>0</Offset>
-                  </Offsets>
-                </CheatEntry>
-                <CheatEntry>
-                  <ID>1337192644</ID>
-                  <Description>"mon controller in object?"</Description>
-                  <ShowAsHex>1</ShowAsHex>
-                  <ShowAsSigned>0</ShowAsSigned>
-                  <VariableType>8 Bytes</VariableType>
-                  <Address>+0</Address>
-                  <CheatEntries>
-                    <CheatEntry>
-                      <ID>1337192658</ID>
-                      <Description>"pointerscan result"</Description>
-                      <ShowAsHex>1</ShowAsHex>
-                      <ShowAsSigned>0</ShowAsSigned>
-                      <VariableType>8 Bytes</VariableType>
-                      <Address>+E98</Address>
-                      <Offsets>
-                        <Offset>8</Offset>
-                        <Offset>10</Offset>
-                        <Offset>20</Offset>
-                        <Offset>F8</Offset>
-                        <Offset>118</Offset>
-                        <Offset>0</Offset>
-                      </Offsets>
-                    </CheatEntry>
-                    <CheatEntry>
-                      <ID>1337192659</ID>
-                      <Description>"pointerscan result"</Description>
-                      <ShowAsHex>1</ShowAsHex>
-                      <ShowAsSigned>0</ShowAsSigned>
-                      <VariableType>8 Bytes</VariableType>
-                      <Address>+E98</Address>
-                      <Offsets>
-                        <Offset>8</Offset>
-                        <Offset>10</Offset>
-                        <Offset>20</Offset>
-                        <Offset>138</Offset>
-                        <Offset>118</Offset>
-                        <Offset>0</Offset>
-                      </Offsets>
-                    </CheatEntry>
-                    <CheatEntry>
-                      <ID>1337192660</ID>
-                      <Description>"pointerscan result"</Description>
-                      <ShowAsHex>1</ShowAsHex>
-                      <ShowAsSigned>0</ShowAsSigned>
-                      <VariableType>8 Bytes</VariableType>
-                      <Address>+E98</Address>
-                      <Offsets>
-                        <Offset>8</Offset>
-                        <Offset>10</Offset>
-                        <Offset>20</Offset>
-                        <Offset>1B8</Offset>
-                        <Offset>118</Offset>
-                        <Offset>0</Offset>
-                      </Offsets>
-                    </CheatEntry>
-                    <CheatEntry>
-                      <ID>1337192662</ID>
-                      <Description>"pointerscan result"</Description>
-                      <ShowAsHex>1</ShowAsHex>
-                      <ShowAsSigned>0</ShowAsSigned>
-                      <VariableType>8 Bytes</VariableType>
-                      <Address>+E98</Address>
-                      <Offsets>
-                        <Offset>8</Offset>
-                        <Offset>10</Offset>
-                        <Offset>20</Offset>
-                        <Offset>178</Offset>
-                        <Offset>118</Offset>
-                        <Offset>0</Offset>
-                      </Offsets>
-                    </CheatEntry>
-                    <CheatEntry>
-                      <ID>1337192663</ID>
-                      <Description>"pointerscan result"</Description>
-                      <ShowAsHex>1</ShowAsHex>
-                      <ShowAsSigned>0</ShowAsSigned>
-                      <VariableType>8 Bytes</VariableType>
-                      <Address>+E98</Address>
-                      <Offsets>
-                        <Offset>8</Offset>
-                        <Offset>10</Offset>
-                        <Offset>20</Offset>
-                        <Offset>1F8</Offset>
-                        <Offset>118</Offset>
-                        <Offset>0</Offset>
-                      </Offsets>
-                    </CheatEntry>
-                    <CheatEntry>
-                      <ID>1337192664</ID>
-                      <Description>"pointerscan result"</Description>
-                      <ShowAsHex>1</ShowAsHex>
-                      <ShowAsSigned>0</ShowAsSigned>
-                      <VariableType>8 Bytes</VariableType>
-                      <Address>+E98</Address>
-                      <Offsets>
-                        <Offset>8</Offset>
-                        <Offset>10</Offset>
-                        <Offset>20</Offset>
-                        <Offset>B8</Offset>
-                        <Offset>1A0</Offset>
-                        <Offset>C8</Offset>
-                        <Offset>0</Offset>
-                      </Offsets>
-                    </CheatEntry>
-                    <CheatEntry>
-                      <ID>1337192671</ID>
-                      <Description>"pointerscan result"</Description>
-                      <ShowAsHex>1</ShowAsHex>
-                      <ShowAsSigned>0</ShowAsSigned>
-                      <VariableType>8 Bytes</VariableType>
-                      <Address>+E98</Address>
-                      <Offsets>
-                        <Offset>8</Offset>
-                        <Offset>10</Offset>
-                        <Offset>20</Offset>
-                        <Offset>F8</Offset>
-                        <Offset>1A0</Offset>
-                        <Offset>C8</Offset>
-                        <Offset>0</Offset>
-                      </Offsets>
-                    </CheatEntry>
-                    <CheatEntry>
-                      <ID>1337192672</ID>
-                      <Description>"pointerscan result"</Description>
-                      <ShowAsHex>1</ShowAsHex>
-                      <ShowAsSigned>0</ShowAsSigned>
-                      <VariableType>8 Bytes</VariableType>
-                      <Address>+EA0</Address>
-                      <Offsets>
-                        <Offset>8</Offset>
-                        <Offset>10</Offset>
-                        <Offset>20</Offset>
-                        <Offset>F8</Offset>
-                        <Offset>118</Offset>
-                        <Offset>0</Offset>
-                        <Offset>10</Offset>
-                      </Offsets>
-                    </CheatEntry>
-                    <CheatEntry>
-                      <ID>1337192673</ID>
-                      <Description>"pointerscan result"</Description>
-                      <ShowAsHex>1</ShowAsHex>
-                      <ShowAsSigned>0</ShowAsSigned>
-                      <VariableType>8 Bytes</VariableType>
-                      <Address>+EA0</Address>
-                      <Offsets>
-                        <Offset>8</Offset>
-                        <Offset>10</Offset>
-                        <Offset>20</Offset>
-                        <Offset>138</Offset>
-                        <Offset>118</Offset>
-                        <Offset>0</Offset>
-                        <Offset>10</Offset>
-                      </Offsets>
-                    </CheatEntry>
-                    <CheatEntry>
-                      <ID>1337192674</ID>
-                      <Description>"pointerscan result"</Description>
-                      <ShowAsHex>1</ShowAsHex>
-                      <ShowAsSigned>0</ShowAsSigned>
-                      <VariableType>8 Bytes</VariableType>
-                      <Address>+EA0</Address>
-                      <Offsets>
-                        <Offset>8</Offset>
-                        <Offset>10</Offset>
-                        <Offset>20</Offset>
-                        <Offset>1B8</Offset>
-                        <Offset>118</Offset>
-                        <Offset>0</Offset>
-                        <Offset>10</Offset>
-                      </Offsets>
-                    </CheatEntry>
-                    <CheatEntry>
-                      <ID>1337192676</ID>
-                      <Description>"pointerscan result"</Description>
-                      <ShowAsHex>1</ShowAsHex>
-                      <ShowAsSigned>0</ShowAsSigned>
-                      <VariableType>8 Bytes</VariableType>
-                      <Address>+EA0</Address>
-                      <Offsets>
-                        <Offset>8</Offset>
-                        <Offset>10</Offset>
-                        <Offset>20</Offset>
-                        <Offset>178</Offset>
-                        <Offset>118</Offset>
-                        <Offset>0</Offset>
-                        <Offset>10</Offset>
-                      </Offsets>
-                    </CheatEntry>
-                    <CheatEntry>
-                      <ID>1337192677</ID>
-                      <Description>"pointerscan result"</Description>
-                      <ShowAsHex>1</ShowAsHex>
-                      <ShowAsSigned>0</ShowAsSigned>
-                      <VariableType>8 Bytes</VariableType>
-                      <Address>+EA0</Address>
-                      <Offsets>
-                        <Offset>8</Offset>
-                        <Offset>10</Offset>
-                        <Offset>20</Offset>
-                        <Offset>1F8</Offset>
-                        <Offset>118</Offset>
-                        <Offset>0</Offset>
-                        <Offset>10</Offset>
-                      </Offsets>
-                    </CheatEntry>
-                    <CheatEntry>
-                      <ID>1337192678</ID>
-                      <Description>"pointerscan result"</Description>
-                      <ShowAsHex>1</ShowAsHex>
-                      <ShowAsSigned>0</ShowAsSigned>
-                      <VariableType>8 Bytes</VariableType>
-                      <Address>+1120</Address>
-                      <Offsets>
-                        <Offset>8</Offset>
-                        <Offset>10</Offset>
-                        <Offset>20</Offset>
-                        <Offset>B8</Offset>
-                        <Offset>1A0</Offset>
-                        <Offset>28</Offset>
-                      </Offsets>
-                    </CheatEntry>
-                    <CheatEntry>
-                      <ID>1337192679</ID>
-                      <Description>"pointerscan result"</Description>
-                      <ShowAsHex>1</ShowAsHex>
-                      <ShowAsSigned>0</ShowAsSigned>
-                      <VariableType>8 Bytes</VariableType>
-                      <Address>+1120</Address>
-                      <Offsets>
-                        <Offset>8</Offset>
-                        <Offset>10</Offset>
-                        <Offset>20</Offset>
-                        <Offset>F8</Offset>
-                        <Offset>1A0</Offset>
-                        <Offset>28</Offset>
-                      </Offsets>
-                    </CheatEntry>
-                    <CheatEntry>
-                      <ID>1337192680</ID>
-                      <Description>"pointerscan result"</Description>
-                      <ShowAsHex>1</ShowAsHex>
-                      <ShowAsSigned>0</ShowAsSigned>
-                      <VariableType>8 Bytes</VariableType>
-                      <Address>+1120</Address>
-                      <Offsets>
-                        <Offset>8</Offset>
-                        <Offset>10</Offset>
-                        <Offset>20</Offset>
-                        <Offset>B8</Offset>
-                        <Offset>58</Offset>
-                        <Offset>10</Offset>
-                        <Offset>28</Offset>
-                      </Offsets>
-                    </CheatEntry>
-                    <CheatEntry>
-                      <ID>1337192681</ID>
-                      <Description>"pointerscan result"</Description>
-                      <ShowAsHex>1</ShowAsHex>
-                      <ShowAsSigned>0</ShowAsSigned>
-                      <VariableType>8 Bytes</VariableType>
-                      <Address>+1120</Address>
-                      <Offsets>
-                        <Offset>8</Offset>
-                        <Offset>10</Offset>
-                        <Offset>20</Offset>
-                        <Offset>B8</Offset>
-                        <Offset>58</Offset>
-                        <Offset>18</Offset>
-                        <Offset>30</Offset>
-                      </Offsets>
-                    </CheatEntry>
-                    <CheatEntry>
-                      <ID>1337192682</ID>
-                      <Description>"pointerscan result"</Description>
-                      <ShowAsHex>1</ShowAsHex>
-                      <ShowAsSigned>0</ShowAsSigned>
-                      <VariableType>8 Bytes</VariableType>
-                      <Address>+1120</Address>
-                      <Offsets>
-                        <Offset>8</Offset>
-                        <Offset>10</Offset>
-                        <Offset>20</Offset>
-                        <Offset>B8</Offset>
-                        <Offset>198</Offset>
-                        <Offset>148</Offset>
-                        <Offset>28</Offset>
-                      </Offsets>
-                    </CheatEntry>
-                    <CheatEntry>
-                      <ID>1337192683</ID>
-                      <Description>"pointerscan result"</Description>
-                      <ShowAsHex>1</ShowAsHex>
-                      <ShowAsSigned>0</ShowAsSigned>
-                      <VariableType>8 Bytes</VariableType>
-                      <Address>+1120</Address>
-                      <Offsets>
-                        <Offset>8</Offset>
-                        <Offset>10</Offset>
-                        <Offset>20</Offset>
-                        <Offset>F8</Offset>
-                        <Offset>58</Offset>
-                        <Offset>10</Offset>
-                        <Offset>28</Offset>
-                      </Offsets>
-                    </CheatEntry>
-                    <CheatEntry>
-                      <ID>1337192684</ID>
-                      <Description>"pointerscan result"</Description>
-                      <ShowAsHex>1</ShowAsHex>
-                      <ShowAsSigned>0</ShowAsSigned>
-                      <VariableType>8 Bytes</VariableType>
-                      <Address>+1120</Address>
-                      <Offsets>
-                        <Offset>8</Offset>
-                        <Offset>10</Offset>
-                        <Offset>20</Offset>
-                        <Offset>F8</Offset>
-                        <Offset>58</Offset>
-                        <Offset>18</Offset>
-                        <Offset>30</Offset>
-                      </Offsets>
-                    </CheatEntry>
-                    <CheatEntry>
-                      <ID>1337192685</ID>
-                      <Description>"pointerscan result"</Description>
-                      <ShowAsHex>1</ShowAsHex>
-                      <ShowAsSigned>0</ShowAsSigned>
-                      <VariableType>8 Bytes</VariableType>
-                      <Address>+1120</Address>
-                      <Offsets>
-                        <Offset>8</Offset>
-                        <Offset>10</Offset>
-                        <Offset>20</Offset>
-                        <Offset>F8</Offset>
-                        <Offset>198</Offset>
-                        <Offset>148</Offset>
-                        <Offset>28</Offset>
-                      </Offsets>
-                    </CheatEntry>
-                  </CheatEntries>
-                </CheatEntry>
-              </CheatEntries>
-            </CheatEntry>
-            <CheatEntry>
-              <ID>1337192795</ID>
-              <Description>"Camera ptr"</Description>
-              <ShowAsHex>1</ShowAsHex>
-              <ShowAsSigned>0</ShowAsSigned>
-              <VariableType>8 Bytes</VariableType>
-              <Address>+0</Address>
-              <CheatEntries>
-                <CheatEntry>
-                  <ID>1337192802</ID>
-                  <Description>"pointerscan result"</Description>
-                  <ShowAsHex>1</ShowAsHex>
-                  <ShowAsSigned>0</ShowAsSigned>
-                  <VariableType>8 Bytes</VariableType>
-                  <Address>+10</Address>
-                  <Offsets>
-                    <Offset>350</Offset>
-                    <Offset>3A8</Offset>
-                    <Offset>10</Offset>
-                    <Offset>18</Offset>
-                    <Offset>0</Offset>
-                    <Offset>1D8</Offset>
-                    <Offset>88</Offset>
-                  </Offsets>
-                  <CheatEntries>
-                    <CheatEntry>
-                      <ID>1337192845</ID>
-                      <Description>"Following Object"</Description>
-                      <ShowAsHex>1</ShowAsHex>
-                      <ShowAsSigned>0</ShowAsSigned>
-                      <Color>008000</Color>
-                      <VariableType>8 Bytes</VariableType>
-                      <Address>+0</Address>
-                    </CheatEntry>
-                    <CheatEntry>
-                      <ID>1337192846</ID>
-                      <Description>"Interactibles Object"</Description>
-                      <ShowAsHex>1</ShowAsHex>
-                      <ShowAsSigned>0</ShowAsSigned>
-                      <Color>0000FF</Color>
-                      <VariableType>8 Bytes</VariableType>
-                      <Address>+10</Address>
-                    </CheatEntry>
-                  </CheatEntries>
-                </CheatEntry>
-              </CheatEntries>
-            </CheatEntry>
-          </CheatEntries>
-        </CheatEntry>
-        <CheatEntry>
           <ID>517</ID>
           <Description>"Camera Stuff"</Description>
           <Options moManualExpandCollapse="1"/>
@@ -2951,6 +2234,549 @@ FFFFFFFF:event
                   <Color>0000FF</Color>
                   <VariableType>Float</VariableType>
                   <Address>+B38</Address>
+                </CheatEntry>
+              </CheatEntries>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1337192613</ID>
+          <Description>"Control Stuff"</Description>
+          <Options moManualExpandCollapse="1"/>
+          <ShowAsHex>1</ShowAsHex>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>+0</Address>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>1337192850</ID>
+              <Description>"Step 1. Paste the loose object's Base Health address into here."</Description>
+              <GroupHeader>1</GroupHeader>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1337192598</ID>
+              <Description>"Loose Base Health"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <Color>008000</Color>
+              <VariableType>Float</VariableType>
+              <Address>2059CF58FBC</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1337192851</ID>
+              <Description>"Step 2. Tick the script below!!"</Description>
+              <GroupHeader>1</GroupHeader>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1337192848</ID>
+              <Description>"Play as Loose Object"</Description>
+              <Color>008000</Color>
+              <VariableType>Auto Assembler Script</VariableType>
+              <AssemblerScript>[ENABLE]
+{$lua}
+--Automatically sets up a playable monster,
+--by Kemui52.
+local addrPlayerParentSource = GetAddress(AddressList.getMemoryRecordByDescription("Player Parent (Source)").AddressString)
+local valuPlayerParentSource = readQword(addrPlayerParentSource)
+local addrLooseObject = GetAddress(AddressList.getMemoryRecordByDescription("Loose Object").AddressString)
+local addrPlayerParentLoose = 0x340 --GetAddress(AddressList.getMemoryRecordByDescription("Player Parent (Loose)").AddressString)
+local addrControlFlagsLoose = 0x354 --GetAddress(AddressList.getMemoryRecordByDescription("Control Flags (Loose)").AddressString)
+local addrCameraFollowingObject = GetAddress(AddressList.getMemoryRecordByDescription("Following Object").AddressString)
+
+if ReadQword(addrLooseObject) ~= nil and
+   ReadQword(addrPlayerParentSource) ~= nil and
+   valuPlayerParentSource ~= 0 then
+--Give monster player controls.
+ writeQword(addrLooseObject+addrPlayerParentLoose, valuPlayerParentSource)
+ writeInteger(addrLooseObject+addrControlFlagsLoose, 1)
+--Remove player's controls.
+ writeQword(addrPlayerParentSource, 0)
+--Attach camera to monster.
+ writeQword(addrCameraFollowingObject, addrLooseObject)
+else
+ showMessage("Failed to start. Is the Loose Object section filled out?")
+end
+{$asm}
+[DISABLE]
+{$lua}
+local addrPlayerParentSource = GetAddress(AddressList.getMemoryRecordByDescription("Player Parent (Source)").AddressString)
+local addrLooseObject = GetAddress(AddressList.getMemoryRecordByDescription("Loose Object").AddressString)
+local addrPlayerParentLoose = 0x340 --GetAddress(AddressList.getMemoryRecordByDescription("Player Parent (Loose)").AddressString)
+local addrControlFlagsLoose = 0x354 --GetAddress(AddressList.getMemoryRecordByDescription("Control Flags (Loose)").AddressString)
+local valuPlayerParentSource = readQword(addrLooseObject+addrPlayerParentLoose)
+local addrCameraFollowingObject = GetAddress(AddressList.getMemoryRecordByDescription("Following Object").AddressString)
+
+if ReadQword(addrLooseObject) then
+--Remove monster player controls.
+ writeQword(addrLooseObject+addrPlayerParentLoose, 0)
+ writeInteger(addrLooseObject+addrControlFlagsLoose, 0)
+--Return player's controls.
+ if ReadQword(addrPlayerParentSource) then
+  if valuPlayerParentSource ~= 0 then
+   writeQword(addrPlayerParentSource, valuPlayerParentSource)
+  end
+--Attach camera to player.
+  if ReadQword(addrCameraFollowingObject) then
+   writeQword(addrCameraFollowingObject, addrPlayerParentSource-addrPlayerParentLoose)
+  end
+ end
+end
+
+</AssemblerScript>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1337192865</ID>
+              <Description>"(Wait for this section below to render correctly, the address table can lag behind)"</Description>
+              <GroupHeader>1</GroupHeader>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1337192623</ID>
+              <Description>"Loose Object"</Description>
+              <ShowAsHex>1</ShowAsHex>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>8 Bytes</VariableType>
+              <Address>(Loose Base Health)-2EC</Address>
+              <CheatEntries>
+                <CheatEntry>
+                  <ID>1337192640</ID>
+                  <Description>"Control Parent?"</Description>
+                  <ShowAsHex>1</ShowAsHex>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>8 Bytes</VariableType>
+                  <Address>+30</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>1337192625</ID>
+                  <Description>"Base Health"</Description>
+                  <VariableType>Float</VariableType>
+                  <Address>+2EC</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>1337192626</ID>
+                  <Description>"Max Health"</Description>
+                  <VariableType>Float</VariableType>
+                  <Address>+2F4</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>1337192627</ID>
+                  <Description>"Current Health"</Description>
+                  <VariableType>Float</VariableType>
+                  <Address>+2F8</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>1337192636</ID>
+                  <Description>"Team Damage Byte"</Description>
+                  <DropDownList DisplayValueAsItem="1">00:default
+01:alien team, no aliens on radar
+03:friend and foe to both
+</DropDownList>
+                  <ShowAsHex>1</ShowAsHex>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>4 Bytes</VariableType>
+                  <Address>+314</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>1337192637</ID>
+                  <Description>"Team React Byte"</Description>
+                  <DropDownList DisplayValueAsItem="1">00:default
+01:alien team
+03:friend and foe to both
+</DropDownList>
+                  <ShowAsHex>1</ShowAsHex>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>4 Bytes</VariableType>
+                  <Address>+318</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>1337192631</ID>
+                  <Description>"?"</Description>
+                  <DropDownList DisplayValueAsItem="1">00000000:event
+00000001:player
+</DropDownList>
+                  <ShowAsHex>1</ShowAsHex>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>4 Bytes</VariableType>
+                  <Address>+31C</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>1337192635</ID>
+                  <Description>"?"</Description>
+                  <DropDownList DisplayValueAsItem="1">00000000:player
+FFFFFFFF:event
+</DropDownList>
+                  <ShowAsHex>1</ShowAsHex>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>4 Bytes</VariableType>
+                  <Address>+338</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>1337192628</ID>
+                  <Description>"Player Parent (Loose)"</Description>
+                  <ShowAsHex>1</ShowAsHex>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>8 Bytes</VariableType>
+                  <Address>+340</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>1337192632</ID>
+                  <Description>"?"</Description>
+                  <DropDownList DisplayValueAsItem="1">00000001:player
+FFFFFFFF:event
+</DropDownList>
+                  <ShowAsHex>1</ShowAsHex>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>4 Bytes</VariableType>
+                  <Address>+34C</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>1337192638</ID>
+                  <Description>"?"</Description>
+                  <DropDownList DisplayValueAsItem="1">0000000B:player
+0000000E:player
+FFFFFFFF:event
+</DropDownList>
+                  <ShowAsHex>1</ShowAsHex>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>4 Bytes</VariableType>
+                  <Address>+350</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>1337192634</ID>
+                  <Description>"Control Flags (Loose)"</Description>
+                  <DropDownList DisplayValueAsItem="1">00000101:player
+00000100:player paused
+00000001:Controllable!
+00000000:event
+</DropDownList>
+                  <ShowAsHex>1</ShowAsHex>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>4 Bytes</VariableType>
+                  <Address>+354</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>1337192633</ID>
+                  <Description>"ptr"</Description>
+                  <DropDownList DisplayValueAsItem="1">0000000B:player
+0000000E:player
+FFFFFFFF:event
+</DropDownList>
+                  <ShowAsHex>1</ShowAsHex>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>4 Bytes</VariableType>
+                  <Address>+d18</Address>
+                  <Offsets>
+                    <Offset>0</Offset>
+                    <Offset>0</Offset>
+                  </Offsets>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>1337192852</ID>
+                  <Description>"Camera Stuff"</Description>
+                  <Options moManualExpandCollapse="1"/>
+                  <ShowAsHex>1</ShowAsHex>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>4 Bytes</VariableType>
+                  <Address>+2F4-8C</Address>
+                  <CheatEntries>
+                    <CheatEntry>
+                      <ID>1337192853</ID>
+                      <Description>"Cam No Rotate"</Description>
+                      <DropDownList DisplayValueAsItem="1">00:off
+01:on
+</DropDownList>
+                      <ShowAsHex>1</ShowAsHex>
+                      <VariableType>Byte</VariableType>
+                      <Address>-38-80</Address>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>1337192854</ID>
+                      <Description>"Cam No Position"</Description>
+                      <DropDownList DisplayValueAsItem="1">00:off
+01:on
+</DropDownList>
+                      <ShowAsHex>1</ShowAsHex>
+                      <VariableType>Byte</VariableType>
+                      <Address>-54-80</Address>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>1337192855</ID>
+                      <Description>"Look X (Loose)"</Description>
+                      <VariableType>Float</VariableType>
+                      <Address>-F8</Address>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>1337192856</ID>
+                      <Description>"Look Y (Loose)"</Description>
+                      <VariableType>Float</VariableType>
+                      <Address>-F4</Address>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>1337192857</ID>
+                      <Description>"Look Z (Loose)"</Description>
+                      <VariableType>Float</VariableType>
+                      <Address>-F0</Address>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>1337192858</ID>
+                      <Description>"Cam X (Loose)"</Description>
+                      <VariableType>Float</VariableType>
+                      <Address>-E8</Address>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>1337192859</ID>
+                      <Description>"Cam Y (Loose)"</Description>
+                      <VariableType>Float</VariableType>
+                      <Address>-E4</Address>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>1337192860</ID>
+                      <Description>"Cam Z (Loose)"</Description>
+                      <VariableType>Float</VariableType>
+                      <Address>-E0</Address>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>1337192861</ID>
+                      <Description>"Cam Speed"</Description>
+                      <DropDownList DisplayValueAsItem="1">1:instant
+0.1000000015:tanks
+0:frozen
+</DropDownList>
+                      <VariableType>Float</VariableType>
+                      <Address>-58-80</Address>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>1337192862</ID>
+                      <Description>"Cam Zoom"</Description>
+                      <DropDownList DisplayValueAsItem="1">3FF00000:closest
+3F800000:default
+3F400000:farthest
+</DropDownList>
+                      <ShowAsHex>1</ShowAsHex>
+                      <VariableType>Float</VariableType>
+                      <Address>-18-80</Address>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>1337192863</ID>
+                      <Description>"Cam Scale from Map Root"</Description>
+                      <VariableType>Float</VariableType>
+                      <Address>-5C-80</Address>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>1337192864</ID>
+                      <Description>"Cam Collide Mod?"</Description>
+                      <DropDownList DisplayValueAsItem="1">1:default
+-1:reversed
+</DropDownList>
+                      <VariableType>Float</VariableType>
+                      <Address>-6C-80</Address>
+                    </CheatEntry>
+                  </CheatEntries>
+                </CheatEntry>
+              </CheatEntries>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1337192849</ID>
+              <Description>"i'm controller"</Description>
+              <ShowAsHex>1</ShowAsHex>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>8 Bytes</VariableType>
+              <Address>+1540</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1337192601</ID>
+              <Description>"i'm object"</Description>
+              <ShowAsHex>1</ShowAsHex>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>8 Bytes</VariableType>
+              <Address>+1548</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1337192602</ID>
+              <Description>"i'm control (ui)"</Description>
+              <ShowAsHex>1</ShowAsHex>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>8 Bytes</VariableType>
+              <Address>+1550</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1337192611</ID>
+              <Description>"Control Parent?"</Description>
+              <ShowAsHex>1</ShowAsHex>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>8 Bytes</VariableType>
+              <Address>+30</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1337192620</ID>
+              <Description>"Player Parent (Source)"</Description>
+              <ShowAsHex>1</ShowAsHex>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>8 Bytes</VariableType>
+              <Address>+340</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1337192621</ID>
+              <Description>"Player Parent ptr"</Description>
+              <ShowAsHex>1</ShowAsHex>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>8 Bytes</VariableType>
+              <Address>+340</Address>
+              <Offsets>
+                <Offset>0</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1337192599</ID>
+              <Description>"controller ptr"</Description>
+              <ShowAsHex>1</ShowAsHex>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>8 Bytes</VariableType>
+              <Address>+1540</Address>
+              <Offsets>
+                <Offset>0</Offset>
+              </Offsets>
+              <CheatEntries>
+                <CheatEntry>
+                  <ID>1337192600</ID>
+                  <Description>"my object"</Description>
+                  <ShowAsHex>1</ShowAsHex>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>8 Bytes</VariableType>
+                  <Address>+8</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>1337192695</ID>
+                  <Description>"controlling me"</Description>
+                  <ShowAsHex>1</ShowAsHex>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>8 Bytes</VariableType>
+                  <Address>+260</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>1337192612</ID>
+                  <Description>"Buttons Pressed"</Description>
+                  <DropDownList DisplayValueAsItem="1">01:A
+02:B
+04:X
+08:Y
+10:LB
+20:RB
+40:LStick
+80:RStick
+</DropDownList>
+                  <ShowAsHex>1</ShowAsHex>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Byte</VariableType>
+                  <Address>+2E8</Address>
+                </CheatEntry>
+              </CheatEntries>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1337192603</ID>
+              <Description>"object ptr"</Description>
+              <ShowAsHex>1</ShowAsHex>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>8 Bytes</VariableType>
+              <Address>+1548</Address>
+              <Offsets>
+                <Offset>0</Offset>
+              </Offsets>
+              <CheatEntries>
+                <CheatEntry>
+                  <ID>1337192610</ID>
+                  <Description>"Control Parent?"</Description>
+                  <ShowAsHex>1</ShowAsHex>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>8 Bytes</VariableType>
+                  <Address>+30</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>1337192605</ID>
+                  <Description>"Base Health"</Description>
+                  <VariableType>Float</VariableType>
+                  <Address>+2EC</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>1337192606</ID>
+                  <Description>"Max Health"</Description>
+                  <VariableType>Float</VariableType>
+                  <Address>+2F4</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>1337192607</ID>
+                  <Description>"Current Health"</Description>
+                  <VariableType>Float</VariableType>
+                  <Address>+2F8</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>1337192622</ID>
+                  <Description>"Player Parent"</Description>
+                  <ShowAsHex>1</ShowAsHex>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>8 Bytes</VariableType>
+                  <Address>+340</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>1337192609</ID>
+                  <Description>"Controller Parent?"</Description>
+                  <ShowAsHex>1</ShowAsHex>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>8 Bytes</VariableType>
+                  <Address>+608</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>1337192608</ID>
+                  <Description>"Can Be Entered"</Description>
+                  <ShowAsHex>1</ShowAsHex>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Byte</VariableType>
+                  <Address>+618</Address>
+                </CheatEntry>
+              </CheatEntries>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1337192604</ID>
+              <Description>"control (ui) ptr"</Description>
+              <ShowAsHex>1</ShowAsHex>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>8 Bytes</VariableType>
+              <Address>+1550</Address>
+              <Offsets>
+                <Offset>0</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1337192802</ID>
+              <Description>"Camera ptr"</Description>
+              <ShowAsHex>1</ShowAsHex>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>8 Bytes</VariableType>
+              <Address>+10</Address>
+              <Offsets>
+                <Offset>350</Offset>
+                <Offset>3A8</Offset>
+                <Offset>10</Offset>
+                <Offset>18</Offset>
+                <Offset>0</Offset>
+                <Offset>1D8</Offset>
+                <Offset>88</Offset>
+              </Offsets>
+              <CheatEntries>
+                <CheatEntry>
+                  <ID>1337192845</ID>
+                  <Description>"Following Object"</Description>
+                  <ShowAsHex>1</ShowAsHex>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>8 Bytes</VariableType>
+                  <Address>+0</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>1337192846</ID>
+                  <Description>"Interactibles Object"</Description>
+                  <ShowAsHex>1</ShowAsHex>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <Color>0000FF</Color>
+                  <VariableType>8 Bytes</VariableType>
+                  <Address>+10</Address>
                 </CheatEntry>
               </CheatEntries>
             </CheatEntry>
