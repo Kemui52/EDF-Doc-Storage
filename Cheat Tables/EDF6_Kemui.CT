@@ -5,7 +5,7 @@
       <ID>356715</ID>
       <Description>"&lt;=== Auto attach to process "</Description>
       <Options moDeactivateChildrenAsWell="1"/>
-      <Color>0000FF</Color>
+      <Color>008000</Color>
       <VariableType>Auto Assembler Script</VariableType>
       <AssemblerScript Async="1">[ENABLE]
 {$lua}
@@ -2259,7 +2259,7 @@ end );
               <ShowAsSigned>0</ShowAsSigned>
               <Color>008000</Color>
               <VariableType>Float</VariableType>
-              <Address>2059CF58FBC</Address>
+              <Address>1DFD0F9E40C</Address>
             </CheatEntry>
             <CheatEntry>
               <ID>1337192851</ID>

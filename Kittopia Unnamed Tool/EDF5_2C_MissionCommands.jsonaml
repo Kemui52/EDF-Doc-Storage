@@ -1810,10 +1810,10 @@
         ]
     },
     {
-        representations: [0xA4],
+        representations: [0xA4,0xFA5],
         group: 0,
-        name: "",
-        description: "",
+        name: "EnableAiRandomTalk",
+        description: "Reenables NPC soldier chatter.",
         returnValue:
         {
             type: "void",
@@ -1823,10 +1823,10 @@
         []
     },
     {
-        representations: [0xA5],
+        representations: [0xA5,0xFA5],
         group: 0,
-        name: "",
-        description: "",
+        name: "DisableAiRandomTalk",
+        description: "Stops NPC soldier chatter.",
         returnValue:
         {
             type: "void",
@@ -2150,10 +2150,10 @@
         ]
     },
     {
-        representations: [0xCE],
+        representations: [0xCE,0xBCE],
         group: 0,
-        name: "",
-        description: "",
+        name: "SetEncount",
+        description: "Alerts the given object.",
         returnValue:
         {
             type: "void",
@@ -2162,9 +2162,9 @@
         arguments:
         [
             {
-                name: "",
+                name: "ID",
                 type: "int",
-                description: ""
+                description: "ID of the object to alert."
             }
         ]
     },
@@ -3532,8 +3532,8 @@
     {
         representations: [0x166],
         group: 0,
-        name: "",
-        description: "",
+        name: "ClearAiObjectDirection",
+        description: "Removes an object's rotation override.",
         returnValue:
         {
             type: "void",
@@ -3542,14 +3542,14 @@
         arguments:
         [
             {
-                name: "",
+                name: "ID",
                 type: "int",
-                description: ""
+                description: "ID of the object to affect."
             },
             {
                 name: "",
                 type: "bool",
-                description: ""
+                description: "unknown"
             }
         ]
     },
@@ -3569,8 +3569,8 @@
     {
         representations: [0x1A4],
         group: 0,
-        name: "",
-        description: "Looks camera to object? Called 8 seconds after Ergi spawns in his 4.1 intro mission",
+        name: "LookCameraToObject",
+        description: "Makes the player's camera look at the given object. Only does anything when Camera Effects is turned on.",
         returnValue:
         {
             type: "void",
@@ -3579,34 +3579,34 @@
         arguments:
         [
             {
-                name: "",
+                name: "ID",
                 type: "int",
-                description: "ID of object to affect?"
+                description: "ID of object to look at."
             },
             {
-                name: "",
+                name: "X?",
                 type: "float",
                 description: "0f"
             },
             {
-                name: "",
+                name: "Y?",
                 type: "float",
                 description: "50f"
             },
             {
-                name: "",
+                name: "Z?",
                 type: "float",
                 description: "0f"
             },
             {
-                name: "",
+                name: "Unknown",
                 type: "float",
                 description: "1000f"
             },
             {
-                name: "",
+                name: "Time",
                 type: "float",
-                description: "4f"
+                description: "The amount of seconds to look at the object?"
             }
         ]
     },
@@ -5682,7 +5682,7 @@
     {
         representations: [0x235B],
         group: 0,
-        name: "CreateEventFactorCheckFlagFalse?",
+        name: "CreateEventFactorCheckFlagFalse",
         description: "",
         returnValue:
         {
