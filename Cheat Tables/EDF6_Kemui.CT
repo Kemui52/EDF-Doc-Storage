@@ -2249,6 +2249,18 @@ end );
           <Address>+0</Address>
           <CheatEntries>
             <CheatEntry>
+              <ID>1337192866</ID>
+              <Description>"No HUD {MoistGoat}"</Description>
+              <DropDownList DisplayValueAsItem="1">80 B9 F0 03 00 00 00:Default
+90 90 90 90 90 90 90:No HUD
+</DropDownList>
+              <ShowAsHex>1</ShowAsHex>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Array of byte</VariableType>
+              <ByteLength>7</ByteLength>
+              <Address>EDF.dll+F7270</Address>
+            </CheatEntry>
+            <CheatEntry>
               <ID>1337192850</ID>
               <Description>"Step 1. Paste the loose object's Base Health address into here."</Description>
               <GroupHeader>1</GroupHeader>
@@ -2259,7 +2271,7 @@ end );
               <ShowAsSigned>0</ShowAsSigned>
               <Color>008000</Color>
               <VariableType>Float</VariableType>
-              <Address>1DFD0F9E40C</Address>
+              <Address>14D3575F5FC</Address>
             </CheatEntry>
             <CheatEntry>
               <ID>1337192851</ID>
@@ -2745,20 +2757,16 @@ FFFFFFFF:event
               </Offsets>
             </CheatEntry>
             <CheatEntry>
-              <ID>1337192802</ID>
+              <ID>1337192867</ID>
               <Description>"Camera ptr"</Description>
               <ShowAsHex>1</ShowAsHex>
-              <ShowAsSigned>0</ShowAsSigned>
               <VariableType>8 Bytes</VariableType>
-              <Address>+10</Address>
+              <Address>"EDF.dll"+020ADD68</Address>
               <Offsets>
                 <Offset>350</Offset>
-                <Offset>3A8</Offset>
-                <Offset>10</Offset>
-                <Offset>18</Offset>
+                <Offset>270</Offset>
                 <Offset>0</Offset>
-                <Offset>1D8</Offset>
-                <Offset>88</Offset>
+                <Offset>30</Offset>
               </Offsets>
               <CheatEntries>
                 <CheatEntry>
@@ -3243,33 +3251,6 @@ FFFFFFFF:event
           </CheatEntries>
         </CheatEntry>
       </CheatEntries>
-    </CheatEntry>
-    <CheatEntry>
-      <ID>1337192737</ID>
-      <Description>"yey"</Description>
-      <ShowAsHex>1</ShowAsHex>
-      <VariableType>8 Bytes</VariableType>
-      <Address>200770EB360</Address>
-    </CheatEntry>
-    <CheatEntry>
-      <ID>1337192736</ID>
-      <Description>"No description"</Description>
-      <ShowAsHex>1</ShowAsHex>
-      <VariableType>8 Bytes</VariableType>
-      <Address>200770EB370</Address>
-    </CheatEntry>
-    <CheatEntry>
-      <ID>1337192847</ID>
-      <Description>"pointerscan result"</Description>
-      <ShowAsHex>1</ShowAsHex>
-      <VariableType>8 Bytes</VariableType>
-      <Address>"umbra_sandlot.dll"+000B2EB0</Address>
-      <Offsets>
-        <Offset>350</Offset>
-        <Offset>50</Offset>
-        <Offset>F0</Offset>
-        <Offset>180</Offset>
-      </Offsets>
     </CheatEntry>
   </CheatEntries>
   <UserdefinedSymbols/>
