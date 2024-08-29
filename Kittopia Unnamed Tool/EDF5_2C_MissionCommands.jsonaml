@@ -3584,29 +3584,29 @@
                 description: "ID of object to look at."
             },
             {
-                name: "X?",
+                name: "X",
                 type: "float",
-                description: "0f"
+                description: "X offset from object origin."
             },
             {
-                name: "Y?",
+                name: "Y",
                 type: "float",
-                description: "50f"
+                description: "Y offset from object origin."
             },
             {
-                name: "Z?",
+                name: "Z",
                 type: "float",
-                description: "0f"
+                description: "Z offset from object origin."
             },
             {
-                name: "Unknown",
+                name: "ZoomRadius",
                 type: "float",
-                description: "1000f"
+                description: "Radius around point to restrain camera zoom."
             },
             {
                 name: "Time",
                 type: "float",
-                description: "The amount of seconds to look at the object?"
+                description: "The amount of seconds to look at the object."
             }
         ]
     },
