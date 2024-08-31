@@ -1,2 +1,5 @@
 ; Author: MoistGoat
-7EB460: C6 41 71 01 C3
+; As host, allows you to disable limits for weapons and armor.
+
+aob OnlineLimits 5BC3885171C3
+OnlineLimits+2: C6 41 71 01 C3

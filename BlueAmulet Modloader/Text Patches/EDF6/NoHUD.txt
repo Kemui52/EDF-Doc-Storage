@@ -1,0 +1,5 @@
+; Author: MoistGoat
+; Hides HUD whilst in a mission, for screenshots, or maybe you don't like the HUD.
+
+aob NoHUD 80B9F003000000753C80
+NoHUD: 90 90 90 90 90 90 90

@@ -1,0 +1,5 @@
+; Author: MoistGoat
+; Skips all the splash screen stuff and takes you directly to Enter to continue menu.
+
+aob NoSplashScreen 488D053963F400
+NoSplashScreen: 90 90 90 90 90 90 90

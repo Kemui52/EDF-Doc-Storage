@@ -1,0 +1,22 @@
+; Author: MoistGoat
+; Based on an autolooter cheat table
+; Loots weapon and armor boxes as soon as they spawn.
+
+aob AutoLoot 0F2FC10F867E000000
+alloc LootCode 4
+
+LootCode: 
+80 BF C0 00 00 00 02
+0F 82 00 00 00 00
+0F 2F C1
+0F 86 00 00 00 00
+E9 00 00 00 00
+
+AutoLoot+5: rel32! LootCode
+
+aob Ret1 488B05394DDE01
+aob Ret2 488B1B483B9DE0
+
+LootCode+9: rel32! Ret1
+LootCode+12: rel32! Ret2
+LootCode+17: rel32! Ret1

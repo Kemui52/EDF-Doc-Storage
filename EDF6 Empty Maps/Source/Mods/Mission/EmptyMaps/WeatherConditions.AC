@@ -1,0 +1,62 @@
+﻿/*
+0 = no weather conditions
+1 = rain
+2 = snow
+3 = sandstorm (NOT READY)
+4 = fog (NOT READY)
+5 = darkness (NOT READY)
+6 = merman fog
+7 = alternate history
+8 = alternate history (no lighting changes)
+*/
+
+int ChosenConditions = 0 ; //<<< Overwrite desired weather here.
+
+
+
+void customSetWeatherConditions()
+{
+	switch (ChosenConditions){
+	case 1:
+		internal_SceneEffect_Rain(
+			0.2f, //fade to start at; .2 recommended
+			0.9f, //reflection
+			0.5f,
+			1.0f, //uv_animation_speed
+			1.0f, //wet_normal_power
+			2.0f, 2.0f, 2.0f, //shine color
+			200.0f,
+			4000, //particle_count
+			40.0f,
+			4.0f, //particle_fall_speed,
+			0.1f /*particle_alpha*/);
+		SceneEffect_StartFade(0.7f, //fade to end on; .4 to .7 recommended
+							  240.0f); //seconds to transition
+	break;
+	case 2:
+		internal_SceneEffect_Snow(
+			10,
+			0.1f, //ground snow bump map power
+			0.05f, //transparency of ground snow
+			0.8f, //normal direction for snow accumlation
+			0.36f, //fade to start at; .36 recommended for snow accum.
+			0.5f, 0.5f, 0.5f, //color of ground snow
+			2, 2, 2, //color of bump map shading
+			100,
+			10000, //particle_count
+			40.0f,
+			0.05f /*particle_fall_speed*/);
+		SceneEffect_StartFade(0.57f, //fade to end on; .42 to .57 recommended
+							  20.0f); //seconds to transition
+	break;
+	case 6:
+		Merman_FogScene(30.0f); //seconds to transition
+	break;
+	case 7:
+		SetAlternateHistorySky(30.0f); //seconds to transition
+	break;
+	case 8:
+		SetAlternateHistorySky2(30.0f); //seconds to transition
+	break;
+	}
+}

@@ -1,0 +1,8 @@
+; Author: redone
+1763D88: f32! 0.10  ;  Easy default 0.1
+1763D8C: f32! 0.25  ;  Normal default 0.25
+1763D90: f32! 0.50  ;  Hard default 0.5
+1763D94: f32! 0.75  ;  Hardest default 0.75
+1763D98: f32! 1.00  ;  Inferno default 1.0
+
+; Also works on enemy grenadiers.

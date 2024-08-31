@@ -1,0 +1,12 @@
+; Author: MoistGoat
+; Removes Crosshair and Laser. Laser commented out by default
+
+aob Crosshair B001EB2D85 
+aob Crosshair2 0FB6838D070000
+aob StickyCrosshair 80BB4201000001
+aob Laser 00004088BB8C070000
+
+Crosshair+1: 00 ; comment this out and uncomment sticky if you want crosshair to be always visible (except in water/maybe vehicles)
+Crosshair2: 90 90 90 90 90 90 90 ; comment this line out too if above applies
+;Laser+2: 90 90 90 90 90 90 90
+;StickyCrosshair+6: 00

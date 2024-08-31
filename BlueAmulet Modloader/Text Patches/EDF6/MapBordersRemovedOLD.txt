@@ -1,0 +1,5 @@
+; Author: MoistGoat (made with the help of kemui's cheat table)
+6DD398: F3 0F 10 41 03
+6DD3B7: F3 0F 10 41 03
+6DD3C1: F3 0F 10 41 04
+6DD394: F3 0F 10 09

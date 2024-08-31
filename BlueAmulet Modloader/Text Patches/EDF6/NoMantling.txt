@@ -1,0 +1,5 @@
+; Author: MoistGoat
+; Removes automatic climbing over obstacles
+
+aob NoMantle 83BBC4120000000F8F9F000000488B
+NoMantle: 90 90 90 90 90 90 90

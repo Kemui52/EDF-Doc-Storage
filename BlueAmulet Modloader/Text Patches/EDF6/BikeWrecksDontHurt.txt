@@ -1,0 +1,5 @@
+; Author: MoistGoat
+; Stops your bike from taking damage when you wreck.
+
+aob Bike 740AC787AC050000E8030000488B
+Bike: 90 90
