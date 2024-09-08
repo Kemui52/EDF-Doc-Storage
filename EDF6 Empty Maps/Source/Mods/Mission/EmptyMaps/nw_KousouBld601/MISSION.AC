@@ -95,7 +95,9 @@ void Main_usercode()
 		// ゲーム進行スクリプト
 		Map("app:/Map/nw_KousouBld601.mac", ChosenWeather);
 		CreatePlayer("Map外部シャッター1" /*"プレイヤー"*/);
-		PlayerIgnoreDamageEventMode(true);
+		if (IsOnlineMode() == false){
+			PlayerIgnoreDamageEventMode(true);
+		};
 		if (SpawnEventMonster == true){
 			Object monster1 = CreateEventObject("戦車5", stringMonster);
 		};

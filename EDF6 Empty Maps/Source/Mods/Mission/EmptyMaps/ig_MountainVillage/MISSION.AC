@@ -19,7 +19,7 @@ string ChosenWeather = "cloudy" ; //<<< Overwrite desired weather here.
 
 //RMPA: M205
 string stringMonster =
-//"./Mods/object/e504_monstera.sgo"
+//"./SgottMods/E603_MERMAN_mon.sgo"
 "app:/object/monster501.sgo"
 ;
 bool SpawnEventMonster = false;
@@ -95,7 +95,9 @@ void Main_usercode()
 		// ゲーム進行スクリプト
 		Map("app:/Map/ig_MountainVillage.mac", ChosenWeather);
 		CreatePlayer("プレイヤー");
-		PlayerIgnoreDamageEventMode(true);
+		if (IsOnlineMode() == false){
+			PlayerIgnoreDamageEventMode(true);
+		};
 		if (SpawnEventMonster == true){
 			Object monster1 = CreateEventObject("敵2_01", stringMonster);
 		};

@@ -88,7 +88,9 @@ void Main_usercode()
 		// ゲーム進行スクリプト
 		Map("app:/Map/ig_Test_BlueFld.mac", ChosenWeather);
 		CreatePlayer("player");
-		PlayerIgnoreDamageEventMode(true);
+		if (IsOnlineMode() == false){
+			PlayerIgnoreDamageEventMode(true);
+		};
 		if (SpawnEventMonster == true){
 			Object monster1 = CreateEventObject("squad2", stringMonster);
 		};

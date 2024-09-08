@@ -99,7 +99,9 @@ void Main_usercode()
 		// ゲーム進行スクリプト
 		Map("app:/Map/nw_JyousuiCity.mac", ChosenWeather);
 		CreatePlayer("プレイヤー");
-		PlayerIgnoreDamageEventMode(true);
+		if (IsOnlineMode() == false){
+			PlayerIgnoreDamageEventMode(true);
+		};
 		if (SpawnEventMonster == true){
 			Object monster1 = CreateEventObject("トラック01", stringMonster);
 		};

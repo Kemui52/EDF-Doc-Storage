@@ -17,7 +17,7 @@ string ChosenWeather = "finecloud" ; //<<< Overwrite desired weather here.
 
 //RMPA: ???
 string stringMonster =
-//"./Mods/object/e504_monstera.sgo"
+//"./SgottMods/E603_MERMAN_mon.sgo"
 "app:/object/monster501.sgo"
 ;
 bool SpawnEventMonster = false;
@@ -93,7 +93,9 @@ void Main_usercode()
 		// ゲーム進行スクリプト
 		Map("app:/Map/ig_TestLightMap.mac", ChosenWeather);
 		CreatePlayer("player");
-		PlayerIgnoreDamageEventMode(true);
+		if (IsOnlineMode() == false){
+			PlayerIgnoreDamageEventMode(true);
+		};
 		if (SpawnEventMonster == true){
 			Object monster1 = CreateEventObject("squad2", stringMonster);
 		};

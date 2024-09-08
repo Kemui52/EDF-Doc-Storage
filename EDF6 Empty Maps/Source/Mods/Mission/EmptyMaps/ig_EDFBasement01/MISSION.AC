@@ -89,7 +89,9 @@ void Main_usercode()
 		// ゲーム進行スクリプト
 		Map("app:/Map/ig_EDFBasement01.mac", ChosenWeather);
 		CreatePlayer("プレイヤー");
-		PlayerIgnoreDamageEventMode(true);
+		if (IsOnlineMode() == false){
+			PlayerIgnoreDamageEventMode(true);
+		};
 		if (SpawnEventMonster == true){
 			Object monster1 = CreateEventObject("射撃的1", stringMonster);
 		};
