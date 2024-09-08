@@ -1,0 +1,13 @@
+; Author: redone
+
+;Double quotation
+5DD3F9:1C 20 ;「 
+5DD51C:1C 20 ;『
+17D2FF4:22 00 ;」
+17D2FF8:22 00 ; 』
+
+;blank
+;5DD3F9:20 00 ;「 
+;5DD51C:20 00 ;『
+;17D2FF4:20 00 ;」
+;17D2FF8:20 00 ; 』
