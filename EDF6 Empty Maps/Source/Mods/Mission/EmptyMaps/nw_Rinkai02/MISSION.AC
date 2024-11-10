@@ -14,12 +14,12 @@ string ChosenWeather = "fine" ; //<<< Overwrite desired weather here.
 
 
 bool SpawnPandora = false ; //Whether the submarine Pandora should appear.
-//NOT READY ^
+
 
 
 //RMPA: M093_2
 string stringMonster =
-//"./SgottMods/E603_MERMAN_mon.sgo"
+//"./SgottMods/E603_MERMAN.sgo"
 "app:/object/monster501.sgo"
 ;
 bool SpawnEventMonster = false;
@@ -71,6 +71,7 @@ void Main()
 	Preload("app:/ui/UiResourceGroup_InMission.sgo", -1);
 	Preload("app:/ui/UiResourceGroup_MissionCleared.sgo", -1);
 	Preload("app:/ui/UiResourceGroup_MissionFailed.sgo", -1);
+	Preload("app:/object/ev603_marine.sgo", -1);
 	Preload(stringMonster, -1);
 	PreloadPlayerResource();
 	WaitPreload();
@@ -101,12 +102,13 @@ void Main_usercode()
 		if (SpawnEventMonster == true){
 			Object monster1 = CreateEventObject("小隊1_02", stringMonster);
 		};
-		//SetMoveArea("BorderShape?");
+		SetMoveArea("ExtendedMap");
 		customSetWeatherConditions();
 
 		if (SpawnPandora == true){
-//no waypoint atm			Object pandora = CreateNeutral("潜水艦" /*配置ポイント*/, "app:/object/ev603_marine.sgo" /*sgo ファイルパス*/, 1 /*レベル*/);
-//			pandora.FarObject_PlayAnimation("main" /*プレイヤー名*/, "surfaced" /*アニメーション名*/);
+			Wait(4.4f);
+			Object pandora = CreateNeutral("PandoraM092" /*配置ポイント*/, "app:/object/ev603_marine.sgo" /*sgo ファイルパス*/, 1 /*レベル*/);
+			pandora.FarObject_PlayAnimation("main" /*プレイヤー名*/, "surfaced" /*アニメーション名*/);
 		};
 	}
 	// -----------------
