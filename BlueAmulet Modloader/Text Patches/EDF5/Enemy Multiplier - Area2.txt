@@ -1,0 +1,14 @@
+; Author: Quarri6343
+;Multiplies the following BVM spawn function by 4.
+;createflyingenemygroup_area2 2008
+aob EnemyArgb 448B4F184C8B47100F95C0488B570888442428F30F11442420E840C40000E9 ;2006 and 2008 has very similar bytes to distinguish
+alloc EnemyMultib 17
+EnemyMultib: 44 8b 4f 18      ; original process
+41 c1 e1 02      ; shl     r9d, 2,   4 times
+4c 8b 47 10           ; original process
+E9 00 00 00 00       ; jump back
+
+EnemyArgb: 90 90 90 90 90 90 90 90
+EnemyArgb+3: E9 00 00 00 00
+EnemyArgb+4: rel32! EnemyMultib ;jump process takes 4 bytes
+EnemyMultib+D: rel32! EnemyArgb+8 ;

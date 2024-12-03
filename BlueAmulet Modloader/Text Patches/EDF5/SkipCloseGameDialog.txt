@@ -1,0 +1,4 @@
+; Author: Quarri6343
+;Skips the message boxes when closing the game.
+aob OpenCloseAskWindow 7449C6054E86C40001488B153586C400
+OpenCloseAskWindow: 90 90

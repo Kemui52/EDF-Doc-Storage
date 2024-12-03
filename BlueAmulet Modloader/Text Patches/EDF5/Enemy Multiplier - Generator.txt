@@ -1,0 +1,14 @@
+; Author: Quarri6343
+;Multiplies the following BVM spawn function by 4.
+;setgenerator 2100
+aob EnemyArga 8B4720F30F11442438F30F104728F30F
+alloc EnemyMultia 17
+EnemyMultia: 8b 47 20      ; original process
+c1 e0 02   ; shl     eax, 2,   4 times
+f3 0f 11 44 24 38 ; original process
+E9 00 00 00 00 ;ret
+
+EnemyArga: 90 90 90 90 90 90 90 90 90
+EnemyArga+4: E9 00 00 00 00
+EnemyArga+5: rel32! EnemyMultia ;jump process takes 4 bytes
+EnemyMultia+D: rel32! EnemyArga+9 ;4 times

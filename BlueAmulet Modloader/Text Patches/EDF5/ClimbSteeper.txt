@@ -1,0 +1,16 @@
+;Author:Quarri6343
+
+aob GlobalMaxSlope 9CCFBE3F0000C03FC3F5C83FDB0FC93F
+
+GlobalMaxSlope: DB 0F C9 3F; set pi / 2, default is pi / 3
+; it is only referenced by Character Rigidbody so it is probably safe to override
+
+
+aob PlaceToAddSupportSlope F30F1145C0F30F100D93D2BF00F30F11
+alloc SupportSlope 8
+SupportSlope:
+C7 45 C0 DB 0F C9 3F ; pi / 2, default is 0.78539819
+C3 ; ret
+
+PlaceToAddSupportSlope: E8 00 00 00 00
+PlaceToAddSupportSlope+1: rel32! SupportSlope
