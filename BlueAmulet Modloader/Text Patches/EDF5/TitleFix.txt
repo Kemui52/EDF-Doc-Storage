@@ -1,0 +1,4 @@
+; Author FevGrave
+; Defence to Defense
+; 0x00EBB3E4 + 0X1800 = 0x00EBCBE4
+EBCBE4: 73

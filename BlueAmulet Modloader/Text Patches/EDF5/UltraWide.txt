@@ -1,0 +1,13 @@
+; Author: FevGrave, inspired by Souzooka's post https://steamcommunity.com/app/1007040/discussions/0/1642043267235851987/
+; Offset added C00
+; Remove the first semicolon from the last 2 lines and from ONE of the resolutions below.
+
+;EE64C4: 39 8E 63 40 ; (3840X1080, 5120x1440)
+;EE64C4: 9A 99 19 40 ; (3840x1600)
+;EE64C4: 8E E3 18 40 ; (3440x1440)
+;EE64C4: 26 B4 17 40 ; (2560x1080)
+;EE64C4: CD CC CC 3F ; (1280x800, 1920x1200, 2560x1600)
+;EE64C4: 55 55 D5 3F ; (1280x768)
+
+;60C17E: 42 ; 
+;4B30BC: 04 ; this prevents HUD stretching
