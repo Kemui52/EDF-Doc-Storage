@@ -2258,7 +2258,7 @@ end );
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>Array of byte</VariableType>
               <ByteLength>7</ByteLength>
-              <Address>EDF.dll+F7270</Address>
+              <Address>EDF.dll+F7790</Address>
             </CheatEntry>
             <CheatEntry>
               <ID>1337192850</ID>
@@ -2271,7 +2271,7 @@ end );
               <ShowAsSigned>0</ShowAsSigned>
               <Color>008000</Color>
               <VariableType>Float</VariableType>
-              <Address>14D3575F5FC</Address>
+              <Address>2436FC0492C</Address>
             </CheatEntry>
             <CheatEntry>
               <ID>1337192851</ID>
@@ -2757,16 +2757,22 @@ FFFFFFFF:event
               </Offsets>
             </CheatEntry>
             <CheatEntry>
+              <ID>1337192868</ID>
+              <Description>"test"</Description>
+              <ShowAsHex>1</ShowAsHex>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>8 Bytes</VariableType>
+              <Address>"EDF.dll"+020ADD68</Address>
+            </CheatEntry>
+            <CheatEntry>
               <ID>1337192867</ID>
               <Description>"Camera ptr"</Description>
               <ShowAsHex>1</ShowAsHex>
+              <ShowAsSigned>0</ShowAsSigned>
               <VariableType>8 Bytes</VariableType>
-              <Address>"EDF.dll"+020ADD68</Address>
+              <Address>"EDF.dll"+020B2998</Address>
               <Offsets>
-                <Offset>350</Offset>
-                <Offset>270</Offset>
-                <Offset>0</Offset>
-                <Offset>30</Offset>
+                <Offset>4D8</Offset>
               </Offsets>
               <CheatEntries>
                 <CheatEntry>
@@ -2793,12 +2799,13 @@ FFFFFFFF:event
       </CheatEntries>
     </CheatEntry>
     <CheatEntry>
-      <ID>1337192569</ID>
+      <ID>1337192870</ID>
       <Description>"BGM Volume (Global)"</Description>
+      <ShowAsSigned>0</ShowAsSigned>
       <VariableType>Float</VariableType>
-      <Address>"EDF.dll"+020AD610</Address>
+      <Address>"EDF.dll"+020B28D0</Address>
       <Offsets>
-        <Offset>2E4</Offset>
+        <Offset>2EC</Offset>
       </Offsets>
       <CheatEntries>
         <CheatEntry>
@@ -3254,4 +3261,8 @@ FFFFFFFF:event
     </CheatEntry>
   </CheatEntries>
   <UserdefinedSymbols/>
+  <Comments>'Camera ptr' found by Node.
+--
+CE 08 6C 4E 00 00 00 00 CE 08 6C 4E CE 08 6C 4E
+</Comments>
 </CheatTable>

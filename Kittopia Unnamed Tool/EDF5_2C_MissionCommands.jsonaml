@@ -904,10 +904,10 @@
         ]
     },
     {
-        representations: [0x4C],
+        representations: [0x4C,0x44C],
         group: 0,
-        name: "",
-        description: "",
+        name: "SetWeaponConditions",
+        description: "Controls the availability of air strikes and vehicle call-ins.",
         returnValue:
         {
             type: "void",
@@ -916,9 +916,9 @@
         arguments:
         [
             {
-                name: "",
+                name: "Condition",
                 type: "int",
-                description: ""
+                description: "0 = default to the mission's limitation, 1 = forcibly disable air support, 2 = forcibly enable air support"
             }
         ]
     },
