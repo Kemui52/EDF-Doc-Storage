@@ -1,18 +1,34 @@
 ; Author: Kemui52
 ; Allows TeamID functions to accept integer numbers.
 
-1792CD5+4030: 69 6E 74 20 20 20 20 20
-1792CF7+4030: 69 6E 74 20 20 20 20 20
-1792D1F+4030: 69 6E 74 20 20 20 20 20
-1792D4C+4030: 69 6E 74 20 20 20 20 20
+; Modification by KittopiaCreator, so blame me for how terrible it is.
+; This is probably horrible, efficiency wise. But very futureproof.
 
-1793F02+4030: 69 6E 74 20 20 20 20 20
+aob SendTeamEncount 76 6f 69 64 20 53 65 6e 64 54 65 61 6d 45 6e 63 6f 75 6e 74 28 3a 3a 54 65 61 6d 49 44 20 29 00
+aob GetTeamObjectCount 69 6e 74 20 47 65 74 54 65 61 6d 4f 62 6a 65 63 74 43 6f 75 6e 74 28 3a 3a 54 65 61 6d 49 44 20 29 00
+aob SuicideTeamObject 76 6f 69 64 20 53 75 69 63 69 64 65 54 65 61 6d 4f 62 6a 65 63 74 28 3a 3a 54 65 61 6d 49 44 20 29 00
+aob ResurrectionTeamObject 76 6f 69 64 20 52 65 73 75 72 72 65 63 74 69 6f 6e 54 65 61 6d 4f 62 6a 65 63 74 28 3a 3a 54 65 61 6d 49 44 20 29 00 00
+aob SetTeamID 76 6f 69 64 20 53 65 74 54 65 61 6d 49 44 28 3a 3a 4f 62 6a 65 63 74 20 2c 20 3a 3a 54 65 61 6d 49 44 20 29 00
+aob FactorTeamObjectCount 76 6f 69 64 20 46 61 63 74 6f 72 5f 54 65 61 6d 4f 62 6a 65 63 74 43 6f 75 6e 74 28 3a 3a 54 65 61 6d 49 44 20 2c 20 75 69 6e 74 33 32 20 29 00
+aob FactorTeamBigObjectCount 76 6f 69 64 20 46 61 63 74 6f 72 5f 54 65 61 6d 42 69 67 4f 62 6a 65 63 74 43 6f 75 6e 74 28 3a 3a 54 65 61 6d 49 44 20 2c 20 69 6e 74 20 29 00
+aob FactorAreaTeamObjectCount 76 6f 69 64 20 46 61 63 74 6f 72 5f 41 72 65 61 54 65 61 6d 4f 62 6a 65 63 74 43 6f 75 6e 74 28 63 6f 6e 73 74 20 73 74 72 69 6e 67 20 26 20 69 6e 2c 20 3a 3a 54 65 61 6d 49 44 20 2c 20 75 69 6e 74 33 32 20 29 00
+aob FactorTeamEncount 76 6f 69 64 20 46 61 63 74 6f 72 5f 54 65 61 6d 45 6e 63 6f 75 6e 74 28 3a 3a 54 65 61 6d 49 44 20 29 00
+aob FactorTeamNotEncount 76 6f 69 64 20 46 61 63 74 6f 72 5f 54 65 61 6d 4e 6f 74 45 6e 63 6f 75 6e 74 28 3a 3a 54 65 61 6d 49 44 20 29 00
+aob ObjectSetTeamID 3a 3a 4f 62 6a 65 63 74 26 20 53 65 74 54 65 61 6d 49 44 28 3a 3a 54 65 61 6d 49 44 20 29 00
+aob ObjectSetTeamDamageAdjust 3a 3a 4f 62 6a 65 63 74 26 20 53 65 74 54 65 61 6d 44 61 6d 61 67 65 41 64 6a 75 73 74 28 3a 3a 54 65 61 6d 49 44 20 2c 20 66 6c 6f 61 74 20 29 00
+aob ObjectSetTeamDamageAdjustSquad 3a 3a 4f 62 6a 65 63 74 26 20 53 65 74 54 65 61 6d 44 61 6d 61 67 65 41 64 6a 75 73 74 5f 53 71 75 61 64 28 3a 3a 54 65 61 6d 49 44 20 2c 20 66 6c 6f 61 74 20 29 00
 
-1794806+4030: 69 6E 74 20 20 20 20 20
-1794844+4030: 69 6E 74 20 20 20 20 20
-17948BC+4030: 69 6E 74 20 20 20 20 20
-1796A14+4030: 69 6E 74 20 20 20 20 20
-1796A47+4030: 69 6E 74 20 20 20 20 20
-1796A93+4030: 69 6E 74 20 20 20 20 20
-1796AE8+4030: 69 6E 74 20 20 20 20 20
-1796B13+4030: 69 6E 74 20 20 20 20 20
+;Write bytes
+SendTeamEncount+15: 69 6E 74 20 20 20 20 20
+GetTeamObjectCount+17: 69 6E 74 20 20 20 20 20
+SuicideTeamObject+17: 69 6E 74 20 20 20 20 20
+ResurrectionTeamObject+1c: 69 6E 74 20 20 20 20 20
+SetTeamID+1a: 69 6E 74 20 20 20 20 20
+FactorTeamObjectCount+1c: 69 6E 74 20 20 20 20 20
+FactorTeamBigObjectCount+1f: 69 6E 74 20 20 20 20 20
+FactorAreaTeamObjectCount+33: 69 6E 74 20 20 20 20 20
+FactorTeamEncount+18: 69 6E 74 20 20 20 20 20
+FactorTeamNotEncount+1b: 69 6E 74 20 20 20 20 20
+ObjectSetTeamID+14: 69 6E 74 20 20 20 20 20
+ObjectSetTeamDamageAdjust+1e: 69 6E 74 20 20 20 20 20
+ObjectSetTeamDamageAdjustSquad+24: 69 6E 74 20 20 20 20 20
