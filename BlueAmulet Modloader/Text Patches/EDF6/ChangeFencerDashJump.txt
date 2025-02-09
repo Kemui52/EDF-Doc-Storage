@@ -1,0 +1,6 @@
+; Author: KittopiaCreator
+; Purpose: Alter starting stats of fencer. This patch is "static" and will require adjustment for future game updates.
+; NPC Fencers may have their jumps affected if they don't have an accessory overriding them.
+
+56769e+2: u32! 0 ;Number of Jumps, actual value adds 1 to this.
+5676dc+2: u32! 0 ;Number of Dashes, actual value adds 1 to this.

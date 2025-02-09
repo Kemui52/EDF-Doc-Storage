@@ -1,0 +1,32 @@
+; Author: KittopiaCreator
+; Purpose: Configure radar icon colours.
+
+;Neutral units
+1f77980: f32! 1.0	;Red Value
+1f77984: f32! 1.0	;Green Value
+1f77988: f32! 1.0	;Blue Value
+1f7798c: f32! 1.0	;Alpha Value
+
+;Allied units
+1f77990: f32! 0.0	;Red Value
+1f77994: f32! 0.75	;Green Value
+1f77998: f32! 1.0	;Blue Value
+1f7799c: f32! 1.0	;Alpha Value
+
+;Items
+1f779a0: f32! 0.0	;Red Value
+1f779a4: f32! 1.0	;Green Value
+1f779a8: f32! 0.0	;Blue Value
+1f779ac: f32! 1.0	;Alpha Value
+
+;Enemies
+1f779b0: f32! 1.0	;Red Value
+1f779b4: f32! 0.0	;Green Value
+1f779b8: f32! 0.0	;Blue Value
+1f779bc: f32! 1.0	;Alpha Value
+
+;Vehicle
+1f779c0: f32! 1.0	;Red Value
+1f779c4: f32! 1.0	;Green Value
+1f779c8: f32! 0.0	;Blue Value
+1f779cc: f32! 1.0	;Alpha Value
