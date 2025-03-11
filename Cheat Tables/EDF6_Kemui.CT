@@ -2271,7 +2271,7 @@ end );
               <ShowAsSigned>0</ShowAsSigned>
               <Color>008000</Color>
               <VariableType>Float</VariableType>
-              <Address>1C6E130C2FC</Address>
+              <Address>15581BD2C7C</Address>
             </CheatEntry>
             <CheatEntry>
               <ID>1337192851</ID>
@@ -2803,6 +2803,26 @@ FFFFFFFF:event
                 <Offset>F0</Offset>
                 <Offset>180</Offset>
               </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1337192868</ID>
+              <Description>"test"</Description>
+              <ShowAsHex>1</ShowAsHex>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>8 Bytes</VariableType>
+              <Address>"EDF.dll"+020B2958</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1337192867</ID>
+              <Description>"Camera ptr"</Description>
+              <ShowAsHex>1</ShowAsHex>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>8 Bytes</VariableType>
+              <Address>"EDF.dll"+020B2958</Address>
+              <Offsets>
+                <Offset>350</Offset>
+                <Offset>4D8</Offset>
+              </Offsets>
               <CheatEntries>
                 <CheatEntry>
                   <ID>1337192845</ID>
@@ -2822,25 +2842,6 @@ FFFFFFFF:event
                   <Address>+10</Address>
                 </CheatEntry>
               </CheatEntries>
-            </CheatEntry>
-            <CheatEntry>
-              <ID>1337192868</ID>
-              <Description>"test"</Description>
-              <ShowAsHex>1</ShowAsHex>
-              <ShowAsSigned>0</ShowAsSigned>
-              <VariableType>8 Bytes</VariableType>
-              <Address>"EDF.dll"+020B2948</Address>
-            </CheatEntry>
-            <CheatEntry>
-              <ID>1337192867</ID>
-              <Description>"Camera ptr"</Description>
-              <ShowAsHex>1</ShowAsHex>
-              <ShowAsSigned>0</ShowAsSigned>
-              <VariableType>8 Bytes</VariableType>
-              <Address>"EDF.dll"+020B2948</Address>
-              <Offsets>
-                <Offset>4D8</Offset>
-              </Offsets>
             </CheatEntry>
           </CheatEntries>
         </CheatEntry>

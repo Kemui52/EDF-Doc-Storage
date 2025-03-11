@@ -1,0 +1,7 @@
+; Author: KittopiaCreator
+; Purpose: Modify booster colour.
+
+17a8d80: f32! 0.5 ;Red Value
+17a8d84: f32! 1.0 ;Green Value
+17a8d88: f32! 1.5 ;Blue Value
+17a8d8c: f32! 1.0 ;Alpha? Value

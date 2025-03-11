@@ -1,0 +1,15 @@
+;Author: redone
+;This patch adds 1 to AmmoAlive after each combo calculation.
+
+aob Weapon_Swing 41 89 87 780A0000
+Weapon_Swing:E9 00000000 90 90
+
+alloc AddAmmoAlive 20
+
+AddAmmoAlive:
+83 C0 01
+41 89 87 780A0000
+E9 00000000
+
+Weapon_Swing+1:rel32! AddAmmoAlive
+AddAmmoAlive+B:rel32! Weapon_Swing+7
