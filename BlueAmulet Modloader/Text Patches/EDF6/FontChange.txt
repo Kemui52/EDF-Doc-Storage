@@ -1,0 +1,22 @@
+; Author: Kemui52
+; Changes the English/Japanese font out for another for those who prefer the alternative spacing.
+
+aob EnJpFont 61 00 70 00 70 00 3A 00 2F 00 55 00 49 00 2F 00 54 00 54 00 5F 00 4E 00 65 00 77 00 43 00 65 00 7A 00 61 00 6E 00 6E 00 65 00 2D 00 44 00 42 00 2E 00 74 00 74 00 66 00 00 00 00 00 00 00 00 00 46 00 54 00 54 00 2D 00 CB 30 E5 30 FC 30 BB 30 B6
+
+; Korean font
+EnJpFont:    61 00 70 00 70 00 3A 00 2F 00 55 00 49 00 2F 00 61 00 72 00 75 00 64 00 6A 00 69 00 6E 00 67 00 78 00 69 00 68 00 65 00 69 00 6B 00 72 00 5F 00 62 00 64 00 2E 00 74 00 74 00 66 00 00 00
+EnJpFont+40: 41 00 52 00 20 00 55 00 44 00 4A 00 69 00 6E 00 67 00 58 00 69 00 48 00 65 00 69 00 4B 00 52 00 20 00 42 00 44 00 00 00
+
+; The other fonts don't have a visual difference on the English alphabet since they're all technically the same font style, but here are the other options anyway.
+; Chinese B5 font
+;EnJpFont:    61 00 70 00 70 00 3A 00 2F 00 55 00 49 00 2F 00 61 00 72 00 75 00 64 00 6A 00 69 00 6E 00 67 00 78 00 69 00 68 00 65 00 69 00 62 00 35 00 5F 00 62 00 64 00 2E 00 74 00 74 00 66 00 00 00
+;EnJpFont+40: 41 00 52 00 20 00 55 00 44 00 4A 00 69 00 6E 00 67 00 58 00 69 00 48 00 65 00 69 00 42 00 35 00 20 00 42 00 44 00 00 00
+
+; Chinese G30 font
+;EnJpFont:    61 00 70 00 70 00 3A 00 2F 00 55 00 49 00 2F 00 61 00 72 00 75 00 64 00 6A 00 69 00 6E 00 67 00 78 00 69 00 68 00 65 00 69 00 67 00 33 00 30 00 5F 00 62 00 64 00 2E 00 74 00 74 00 66 00 00 00
+;EnJpFont+40: 41 00 52 00 20 00 55 00 44 00 4A 00 69 00 6E 00 67 00 58 00 69 00 48 00 65 00 69 00 47 00 33 00 30 00 20 00 42 00 44 00 00 00
+
+; Invalidates the English font, forcing the game to fall back to a default. In case you like the look of this instead.
+; Fallback font
+;EnJpFont:    40 40
+;EnJpFont+40: 40 40 

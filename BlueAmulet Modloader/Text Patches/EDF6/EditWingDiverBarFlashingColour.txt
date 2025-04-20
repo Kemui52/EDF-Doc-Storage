@@ -1,0 +1,14 @@
+; Author: KittopiaCreator
+; Purpose: Allow editing of the flashing colour of the Wing Divers energy bar.
+
+;Emergency Recharge
+1f77a50: f32! 3.0 ;Red Value
+1f77a54: f32! 0.0 ;Green Value
+1f77a58: f32! 0.0 ;Blue Value
+1f77a5c: f32! 1.0 ;Alpha? Value
+
+;Low Energy
+1f77a70: f32! 3.0 ;Red Value
+1f77a74: f32! 1.0 ;Green Value
+1f77a78: f32! 0.0 ;Blue Value
+1f77a7c: f32! 1.0 ;Alpha? Value
