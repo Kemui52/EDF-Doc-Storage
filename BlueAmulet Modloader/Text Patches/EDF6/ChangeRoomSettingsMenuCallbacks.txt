@@ -1,0 +1,5 @@
+; Author: KittopiaCreator
+; Purpose: Swaps the button callbacks of the room creation menu
+
+91a359+3: rel32! 180ecd0
+91a373+3: rel32! 180ecd0

@@ -1,0 +1,22 @@
+; Author: KittopiaCreator
+; Purpose: Sets the camera offset to the data defined in this patch
+
+aob injection_point 0F 11 A3 50 1F 00 00
+alloc custom_code 100
+
+custom_code:
+0F10 25 11000000      ; movups xmm4,[data]
+0F11 A3 501F0000      ; movups [rbx+00001F50],xmm4
+E9 00 00 00 00        ; jmp EDF.dll+5501AB
+CC CC CC CC CC ; Padding
+
+;Data sets
+f32! 0.0	;X Offset
+f32! 1.0	;Y Offset
+f32! -10.0	;Z Offset
+f32! 0.0	;Ensure spacing.
+
+injection_point: E9 00 00 00 00 66 90
+injection_point+1: rel32! custom_code
+
+custom_code+f: rel32! injection_point+7 ;Return to injection point.

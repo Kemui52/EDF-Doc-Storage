@@ -1,0 +1,7 @@
+; Author: redone
+; Adjust the random weighting of item drops.
+aob Item_ratio 06000000 0F000000 0E000000 03000000
+Item_ratio:s32! 6 ; Weapon
+Item_ratio+4:s32! 15 ; Armor
+Item_ratio+8:s32! 14 ; Healing S
+Item_ratio+C:s32! 3 ; Healing L

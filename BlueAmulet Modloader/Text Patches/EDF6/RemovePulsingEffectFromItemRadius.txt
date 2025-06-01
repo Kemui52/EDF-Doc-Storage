@@ -1,0 +1,4 @@
+; Author: KittopiaCreator
+; Purpose: Removes the pulsing effect from the item pickup radius AreaRenderer by setting the set alpha value to 0
+
+59BA6B: f32! 0.0
