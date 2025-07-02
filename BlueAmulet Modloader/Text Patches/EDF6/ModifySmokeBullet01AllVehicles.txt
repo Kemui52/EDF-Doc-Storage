@@ -1,14 +1,13 @@
 ; Author: KittopiaCreator
-; Purpose: Modify the SmokeBullet01 to allow 'Popup Style' vehicles to always spawn 'popup style'
+; Purpose: Modify the SmokeBullet01 to allow vehicles to always spawn 'popup style'
 
 aob injection_point 48 8D 05 90 E1 FF FF
 alloc custom_code 40
 
 custom_code:
 83 BF 400F0000 01
-0F85 0D000000
-80 BF F5130000 01
-0F84
+0F85 05000000
+e9
 rel32! 2aafc4
 48 8D 05
 rel32! 2A92A0

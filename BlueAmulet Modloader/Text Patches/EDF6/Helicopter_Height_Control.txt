@@ -1,0 +1,71 @@
+; Author: KittopiaCreator
+; Purpose: Allows more control over the helicopter vehicle's height. It works by removing automatic decay of thrust and making the throttle controllable. With this patch, LShift will decrease throttle.
+;TODO: Gamepad support, make it actually use existing systems, ect.
+;Possible errors may occur, particularly online.
+; Disclaimer: Will need to be updated if the game updates
+
+;AOB Scans
+aob control_redirect 8B 81 E0 02 00 00 89 87
+aob auto_descent_reirect F3 0F 5C F1 F3 0F 59 73 08
+
+;Allocate memory for patch code
+alloc patch_code 300
+
+patch_code:
+
+;Modification of vfTable[55]
+;_____________________________________________________________________________
+
+label add_controls
+80 3D     ; cmp byte ptr [EDF.dll+1FEEE1C],01
+rel32! 1FEEE1B
+01
+0F84 27000000         ; je 7FFC2E190034
+8B 81 E0020000        ; mov eax,[rcx+000002E0]
+83 F8 00              ; cmp eax,00
+0F85         ; jne EDF.dll+654564
+rel32! control_redirect+6
+
+80 3D	     ; cmp byte ptr [EDF.dll+2136180],7F
+rel32! 213617f ;Apparently need to go 1 lower.
+7F
+
+0F86         ; jbe EDF.dll+654564
+rel32! control_redirect+6
+
+8B 05 19000000        ; mov eax,[7FFC2E190048]
+E9           ; jmp EDF.dll+654564
+rel32! control_redirect+6
+8B 81 D4020000        ; mov eax,[rcx+000002D4]
+35 00000080           ; xor eax,80000000
+E9           ; jmp EDF.dll+654564
+rel32! control_redirect+6
+CC CC CC CC
+00 00 80 BF 00 00 00 00 00
+
+;Modification of "Helicopter Thrust Function"
+;_____________________________________________________________________________
+label helicopter_thrust
+0F2F 7F 08            ; comiss xmm7,[rdi+08]
+0F82 04000000         ; jb 7FFC2CA5000E
+F3 0F5C F1            ; subss xmm6,xmm1
+F3 0F59 73 08         ; mulss xmm6,[rbx+08]
+E9           ; jmp EDF.dll+656775
+rel32! 656775
+
+
+;__________________________________________
+;Redirects.
+
+control_redirect:
+E9
+rel32! add_controls
+90
+
+auto_descent_reirect:
+E9
+rel32! helicopter_thrust
+0F1F 40 00           
+
+
+
