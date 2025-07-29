@@ -3,3 +3,6 @@
 
 1AF13D: u32! 2048 ;Maximum number of pickups per mission. Default 1024
 1AF165: u32! 2048 ;Synchronize with above value
+
+;Item Drop Rate - credit Kittopia
+0ab6610: f32! 0.947 ;Value. Lower is better drop rates. Default is 0.947
