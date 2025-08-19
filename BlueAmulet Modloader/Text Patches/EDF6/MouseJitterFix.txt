@@ -1,0 +1,2 @@
+; Author: Souzooka, KittopiaCreator
+11845d1: 66 0F 1F 44 00
