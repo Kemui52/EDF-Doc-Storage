@@ -1,2 +1,3 @@
 ; Author: BlueAmulet, inspired by Souzooka's censor removal patch
-358C70: EB 6E 90 90
+aob ChatCensor 66833B0075054533C9
+ChatCensor: EB 6E 90 90

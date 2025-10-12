@@ -1,0 +1,17 @@
+; Author: MoistGoat, redone
+aob item_ratio 06000000 0F000000 0E000000 03000000
+item_ratio:s32! 6 ; Weapon
+item_ratio+4:s32! 15 ; Armor
+item_ratio+8:s32! 14 ; Healing S
+item_ratio+C:s32! 3 ; Healing L
+
+
+; Author: KittopiaCreator
+alloc control_value 4
+
+control_value:
+f32! 0.5
+
+198700:
+F3 44 0F10 1D
+rel32! control_value
