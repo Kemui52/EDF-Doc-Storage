@@ -1,0 +1,8 @@
+; Author: KittopiaCreator
+; Purpose: Add kruul pods to radar by removing its exclusion.
+
+;Remove TeamManager exclusion
+3fa46c: 90 90 90 90 90
+
+;Always be enemy team (optional)
+3ec8b3: BB 01 00 00 00 90
