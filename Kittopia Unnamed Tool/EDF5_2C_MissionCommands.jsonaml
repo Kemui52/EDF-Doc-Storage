@@ -362,8 +362,8 @@
     {
         representations: [0x14],
         group: 0,
-        name: "",
-        description: "",
+        name: "SetMissionLevel?",
+        description: "Overrides mission level from its current setting, which sets the general strength of enemies.",
         returnValue:
         {
             type: "void",
@@ -372,9 +372,9 @@
         arguments:
         [
             {
-                name: "",
+                name: "Level",
                 type: "int",
-                description: ""
+                description: "The level out of...100, presumably?"
             }
         ]
     },
